@@ -1,0 +1,1064 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ôn luyện thẻ thẩm định viên</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f6f3ec;--card:#fffdf8;--fg:#1d2a2a;--mut:#5d6b69;--line:#ddd6c6;--ac:#0f5c56;--ac2:#e8f1ee;--acfg:#fff;--warn:#a85a00;--warnbg:#fbeedb;--ok:#1b6e3a;--okbg:#e2f2e6;--bad:#a8281f;--badbg:#f9e3e0;--hl:#fff3c4;--sh:0 1px 2px rgba(30,40,40,.07)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a19;--card:#1a2423;--fg:#e8ece9;--mut:#9bacaa;--line:#2f3d3b;--ac:#58c4b6;--ac2:#1c3330;--acfg:#08201d;--warn:#f0b35c;--warnbg:#3a2c14;--ok:#7fd49a;--okbg:#1a3324;--bad:#ff9a90;--badbg:#3c1f1c;--hl:#4a4116;--sh:none;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121a19;--card:#1a2423;--fg:#e8ece9;--mut:#9bacaa;--line:#2f3d3b;--ac:#58c4b6;--ac2:#1c3330;--acfg:#08201d;--warn:#f0b35c;--warnbg:#3a2c14;--ok:#7fd49a;--okbg:#1a3324;--bad:#ff9a90;--badbg:#3c1f1c;--hl:#4a4116;--sh:none;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.6 'Be Vietnam Pro',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;padding-inline:16px;overflow-x:hidden}
+.wrap{max-width:860px;margin:0 auto;padding-block:0 56px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);margin-inline:-16px;padding:10px 16px 0;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.brand b{font-size:17px;letter-spacing:-.01em}.brand span{color:var(--mut);font-size:12.5px}
+nav{display:flex;gap:2px;overflow-x:auto;margin-top:6px;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{padding:9px 12px;color:var(--mut);text-decoration:none;font-weight:500;white-space:nowrap;border-bottom:2px solid transparent;font-size:14px}
+nav a.on{color:var(--ac);border-color:var(--ac)}
+main{padding-top:22px;min-width:0}
+h1{font-size:25px;line-height:1.25;margin:0 0 6px;letter-spacing:-.015em;text-wrap:balance}
+h2{font-size:18px;margin:26px 0 10px;text-wrap:balance}
+h3{font-size:15.5px;margin:0 0 4px}
+h4{font-size:14px;margin:18px 0 6px;color:var(--ac)}
+.lead{color:var(--mut);margin:0 0 18px;max-width:62ch}
+.mono,.num{font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;box-shadow:var(--sh);min-width:0}
+a.card{display:block;color:inherit;text-decoration:none}a.card:hover{border-color:var(--ac)}
+.mut{color:var(--mut)}.sm{font-size:13px}
+.bar{height:6px;background:var(--line);border-radius:4px;overflow:hidden;margin:8px 0 4px}
+.bar i{display:block;height:100%;background:var(--ac)}
+.pill{display:inline-block;font-size:11.5px;padding:1px 8px;border-radius:99px;background:var(--ac2);color:var(--ac);font-weight:600;white-space:nowrap}
+.pill.w{background:var(--warnbg);color:var(--warn)}.pill.o{background:var(--okbg);color:var(--ok)}.pill.b{background:var(--badbg);color:var(--bad)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn{font:inherit;font-weight:600;font-size:14px;padding:9px 16px;border-radius:8px;border:1px solid var(--ac);background:var(--ac);color:var(--acfg);cursor:pointer;text-decoration:none;display:inline-block}
+.btn.g{background:transparent;color:var(--ac)}.btn:disabled{opacity:.45;cursor:default}
+.btn.s{padding:6px 12px;font-size:13px}
+select,input[type=text],input[type=number]{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);max-width:100%;min-width:0}
+label.f{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--mut);min-width:0}
+.crumb{font-size:13px;color:var(--mut);margin-bottom:10px}.crumb a{color:var(--ac)}
+.tree{list-style:none;margin:0;padding:0}
+.tree li{margin:0}
+.tree a.it{display:flex;gap:10px;align-items:baseline;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);margin-bottom:6px;text-decoration:none;color:inherit}
+.tree a.it:hover{border-color:var(--ac)}
+.tree .n{font-family:'IBM Plex Mono',monospace;color:var(--mut);font-size:12px;min-width:22px}
+.tree .tt{flex:1;min-width:0}.tree .tt small{display:block;color:var(--mut);font-size:12.5px}
+.les h4{margin-top:20px}.les p{margin:8px 0}.les ul,.les ol{padding-left:22px;margin:8px 0}.les li{margin:3px 0}
+.tw{overflow-x:auto;margin:10px 0;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+.tw table{border-collapse:collapse;min-width:100%;font-size:13.5px}
+.tw th,.tw td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.tw th{background:var(--ac2);color:var(--ac);white-space:nowrap}.tw tr:last-child td{border-bottom:0}
+.key{background:var(--hl);border-radius:10px;padding:12px 16px;margin:20px 0}.key ul{margin:6px 0 0;padding-left:20px}
+.q{font-size:16.5px;font-weight:600;line-height:1.5;margin:8px 0 14px;text-wrap:pretty}
+.opt{display:flex;gap:10px;width:100%;text-align:left;font:inherit;padding:11px 14px;margin-bottom:8px;border:1px solid var(--line);border-radius:9px;background:var(--card);color:var(--fg);cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--ac)}
+.opt b{font-family:'IBM Plex Mono',monospace;color:var(--mut);min-width:18px}
+.opt.ok{background:var(--okbg);border-color:var(--ok)}.opt.bad{background:var(--badbg);border-color:var(--bad)}
+.opt:disabled{cursor:default}
+.exp{border-left:3px solid var(--ac);background:var(--ac2);padding:12px 14px;border-radius:0 8px 8px 0;margin:12px 0}
+.exp.bad{border-color:var(--bad);background:var(--badbg)}.exp.ok{border-color:var(--ok);background:var(--okbg)}
+.exp .src{font-size:12.5px;color:var(--mut);margin-top:6px}
+.step{border:1px solid var(--line);background:var(--card);border-radius:9px;padding:12px 14px;margin:10px 0}
+.step h4{margin:0 0 4px}
+.ans{font-size:18px;font-weight:600;font-family:'IBM Plex Mono',monospace;background:var(--okbg);color:var(--ok);padding:10px 14px;border-radius:8px;margin:12px 0}
+.note{background:var(--warnbg);color:var(--fg);border-left:3px solid var(--warn);padding:10px 14px;border-radius:0 8px 8px 0;margin:12px 0;font-size:14px}
+.stat{display:flex;gap:18px;flex-wrap:wrap}.stat div b{display:block;font-size:22px;font-family:'IBM Plex Mono',monospace}
+.fx{font-family:'IBM Plex Mono',monospace;font-size:13.5px;background:var(--ac2);padding:8px 12px;border-radius:8px;overflow-x:auto;margin:6px 0}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:10px 0}
+.res{font-weight:600;font-family:'IBM Plex Mono',monospace;margin-top:6px;min-height:1.5em}
+.foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--mut)}
+.link{background:none;border:0;color:var(--ac);font:inherit;cursor:pointer;padding:0;text-decoration:underline}
+@media(max-width:480px){h1{font-size:22px}.q{font-size:15.5px}}
+</style>
+<div class="wrap"><header class="top"><div class="brand"><b>Ôn thi thẻ thẩm định viên</b><span>Pháp luật · BĐS · Động sản</span></div><nav><a href="#" data-tab="">Tổng quan</a><a href="#hoc" data-tab="hoc">Bài học</a><a href="#luyen" data-tab="luyen">Trắc nghiệm</a><a href="#bai" data-tab="bai">Bài tính</a><a href="#ct" data-tab="ct">Công thức</a></nav></header><main id="app"></main></div><script>
+// Ngân hàng câu hỏi — Môn 1 (Pháp luật + nguyên lý). q(môn, chủ đề, câu hỏi, [đáp án], vị trí đúng, giải thích, nguồn)
+const Q=[];
+const q=(m,t,s,o,a,w,src)=>Q.push({id:'q'+(Q.length+1),m,t,s,o,a,w,src});
+
+/* ===== LUẬT GIÁ 2023 ===== */
+q(1,'luatgia','Luật Giá 2023 bắt đầu có hiệu lực từ ngày nào?',['01/01/2024','01/07/2024','01/01/2025','01/07/2023'],1,'Luật Giá 2023 có hiệu lực từ 01/07/2024. Nghị định 85/2024/NĐ-CP (hướng dẫn Luật) và 78/2024/NĐ-CP (hướng dẫn về thẩm định giá) ra đời để thi hành.','CĐ1A Pháp luật về TĐG; Luật Giá Đ.74');
+q(1,'luatgia','Theo Luật Giá 2023, bản chất của hoạt động thẩm định giá là gì?',['Hoạt động quản lý nhà nước quyết định giá tài sản','Hoạt động tư vấn xác định giá trị tài sản tại một địa điểm, thời điểm, cho một mục đích nhất định','Hoạt động xác lập giá bán cuối cùng cho giao dịch','Hoạt động kiểm tra yếu tố hình thành giá'],1,'Điều 4 khoản 16: thẩm định giá là hoạt động TƯ VẤN xác định giá trị tài sản, do doanh nghiệp thẩm định giá hoặc hội đồng thẩm định giá thực hiện theo Chuẩn mực. Quyết định giá cuối cùng vẫn thuộc chủ sở hữu hoặc người có thẩm quyền, nên thẩm định giá không phải là "định giá".','Luật Giá Đ.4 k16; CĐ2 mục 2.2.1.1');
+q(1,'luatgia','Nguyên tắc hoạt động thẩm định giá tại Điều 41 Luật Giá gồm những nội dung nào?',['Tuân thủ pháp luật và Chuẩn mực; độc lập, khách quan, trung thực; chịu trách nhiệm về hoạt động thẩm định giá','Bảo đảm lợi nhuận cho khách hàng; trung thực; bảo mật','Tuân thủ chỉ đạo của cơ quan nhà nước; độc lập; công khai giá','Theo yêu cầu của khách hàng; khách quan; bồi thường thiệt hại'],0,'Điều 41 có đúng ba nguyên tắc: (1) tuân thủ pháp luật, Chuẩn mực thẩm định giá VN; (2) độc lập, khách quan, trung thực; (3) chịu trách nhiệm theo quy định của pháp luật. Các phương án khác pha thêm nội dung không có trong điều luật.','Luật Giá Đ.41');
+q(1,'luatgia','Ai ban hành Chuẩn mực thẩm định giá Việt Nam?',['Quốc hội','Chính phủ','Bộ trưởng Bộ Tài chính','Hội Thẩm định giá Việt Nam'],2,'Điều 42 Luật Giá: Bộ trưởng Bộ Tài chính ban hành, theo dõi việc thực hiện, rà soát và kiến nghị sửa các quy định mâu thuẫn, chồng chéo. Hội nghề nghiệp không có thẩm quyền ban hành chuẩn mực.','Luật Giá Đ.42');
+q(1,'luatgia','Hoạt động thẩm định giá theo Luật Giá gồm hai loại nào?',['Thẩm định giá tài sản và thẩm định giá doanh nghiệp','Cung cấp dịch vụ thẩm định giá (do doanh nghiệp thẩm định giá, qua hợp đồng dân sự) và thẩm định giá của Nhà nước (do hội đồng thẩm định giá)','Thẩm định giá bắt buộc và thẩm định giá tự nguyện','Thẩm định giá trong nước và thẩm định giá nước ngoài'],1,'Điều 40: dịch vụ thẩm định giá do doanh nghiệp thực hiện, giao kết bằng hợp đồng dân sự; thẩm định giá của Nhà nước do hội đồng thẩm định giá thực hiện theo quyết định của người có thẩm quyền (Điều 59). Phương án A là cách phân loại theo lĩnh vực của thẻ thẩm định viên, không phải theo hoạt động.','Luật Giá Đ.40');
+q(1,'luatgia','Hoạt động nào sau đây KHÔNG nằm trong các hoạt động điều tiết giá?',['Bình ổn giá','Hiệp thương giá','Kê khai giá, niêm yết giá','Thẩm định giá của doanh nghiệp thẩm định giá'],3,'Các hoạt động điều tiết giá: bình ổn giá, định giá, hiệp thương giá, kê khai giá, niêm yết giá, giá tham chiếu, kiểm tra yếu tố hình thành giá. Thẩm định giá là hoạt động tư vấn xác định giá trị, không phải biện pháp điều tiết của Nhà nước.','CĐ1A; Luật Giá Đ.4 k8');
+q(1,'luatgia','"Định giá" khác "thẩm định giá" ở điểm cốt lõi nào?',['Định giá là việc cơ quan nhà nước có thẩm quyền hoặc tổ chức, cá nhân kinh doanh xác định giá của hàng hóa, dịch vụ; thẩm định giá là tư vấn xác định giá trị tài sản','Hai khái niệm hoàn toàn đồng nghĩa','Định giá chỉ áp dụng cho bất động sản','Thẩm định giá có tính bắt buộc, định giá thì không'],0,'Điều 4 khoản 11: định giá là quá trình cơ quan nhà nước hoặc tổ chức, cá nhân kinh doanh xác định GIÁ của hàng hóa, dịch vụ (chủ thể có quyền quyết định). Thẩm định giá chỉ là tư vấn nên không ràng buộc người quyết định.','Luật Giá Đ.4 k11');
+q(1,'luatgia','Giá dịch vụ thẩm định giá do ai và theo nguyên tắc nào xác định?',['Bộ Tài chính quy định khung giá','Do doanh nghiệp thẩm định giá và khách hàng thỏa thuận trong hợp đồng, bảo đảm bù đắp chi phí thực tế hợp lý','Do hội nghề nghiệp công bố','Tính theo phần trăm giá trị tài sản bắt buộc'],1,'Điều 57: giá dịch vụ ghi trong hợp đồng, theo giao dịch dân sự giữa doanh nghiệp và khách hàng, phải bảo đảm nguyên tắc bù đắp chi phí thực tế hợp lý để thực hiện đầy đủ phạm vi công việc theo Chuẩn mực.','Luật Giá Đ.57');
+q(1,'luatgia','Phương thức giải quyết tranh chấp về hợp đồng thẩm định giá theo Luật Giá là gì?',['Chỉ được khởi kiện ra Tòa án','Thương lượng, hòa giải; trọng tài thương mại; khởi kiện tại Tòa án','Chỉ qua Bộ Tài chính phân xử','Chỉ qua Hội Thẩm định giá'],1,'Điều 58 liệt kê ba phương thức: thương lượng/hòa giải theo cam kết trong hợp đồng; trọng tài thương mại; khởi kiện tại Tòa án theo tố tụng dân sự.','Luật Giá Đ.58');
+q(1,'luatgia','Cơ quan nào chịu trách nhiệm trước Chính phủ thực hiện chức năng quản lý nhà nước về giá?',['Bộ Kế hoạch và Đầu tư','Bộ Tài chính','Ngân hàng Nhà nước','Bộ Công Thương'],1,'Chính phủ thống nhất quản lý nhà nước về giá; Bộ Tài chính chịu trách nhiệm trước Chính phủ; các bộ quản lý trong lĩnh vực mình phụ trách; UBND cấp tỉnh quản lý tại địa phương.','Luật Giá Đ.12–16');
+q(1,'luatgia','Hành vi nào sau đây là hành vi bị cấm đối với tổ chức, cá nhân theo Điều 7 Luật Giá?',['Niêm yết giá đúng quy định','Cản trở hoạt động quản lý, điều tiết giá, thẩm định giá của cơ quan nhà nước có thẩm quyền','Kê khai giá đúng hạn','Tham gia hội nghề nghiệp về thẩm định giá'],1,'Điều 7 khoản 2 cấm loan tin sai sự thật gây nhiễu loạn thị trường, gian lận về giá, lợi dụng thiên tai dịch bệnh để tăng giá trục lợi, cản trở hoạt động quản lý, điều tiết giá và thẩm định giá. Các phương án còn lại là hành vi hợp pháp.','Luật Giá Đ.7 k2');
+q(1,'luatgia','Mặt hàng nào sau đây thuộc danh mục hàng hóa, dịch vụ thực hiện bình ổn giá (Phụ lục 1 Luật Giá)?',['Sữa dành cho trẻ em dưới 06 tuổi','Thịt lợn','Điện thoại di động','Dịch vụ du lịch'],0,'Danh mục bình ổn giá gồm: xăng dầu thành phẩm; LPG; sữa dành cho trẻ em dưới 06 tuổi; thóc tẻ, gạo tẻ; phân đạm, DAP, NPK; thức ăn chăn nuôi, thủy sản; vắc-xin phòng bệnh cho gia súc, gia cầm; thuốc bảo vệ thực vật; thuốc thiết yếu tại cơ sở khám chữa bệnh.','Luật Giá Phụ lục 1; CĐ1A');
+
+/* ===== THẺ & THẨM ĐỊNH VIÊN ===== */
+q(1,'tdv','Điều kiện để được dự thi cấp thẻ thẩm định viên về giá (Điều 44) gồm:',['Năng lực hành vi dân sự đầy đủ; bằng đại học trở lên; chứng chỉ đào tạo nghiệp vụ thẩm định giá phù hợp lĩnh vực (trừ người có bằng cao đẳng trở lên chuyên ngành giá hoặc thẩm định giá)','Có bằng cao đẳng trở lên và 36 tháng kinh nghiệm','Có hợp đồng lao động với doanh nghiệp thẩm định giá','Là cán bộ, công chức ngành tài chính'],0,'Điều 44 khoản 2: ba điều kiện (a) năng lực hành vi, (b) bằng đại học trở lên, (c) chứng chỉ đào tạo nghiệp vụ TĐG, trừ trường hợp có bằng CĐ trở lên chuyên ngành giá/thẩm định giá. 36 tháng và hợp đồng lao động là điều kiện ĐĂNG KÝ HÀNH NGHỀ (Điều 45), không phải điều kiện dự thi.','Luật Giá Đ.44');
+q(1,'tdv','Thẩm định viên về giá là ai theo Điều 46 Luật Giá?',['Người có thẻ thẩm định viên về giá','Người có thẻ, đã đăng ký hành nghề thẩm định giá và được Bộ Tài chính thông báo là thẩm định viên về giá','Người có chứng chỉ đào tạo nghiệp vụ thẩm định giá','Người làm việc tại doanh nghiệp thẩm định giá'],1,'Có thẻ mới chỉ là điều kiện cần. Phải đăng ký hành nghề qua doanh nghiệp thẩm định giá và được Bộ Tài chính thông báo thì mới là "thẩm định viên về giá" và được ký chứng thư, báo cáo.','Luật Giá Đ.46');
+q(1,'tdv','Tổng thời gian thực tế làm việc tối thiểu (trình độ đại học trở lên) để đăng ký hành nghề thẩm định giá là bao nhiêu?',['12 tháng','24 tháng, mọi trường hợp','36 tháng; được rút xuống 24 tháng nếu làm việc theo chương trình định hướng ứng dụng đại học trở lên về chuyên ngành giá hoặc thẩm định giá','60 tháng'],2,'Điều 45 khoản 1 điểm c: đủ 36 tháng làm việc tại doanh nghiệp thẩm định giá, cơ quan quản lý nhà nước về giá và thẩm định giá; 24 tháng với trường hợp đại học trở lên chuyên ngành giá/TĐG theo chương trình định hướng ứng dụng.','Luật Giá Đ.45 k1c');
+q(1,'tdv','Đối tượng nào KHÔNG được hành nghề thẩm định giá?',['Người có thẻ và có hợp đồng lao động với doanh nghiệp thẩm định giá','Cán bộ, công chức; sĩ quan, quân nhân chuyên nghiệp, công nhân quốc phòng; sĩ quan, hạ sĩ quan, công nhân công an','Người đã qua 36 tháng làm việc','Người đã cập nhật kiến thức'],1,'Điều 45 khoản 2: gồm cán bộ, công chức; lực lượng quân đội, công an theo danh sách luật; người đang bị cấm hành nghề, bị khởi tố/truy tố/xét xử, đã bị kết án một số tội kinh tế, chức vụ chưa xóa án tích; người đang bị tước thẻ.','Luật Giá Đ.45 k2');
+q(1,'tdv','Một người có thẻ thẩm định viên về giá có được đăng ký hành nghề đồng thời tại hai doanh nghiệp thẩm định giá không?',['Có, nếu có hợp đồng lao động với cả hai','Có, nếu được Bộ Tài chính đồng ý','Không được đăng ký hành nghề đồng thời tại hai doanh nghiệp thẩm định giá trở lên','Chỉ được nếu là thành viên góp vốn'],2,'Điều 45 khoản 3 cấm đăng ký đồng thời tại 2 doanh nghiệp trở lên, nhằm gắn trách nhiệm nghề nghiệp vào một doanh nghiệp duy nhất.','Luật Giá Đ.45 k3');
+q(1,'tdv','Người có thẻ thẩm định viên lĩnh vực THẨM ĐỊNH GIÁ TÀI SẢN có được thực hiện thẩm định giá doanh nghiệp không?',['Có, vì doanh nghiệp là một loại tài sản','Không; chỉ người có thẻ lĩnh vực thẩm định giá doanh nghiệp mới được thẩm định giá doanh nghiệp','Có, nếu có thêm chứng chỉ ngoại ngữ','Có, nếu doanh nghiệp thẩm định giá cho phép'],1,'Thẻ chia hai lĩnh vực: tài sản và doanh nghiệp. Người có thẻ lĩnh vực doanh nghiệp được đăng ký hành nghề cả hai lĩnh vực; chiều ngược lại thì không. Ký chứng thư không đúng lĩnh vực chuyên môn là hành vi bị cấm.','Luật Giá Đ.44, 45 k3, 7 k4');
+q(1,'tdv','Điều kiện "đã cập nhật kiến thức về thẩm định giá" khi đăng ký hành nghề được miễn trong trường hợp nào?',['Thẻ được cấp dưới 01 năm tính đến thời điểm đăng ký hành nghề','Có bằng thạc sĩ','Đã làm việc trên 5 năm','Không có trường hợp miễn'],0,'Điều 45 khoản 1 điểm d miễn cập nhật kiến thức đối với thẻ được cấp dưới 01 năm tính đến thời điểm đăng ký.','Luật Giá Đ.45 k1d');
+q(1,'tdv','Hành vi nào sau đây thẩm định viên về giá bị nghiêm cấm?',['Đưa ra quan điểm độc lập về chuyên môn','Lập chứng thư thẩm định giá, báo cáo thẩm định giá với tư cách cá nhân','Từ chối thẩm định giá khi hồ sơ không đủ tin cậy','Tham gia tổ chức nghề nghiệp'],1,'Điều 7 khoản 4 cấm: thông tin sai về trình độ; giả mạo, cho thuê, cho mượn thẻ; lập chứng thư/báo cáo với tư cách cá nhân; ký sai lĩnh vực hoặc khi không đủ điều kiện; thẩm định giá cho người có liên quan; lập khống; mua chuộc, thông đồng. Các phương án còn lại là QUYỀN của thẩm định viên.','Luật Giá Đ.7 k4, Đ.47');
+q(1,'tdv','Thẩm định viên có quyền từ chối thực hiện thẩm định giá trong trường hợp nào?',['Khi khách hàng yêu cầu giá thấp hơn mong muốn','Không đúng lĩnh vực chuyên môn được phép hành nghề, hoặc hồ sơ, tài liệu không đủ hoặc không bảo đảm tin cậy','Khi tài sản ở xa trụ sở','Khi khách hàng chưa trả phí'],1,'Điều 47: thẩm định viên được từ chối khi không đúng lĩnh vực hoặc hồ sơ, tài liệu thiếu hay không đáng tin cậy. Phí và khoảng cách không phải căn cứ luật định.','Luật Giá Đ.47');
+
+/* ===== DOANH NGHIỆP THẨM ĐỊNH GIÁ ===== */
+q(1,'dntdg','Điều kiện chung để doanh nghiệp được cấp giấy chứng nhận đủ điều kiện kinh doanh dịch vụ thẩm định giá về nhân sự là:',['Có ít nhất 03 người có thẻ thẩm định viên','Có ít nhất 05 người có thẻ thẩm định viên về giá đủ điều kiện đăng ký hành nghề tại doanh nghiệp','Có ít nhất 10 người có thẻ thẩm định viên','Có ít nhất 02 thẩm định viên và 1 kế toán'],1,'Điều 49: điều kiện chung là ít nhất 05 người có thẻ đủ điều kiện đăng ký hành nghề tại doanh nghiệp, cộng điều kiện riêng theo loại hình.','Luật Giá Đ.49');
+q(1,'dntdg','Với công ty TNHH hai thành viên trở lên và công ty cổ phần, điều kiện riêng nào đúng?',['Ít nhất 02 thành viên góp vốn hoặc cổ đông là người có thẻ thẩm định viên đăng ký hành nghề tại doanh nghiệp','Tất cả thành viên phải có thẻ','Chỉ cần người đại diện theo pháp luật có thẻ','Không có điều kiện về vốn'],0,'Điều 49: ít nhất 02 thành viên/cổ đông có thẻ đăng ký hành nghề; tổng vốn góp của các thành viên là tổ chức không quá 35% vốn điều lệ; tổng vốn góp của thành viên/cổ đông là thẩm định viên phải chiếm trên 50% vốn điều lệ.','Luật Giá Đ.49');
+q(1,'dntdg','Tổng phần vốn góp của các thành viên/cổ đông LÀ TỔ CHỨC trong doanh nghiệp thẩm định giá (TNHH 2 thành viên trở lên, cổ phần) không được vượt quá:',['25% vốn điều lệ','35% vốn điều lệ','49% vốn điều lệ','50% vốn điều lệ'],1,'Điều 49: không quá 35% vốn điều lệ, và người đại diện theo ủy quyền của tổ chức phải là người có thẻ đăng ký hành nghề tại doanh nghiệp. Cùng lúc, vốn của thành viên là thẩm định viên phải chiếm TRÊN 50%.','Luật Giá Đ.49');
+q(1,'dntdg','Điều kiện nào đúng với người đại diện theo pháp luật, Giám đốc hoặc Tổng giám đốc của doanh nghiệp thẩm định giá (Điều 51)?',['Là thẩm định viên về giá tại doanh nghiệp đó và có từ đủ 36 tháng là thẩm định viên về giá','Chỉ cần có thẻ thẩm định viên','Có từ đủ 60 tháng làm việc tại cơ quan nhà nước','Không cần ghi tên trên Giấy chứng nhận đăng ký doanh nghiệp'],0,'Điều 51: ghi tên trên Giấy CN đăng ký doanh nghiệp; là thẩm định viên tại doanh nghiệp đó; đủ 36 tháng là thẩm định viên; duy trì điều kiện hành nghề; không thuộc trường hợp từng giữ vị trí này ở doanh nghiệp bị thu hồi giấy chứng nhận (12 tháng với lần 1, 60 tháng với lần 2).','Luật Giá Đ.51');
+q(1,'dntdg','Khi doanh nghiệp thẩm định giá không còn đáp ứng một trong các điều kiện Điều 49, 50, doanh nghiệp phải làm gì?',['Báo cáo Bộ Tài chính trong 10 ngày và khắc phục trong tối đa 03 tháng kể từ ngày không đủ điều kiện','Dừng hoạt động ngay lập tức, không được khắc phục','Báo cáo trong 30 ngày và khắc phục trong 12 tháng','Không cần báo cáo'],0,'Điều 52 khoản 2: báo cáo Bộ Tài chính trong thời hạn 10 ngày; khắc phục trong tối đa 03 tháng.','Luật Giá Đ.52 k2');
+q(1,'dntdg','Doanh nghiệp thẩm định giá bị ĐÌNH CHỈ kinh doanh dịch vụ thẩm định giá khi:',['Không đáp ứng một trong các điều kiện khoản 1 Điều 49 trong 03 tháng liên tục, hoặc phát hành chứng thư, báo cáo do người không phải thẩm định viên ký với vai trò thẩm định viên','Không phát hành chứng thư trong 12 tháng liên tục','Kê khai gian lận hồ sơ cấp giấy chứng nhận','Tự chấm dứt kinh doanh dịch vụ'],0,'Điều 54 khoản 1 là các trường hợp ĐÌNH CHỈ. Các phương án B, C, D thuộc khoản 2 (THU HỒI giấy chứng nhận). Cần phân biệt: đình chỉ là tạm dừng, có thể khắc phục; thu hồi là chấm dứt.','Luật Giá Đ.54');
+q(1,'dntdg','Doanh nghiệp thẩm định giá bị THU HỒI giấy chứng nhận đủ điều kiện kinh doanh khi:',['Không phát hành chứng thư thẩm định giá, báo cáo thẩm định giá trong 12 tháng liên tục','Chậm báo cáo Bộ Tài chính 1 lần','Thay đổi trụ sở','Thay đổi người đại diện theo pháp luật'],0,'Điều 54 khoản 2 gồm: kê khai gian lận hồ sơ; không phát hành chứng thư/báo cáo 12 tháng liên tục; trong 60 ngày kể từ khi bị đình chỉ không khắc phục được; tự chấm dứt; bị thu hồi giấy đăng ký doanh nghiệp.','Luật Giá Đ.54 k2');
+q(1,'dntdg','Nghĩa vụ nào sau đây là của doanh nghiệp thẩm định giá theo Điều 53?',['Mua bảo hiểm trách nhiệm nghề nghiệp hoặc trích lập dự phòng rủi ro nghề nghiệp','Bảo đảm khách hàng được lợi nhuận','Cung cấp miễn phí báo cáo cho cơ quan thuế','Chỉ tuyển thẩm định viên mới tốt nghiệp'],0,'Điều 53 khoản 2 yêu cầu doanh nghiệp: kiểm soát chất lượng báo cáo trước khi phát hành chứng thư, bồi thường thiệt hại nếu vi phạm, mua bảo hiểm trách nhiệm nghề nghiệp hoặc trích lập dự phòng rủi ro nghề nghiệp, quản lý thẩm định viên, lưu trữ hồ sơ.','Luật Giá Đ.53 k2');
+q(1,'dntdg','Người đại diện theo pháp luật của doanh nghiệp thẩm định giá không còn là thẩm định viên tại doanh nghiệp trong thời gian khắc phục điều kiện. Doanh nghiệp được làm gì?',['Vẫn phát hành chứng thư bình thường','Không được phát hành chứng thư thẩm định giá, báo cáo thẩm định giá','Chỉ được phát hành báo cáo','Chỉ được nhận hợp đồng mới'],1,'Điều 52 khoản 3a: khi người đại diện theo pháp luật không còn là thẩm định viên tại doanh nghiệp hoặc không còn đáp ứng các điều kiện hành nghề, doanh nghiệp và chi nhánh không được phát hành chứng thư, báo cáo trong thời gian khắc phục.','Luật Giá Đ.52 k3a');
+
+/* ===== HỘI ĐỒNG THẨM ĐỊNH GIÁ ===== */
+q(1,'hdtdg','Số thành viên tối thiểu của hội đồng thẩm định giá là:',['02','03','05','07'],1,'Điều 60 khoản 1: tối thiểu 03 thành viên là cán bộ, công chức, viên chức, người lao động thuộc thẩm quyền quản lý của người thành lập hội đồng, trong đó có Chủ tịch.','Luật Giá Đ.60 k1');
+q(1,'hdtdg','Điều kiện về chuyên môn của hội đồng thẩm định giá là gì?',['Mọi thành viên phải có thẻ thẩm định viên','Ít nhất 50% thành viên, bao gồm Chủ tịch, có ít nhất một trong các chứng nhận chuyên môn (bằng CĐ trở lên chuyên ngành giá/TĐG; thẻ thẩm định viên; chứng chỉ đào tạo nghiệp vụ TĐG; chứng chỉ bồi dưỡng TĐG nhà nước)','Chỉ Chủ tịch cần có chứng chỉ','Không có yêu cầu'],1,'Điều 60 khoản 2. Chú ý: yêu cầu là "ít nhất 50% thành viên, gồm cả Chủ tịch" và chứng nhận chuyên môn có bốn loại, không chỉ riêng thẻ thẩm định viên.','Luật Giá Đ.60 k2');
+q(1,'hdtdg','Phiên họp của hội đồng thẩm định giá hợp lệ khi:',['Có mặt ít nhất 1/2 số thành viên','Có mặt ít nhất 2/3 số thành viên; hội đồng chỉ có 03 thành viên thì phải có mặt đủ 03','Có mặt toàn bộ thành viên trong mọi trường hợp','Có mặt Chủ tịch là đủ'],1,'Điều 60 khoản 3a: hội đồng làm việc theo nguyên tắc tập thể, quyết định theo đa số; phải có ít nhất 2/3 thành viên tham dự; riêng hội đồng 03 thành viên phải đủ 03. Thành viên vắng mặt phải có văn bản nêu lý do và ý kiến độc lập.','Luật Giá Đ.60 k3a');
+q(1,'hdtdg','Hội đồng thẩm định giá biểu quyết có số ý kiến ngang nhau thì xử lý thế nào?',['Hoãn họp','Ý kiến của bên có biểu quyết của Chủ tịch hội đồng là ý kiến quyết định','Bốc thăm','Báo cáo cấp trên quyết định'],1,'Điều 60 khoản 3b. Thành viên không đồng ý với quyết định của hội đồng có quyền bảo lưu ý kiến.','Luật Giá Đ.60 k3b');
+q(1,'hdtdg','Hoạt động thẩm định giá của Nhà nước KHÔNG áp dụng đối với:',['Tài sản công khi bán, thanh lý, cho thuê','Hàng hóa, dịch vụ thuộc Danh mục hàng hóa, dịch vụ do Nhà nước định giá','Mua sắm tài sản sử dụng vốn nhà nước','Liên doanh, liên kết bằng tài sản công'],1,'Điều 59: thẩm định giá của Nhà nước dùng làm một trong các cơ sở xem xét, phê duyệt giá khi bán, thanh lý, cho thuê, liên doanh, liên kết, chuyển giao tài sản công hoặc mua, đi thuê hàng hóa, dịch vụ, tài sản có sử dụng vốn nhà nước; nhưng không áp dụng với hàng hóa, dịch vụ thuộc danh mục Nhà nước định giá.','Luật Giá Đ.59');
+
+/* ===== CHỨNG THƯ, BÁO CÁO, HỒ SƠ (TT 30/2024) ===== */
+q(1,'chungthu','Thời gian hiệu lực tối đa của chứng thư thẩm định giá (Chuẩn mực theo TT 30/2024) là:',['03 tháng','06 tháng kể từ thời điểm phát hành','12 tháng','24 tháng'],1,'Chứng thư có hiệu lực từ ngày phát hành, thời hạn được xác định dựa trên đặc điểm pháp lý, kinh tế–kỹ thuật, biến động thị trường và mục đích thẩm định giá, nhưng tối đa không quá 06 tháng. Quy định tương tự áp dụng cho thông báo kết quả thẩm định giá của hội đồng.','TT 30/2024 Điều 7, Điều 10');
+q(1,'chungthu','Thời hạn lưu trữ tối thiểu hồ sơ thẩm định giá là:',['03 năm','05 năm','10 năm kể từ ngày phát hành chứng thư','20 năm'],2,'Điều 12 Chuẩn mực về Hồ sơ TĐG: tối thiểu 10 năm kể từ ngày phát hành chứng thư tại doanh nghiệp hoặc chi nhánh phát hành. Hồ sơ lưu trữ gồm báo cáo, chứng thư, hợp đồng, tài liệu về tài sản và tài sản so sánh, biên bản khảo sát, ảnh chụp, tài liệu phân tích...','TT 30/2024 Điều 12');
+q(1,'chungthu','Chữ ký trên chứng thư thẩm định giá theo Điều 55 Luật Giá gồm:',['Chỉ thẩm định viên','Chữ ký của thẩm định viên thực hiện thẩm định giá và chữ ký của người đại diện theo pháp luật (hoặc người đứng đầu chi nhánh), kèm đóng dấu','Chỉ người đại diện theo pháp luật','Khách hàng và thẩm định viên'],1,'Điều 55 khoản 1. Báo cáo thẩm định giá thì cần chữ ký thẩm định viên và PHÊ DUYỆT của người đại diện, và không thể tách rời chứng thư.','Luật Giá Đ.55');
+q(1,'chungthu','Người đại diện theo pháp luật ủy quyền ký chứng thư thẩm định giá và duyệt báo cáo thì người được ủy quyền phải:',['Là người quản lý doanh nghiệp theo pháp luật về doanh nghiệp VÀ là thẩm định viên về giá tại doanh nghiệp','Chỉ cần là nhân viên doanh nghiệp','Là khách hàng','Là chuyên gia bên ngoài'],0,'Điều 55 khoản 3: được ủy quyền cho người quản lý doanh nghiệp, người được ủy quyền phải là thẩm định viên về giá tại doanh nghiệp.','Luật Giá Đ.55 k3');
+q(1,'chungthu','Chứng thư và báo cáo thẩm định giá có giá trị sử dụng khi nào?',['Vô thời hạn','Chỉ trong thời hạn hiệu lực, đúng mục đích thẩm định giá, gắn với đúng thông tin và số lượng tài sản tại hợp đồng thẩm định giá','Trong 1 năm bất kể mục đích','Cho mọi tài sản cùng loại của khách hàng'],1,'Điều 55 khoản 4. Dùng cho mục đích khác, tài sản khác hoặc sau khi hết hạn thì chứng thư không còn giá trị.','Luật Giá Đ.55 k4');
+q(1,'chungthu','Báo cáo thẩm định giá cần thể hiện điều gì về thông tin, số liệu sử dụng?',['Không cần dẫn nguồn','Được dẫn chiếu nguồn cụ thể và có thuyết minh, lập luận, phân tích về việc xác định giá trị','Chỉ cần ghi kết quả cuối cùng','Chỉ cần liệt kê tài sản so sánh'],1,'Điều 3 Chuẩn mực: báo cáo cung cấp thông tin thuyết minh, lập luận, phân tích; thông tin, số liệu phải dẫn chiếu nguồn cụ thể; có thể phát hành điện tử với chữ ký điện tử.','TT 30/2024 Điều 3');
+
+/* ===== CƠ SỞ GIÁ TRỊ ===== */
+q(1,'cosogt','Giá trị thị trường theo Chuẩn mực là:',['Giá bán thực tế đã ghi trong hợp đồng','Khoản tiền ước tính để tài sản có thể được giao dịch tại thời điểm thẩm định giá giữa người sẵn sàng mua và người sẵn sàng bán, trong giao dịch khách quan, độc lập, sau khi được tiếp thị đầy đủ, các bên hành động có hiểu biết, thận trọng, không bị ép buộc','Giá mà người bán mong muốn','Giá ghi sổ kế toán'],1,'Giá trị thị trường là mức giá ƯỚC TÍNH, không phải khoản tiền ấn định trước hay giá bán thực tế (Điều 5 k2). Gắn với thời điểm thẩm định giá cụ thể.','Chuẩn mực Cơ sở giá trị Điều 5');
+q(1,'cosogt','Cơ sở giá trị nào phản ánh giá trị của tài sản đối với MỘT chủ sở hữu hoặc chủ sở hữu tiềm năng cụ thể cho hoạt động đầu tư cụ thể?',['Giá trị thị trường','Giá trị đầu tư','Giá trị bắt buộc phải bán','Giá trị thuê thị trường'],1,'Giá trị đầu tư mang tính đặc thù cho một đối tượng cụ thể, phản ánh lợi ích chủ sở hữu nhận được và thường dùng đo hiệu quả đầu tư (Điều 7).','Chuẩn mực Cơ sở giá trị Điều 7');
+q(1,'cosogt','Giá trị bắt buộc phải bán phản ánh tình huống nào?',['Người bán bắt buộc phải bán trong thời gian hạn chế nên không tiếp thị đầy đủ, người mua có thể không kiểm tra đầy đủ tài sản','Người bán không muốn bán','Giao dịch giữa hai bên cụ thể thỏa thuận được lợi ích tương ứng','Tài sản cho thuê dài hạn'],0,'Điều 8: bắt buộc phải bán là tình huống giao dịch dự kiến vẫn diễn ra; giá đạt được phụ thuộc bản chất áp lực bán và lý do không thể tiếp thị đầy đủ. Phương án C là giá trị ngang bằng.','Chuẩn mực Cơ sở giá trị Điều 8, 9');
+q(1,'cosogt','Giả thiết đặc biệt là gì và cần điều kiện nào?',['Giả thiết về thông tin còn hạn chế, không cần thông báo','Giả thiết về tình trạng tài sản khác thực tế tại thời điểm thẩm định giá, phù hợp mục đích; phải thông báo và có đồng thuận bằng văn bản của bên yêu cầu thẩm định giá','Giả thiết của thẩm định viên, không cần khách hàng biết','Giả thiết do cơ quan thuế đưa ra'],1,'Điều 10: giả thiết thường dùng cho thông tin hạn chế, không khắc phục được; GIẢ THIẾT ĐẶC BIỆT khác với thực tế nên bắt buộc thông báo và có văn bản đồng thuận, đồng thời phù hợp pháp luật. Nếu giả thiết đặc biệt làm thẩm định giá không khả thi thì loại bỏ.','Chuẩn mực Cơ sở giá trị Điều 10');
+q(1,'cosogt','Vai trò của cơ sở giá trị trong thẩm định giá là:',['Chỉ để ghi trong chứng thư','Là nền tảng của hoạt động thẩm định giá; ảnh hưởng đến việc chọn phương pháp, thông tin đầu vào, giả thiết và quan điểm về giá trị; được xác định theo mục đích và tình huống giao dịch, sau khi trao đổi với bên yêu cầu','Do khách hàng tự chọn không cần trao đổi','Luôn là giá trị thị trường'],1,'Điều 4 khoản 2–3. Cơ sở giá trị gồm nhưng không giới hạn: giá trị thị trường, thuê thị trường, đầu tư, bắt buộc phải bán, ngang bằng; giá trị hợp lý theo pháp luật về lập báo cáo tài chính và IFRS.','Chuẩn mực Cơ sở giá trị Điều 4');
+
+/* ===== THU THẬP & PHÂN TÍCH THÔNG TIN ===== */
+q(1,'thongtin','Phương pháp so sánh áp dụng được khi thu thập tối thiểu bao nhiêu tài sản so sánh và điều kiện gì?',['01 tài sản','02 tài sản','03 tài sản từ các tổ chức, cá nhân khác nhau, giao dịch hoặc chào mua/bán gần thời điểm và địa điểm của tài sản thẩm định','10 tài sản'],2,'Điều 5 Chuẩn mực cách tiếp cận từ thị trường: ít nhất 03 tài sản so sánh từ các tổ chức, cá nhân khác nhau; thời điểm giao dịch hoặc chào mua/bán gần nhất nhưng không quá 24 tháng trước thời điểm thẩm định giá.','TT 32/2024 Điều 5');
+q(1,'thongtin','Thời điểm giao dịch/chào giá của các tài sản so sánh không được xa hơn thời điểm thẩm định giá bao nhiêu (theo tài liệu CĐ4)?',['03 tháng','06 tháng','12 tháng','24 tháng'],3,'Theo hướng dẫn trong chuyên đề: ít nhất 03 tài sản so sánh, thời điểm giao dịch gần nhất nhưng không quá 24 tháng tính từ thời điểm thẩm định giá trở về trước. Lưu ý riêng kỹ thuật hao mòn "so sánh" yêu cầu ít nhất 02 tài sản trong không quá 01 năm.','CĐ4 slide; TT 32/2024');
+q(1,'thongtin','Khi giá thị trường biến động giữa thời điểm giao dịch của tài sản so sánh và thời điểm thẩm định giá, thẩm định viên phải làm gì trước tiên?',['Bỏ qua','Điều chỉnh (tăng hoặc giảm) mức giá của tài sản so sánh về thời điểm thẩm định giá, rồi mới điều chỉnh theo các yếu tố so sánh','Chỉ điều chỉnh theo vị trí','Loại tài sản so sánh đó'],1,'Điều chỉnh về thời điểm thẩm định giá được làm TRƯỚC khi điều chỉnh các yếu tố so sánh khác. Đây là điều chỉnh yếu tố thời gian.','TT 32/2024 Điều 5 k3');
+q(1,'thongtin','Thông tin tài sản so sánh thu thập trên Internet cần đáp ứng yêu cầu nào?',['Lấy từ bất kỳ diễn đàn nào','Phiếu thu thập dẫn chiếu cụ thể đường dẫn, lưu hình ảnh minh chứng; thông tin phải từ website chính thức của cơ quan, tổ chức hoạt động theo quy định pháp luật','Chỉ cần ghi tên website','Không cần lưu bằng chứng'],1,'Kết quả thu thập phải lập thành phiếu thu thập thông tin có chữ ký người thu thập; với báo giá chào mua/bán phải có tên, địa chỉ, mã số thuế (nếu có), đóng dấu, thời điểm cung cấp và hiệu lực báo giá.','TT 32/2024 Điều 6');
+q(1,'thongtin','Phân tích "sử dụng tốt nhất và có hiệu quả nhất" theo Chuẩn mực chỉ áp dụng với loại tài sản nào?',['Mọi tài sản','Bất động sản','Máy, thiết bị','Tài sản vô hình'],1,'Điều 8 Chuẩn mực về thu thập, phân tích thông tin: nội dung phân tích sử dụng tốt nhất và hiệu quả nhất chỉ áp dụng đối với bất động sản. Đó là việc sử dụng phù hợp pháp luật, khả thi về vật chất, kỹ thuật và mang lại hiệu quả kinh tế cao nhất.','TT 31/2024 Điều 8');
+q(1,'thongtin','Hồ sơ do bên yêu cầu thẩm định giá cung cấp có điểm khác với kết quả khảo sát hiện trạng tài sản. Thẩm định viên cần:',['Dùng số liệu của khách hàng','Dùng số liệu khảo sát và không báo cho ai','Kịp thời trao đổi với bên yêu cầu để bổ sung hoặc làm rõ, bảo đảm khách quan, nghiêm cấm tác động làm ảnh hưởng đến giá trị tài sản','Từ chối vĩnh viễn hợp đồng'],2,'Điều 7 Chuẩn mực: khi có sai khác hoặc hồ sơ không đầy đủ phải kịp thời trao đổi để bổ sung, làm rõ; quá trình này phải bảo đảm tính khách quan và nghiêm cấm mọi hành vi tác động ảnh hưởng.','TT 31/2024 Điều 7');
+q(1,'thongtin','Tổng giá trị điều chỉnh THUẦN và GỘP khác nhau thế nào?',['Thuần cộng trị tuyệt đối, gộp tính cả dấu','Thuần là tổng mức điều chỉnh có tính dấu (+/−); gộp là tổng giá trị tuyệt đối của các lần điều chỉnh','Hai khái niệm đồng nghĩa','Thuần chỉ tính điều chỉnh tăng'],1,'Điều 3 Chuẩn mực cách tiếp cận từ thị trường: thuần có tính dấu âm/dương (có thể bù trừ); gộp là tổng giá trị tuyệt đối. Tài sản so sánh tốt thường có gộp nhỏ, thuần nhỏ, ít lần điều chỉnh.','TT 32/2024 Điều 3');
+
+/* ===== PHÁP LUẬT DOANH NGHIỆP ===== */
+q(1,'phapluatdn','Công ty trách nhiệm hữu hạn hai thành viên trở lên có tối đa bao nhiêu thành viên?',['30','50','100','Không giới hạn'],1,'Công ty TNHH 2 thành viên trở lên: số lượng không quá 50, có tư cách pháp nhân, không được phát hành cổ phần, trách nhiệm hữu hạn trong phạm vi vốn góp.','CĐ1A Pháp luật doanh nghiệp');
+q(1,'phapluatdn','Công ty cổ phần có số cổ đông tối thiểu là:',['01','02','03','07'],2,'Cổ đông là tổ chức hoặc cá nhân, số lượng tối thiểu là 03, không hạn chế tối đa; vốn chia thành cổ phần bằng nhau; được quyền phát hành cổ phần, chứng khoán.','CĐ1A Pháp luật doanh nghiệp');
+q(1,'phapluatdn','Loại hình doanh nghiệp nào KHÔNG có tư cách pháp nhân?',['Công ty TNHH một thành viên','Công ty cổ phần','Công ty hợp danh','Doanh nghiệp tư nhân'],3,'Doanh nghiệp tư nhân: một cá nhân làm chủ, không có tư cách pháp nhân, chủ chịu trách nhiệm vô hạn, không được phát hành chứng khoán. Công ty hợp danh VẪN là pháp nhân (có ít nhất 02 thành viên hợp danh là cá nhân chịu trách nhiệm vô hạn).','CĐ1A Pháp luật doanh nghiệp');
+q(1,'phapluatdn','Thành viên hợp danh trong công ty hợp danh chịu trách nhiệm như thế nào?',['Hữu hạn trong phạm vi vốn góp','Vô hạn bằng toàn bộ tài sản và có quyền đại diện cho công ty','Không chịu trách nhiệm','Chỉ chịu trách nhiệm theo thỏa thuận'],1,'Thành viên hợp danh (ít nhất 2, là cá nhân) chịu trách nhiệm vô hạn, có quyền đại diện; thành viên góp vốn (nếu có) chịu trách nhiệm hữu hạn. Công ty hợp danh không phát hành chứng khoán.','CĐ1A Pháp luật doanh nghiệp');
+q(1,'phapluatdn','Vốn pháp định là gì?',['Vốn các thành viên đã góp','Mức vốn tối thiểu phải có theo quy định pháp luật để thành lập doanh nghiệp ở một số ngành, lĩnh vực nhất định','Vốn vay ngân hàng','Vốn tự có của doanh nghiệp'],1,'Vốn điều lệ là số vốn thành viên, cổ đông đã góp hoặc cam kết góp trong một thời hạn nhất định, ghi vào Điều lệ (doanh nghiệp tư nhân gọi là vốn đăng ký). Vốn pháp định là mức tối thiểu luật quy định cho ngành đặc thù.','CĐ1A Pháp luật doanh nghiệp');
+q(1,'phapluatdn','Cổ đông sáng lập bị hạn chế chuyển nhượng cổ phần phổ thông cho người không phải cổ đông sáng lập trong bao lâu kể từ khi công ty được cấp Giấy chứng nhận đăng ký doanh nghiệp?',['01 năm','02 năm','03 năm','05 năm'],2,'Theo tài liệu chuyên đề: cổ đông sáng lập không được tự do chuyển nhượng ra bên ngoài trong vòng 03 năm kể từ khi thành lập. Khi phát hành cổ phần riêng lẻ, Luật Chứng khoán hạn chế chuyển nhượng 01 năm.','CĐ1A Pháp luật doanh nghiệp');
+q(1,'phapluatdn','Ai KHÔNG có quyền thành lập, góp vốn, mua cổ phần vào doanh nghiệp theo hướng dẫn trong chuyên đề (đối tượng bị cấm)?',['Cán bộ, công chức, quân nhân ở diện bị cấm; người bị hạn chế hoặc mất năng lực hành vi; người đang bị phạt tù hoặc bị cấm kinh doanh','Mọi cá nhân từ 18 tuổi','Người nước ngoài','Doanh nhân tư nhân'],0,'Chuyên đề nêu nhóm bị cấm thành lập doanh nghiệp: cơ quan nhà nước, đơn vị vũ trang; cán bộ, công chức, quân nhân; lãnh đạo doanh nghiệp 100% vốn nhà nước; người hạn chế hoặc mất năng lực hành vi; người bị phạt tù hoặc cấm kinh doanh; một số trường hợp khác.','CĐ1A Pháp luật doanh nghiệp');
+q(1,'phapluatdn','Luật nào là cơ sở pháp lý về phá sản doanh nghiệp, có hiệu lực từ 01/01/2015?',['Luật Phá sản 2014','Luật Doanh nghiệp 2014','Bộ luật Dân sự 2015','Luật Đầu tư 2014'],0,'Phá sản là thủ tục trả nợ tập thể và chấm dứt hoạt động của doanh nghiệp, theo Luật Phá sản 2014 (hiệu lực 01/01/2015). Chủ nợ không bảo đảm hoặc bảo đảm một phần, đại diện doanh nghiệp, cổ đông đại diện 20% cổ phần phổ thông… có quyền nộp đơn.','CĐ1A Pháp luật doanh nghiệp');
+
+/* ===== THUẾ ===== */
+q(1,'thue','Đặc trưng cơ bản của thuế KHÔNG gồm:',['Tính bắt buộc','Tính không hoàn trả trực tiếp','Tính đối giá, đối khoản với người nộp','Do Quốc hội quyết định dưới hình thức luật'],2,'Thuế có tính bắt buộc, không hoàn trả trực tiếp, KHÔNG đối giá và không đối khoản (người nộp không nhận lại khoản tương ứng); do Quốc hội quyết định qua luật.','CĐ1A Pháp luật thuế');
+q(1,'thue','Kiểm tra thuế tại trụ sở người nộp thuế kéo dài tối đa bao lâu?',['Không quá 5 ngày, gia hạn một lần không quá 5 ngày','Không quá 30 ngày','Không quá 10 ngày, không gia hạn','Không giới hạn'],0,'Theo tài liệu: kiểm tra tại trụ sở người nộp thuế không quá 5 ngày, gia hạn một lần không quá 5 ngày. Thanh tra thuế tối đa 30 ngày, gia hạn không quá 30 ngày.','CĐ1A Pháp luật thuế');
+q(1,'thue','Thanh tra thuế khác kiểm tra thuế ở điểm nào?',['Thanh tra xác minh CÓ hay KHÔNG CÓ vi phạm pháp luật thuế; kiểm tra đánh giá mức độ chấp hành','Hai hoạt động giống nhau','Kiểm tra chỉ do hải quan thực hiện','Thanh tra không cần quyết định'],0,'Kiểm tra thuế là hoạt động quản lý nhà nước đánh giá mức độ chấp hành pháp luật thuế. Thanh tra thuế xác minh có/không có vi phạm; quy trình: ra quyết định, thanh tra, kết luận, giao quyết định. Người nộp thuế có quyền từ chối nếu không có quyết định.','CĐ1A Pháp luật thuế');
+q(1,'thue','Cơ chế quản lý thuế hiện hành dựa trên nguyên tắc nào?',['Cơ quan thuế ấn định thuế cho mọi doanh nghiệp','Tự khai, tự nộp: doanh nghiệp chủ động xác định số thuế trong thời hạn luật định, cơ quan thuế tập trung giám sát doanh nghiệp có dấu hiệu vi phạm','Chỉ nộp thuế khi cơ quan thuế thông báo','Nộp thuế một lần cho cả năm'],1,'Cơ chế tự khai, tự nộp đảm bảo chủ động cho doanh nghiệp và khả năng giám sát tập trung. Cơ sở pháp lý: Luật Quản lý thuế 2019.','CĐ1A Pháp luật thuế');
+q(1,'thue','Chuyển giá và sử dụng "thiên đường thuế" là biểu hiện của hành vi nào được chuyên đề nêu?',['Trốn thuế (gian lận để giảm hoặc không nộp thuế)','Tránh thuế (chọn mức thuế thấp để nộp thay vì mức cao hơn) trong thực tế','Miễn thuế','Hoàn thuế'],1,'Chuyên đề gắn chuyển giá, thiên đường thuế với tránh thuế; giải pháp gồm quản lý giá và định mức chi phí, cơ chế thỏa thuận trước về phương pháp xác định giá tính thuế (APA). Trốn thuế là gian lận làm giảm hoặc không nộp thuế.','CĐ1A Pháp luật thuế');
+
+/* ===== HỢP ĐỒNG ===== */
+q(1,'hopdong','Thời hiệu yêu cầu Tòa án tuyên bố giao dịch (hợp đồng) vô hiệu trong các trường hợp thông thường được nêu trong tài liệu là:',['6 tháng','1 năm','2 năm kể từ ngày giao dịch được xác lập','Không hạn chế'],2,'Theo tài liệu: thời hiệu đề nghị tuyên vô hiệu 02 năm kể từ ngày giao dịch được xác lập; một số trường hợp không hạn chế thời hiệu (vi phạm điều cấm, trái đạo đức, giả tạo…). Hợp đồng chỉ vô hiệu khi có tuyên bố của Tòa án hoặc trọng tài.','CĐ1A Hợp đồng');
+q(1,'hopdong','Trọng tài thương mại có thể giải quyết tranh chấp khi nào?',['Mọi tranh chấp, kể cả khi không có thỏa thuận','Khi các bên có thỏa thuận trọng tài; phán quyết trọng tài là chung thẩm, giải quyết một lần','Chỉ khi Tòa án chuyển sang','Chỉ với tranh chấp bất động sản'],1,'Điều kiện bắt buộc là có thỏa thuận trọng tài. Trọng tài giải quyết một lần (chung thẩm), khác với Tòa án có các cấp xét xử. Thương lượng, hòa giải là phương thức đầu tiên, không bắt buộc có thỏa thuận.','CĐ1A Hợp đồng');
+q(1,'hopdong','Hậu quả của hợp đồng vô hiệu nói chung là:',['Hợp đồng vẫn có hiệu lực đối với bên ngay tình','Các bên khôi phục tình trạng ban đầu, hoàn trả cho nhau những gì đã nhận; bên có lỗi phải bồi thường thiệt hại','Chỉ bên có lỗi phải hoàn trả','Không có hậu quả pháp lý'],1,'Giao dịch vô hiệu không làm phát sinh quyền, nghĩa vụ từ thời điểm xác lập: các bên hoàn trả, bên có lỗi bồi thường. Khi áp dụng cho hợp đồng thẩm định giá, chứng thư lập trên hợp đồng vô hiệu không có giá trị.','CĐ1A Hợp đồng');
+
+/* ===== SHTT ===== */
+q(1,'shtt','Quyền tác giả phát sinh từ khi nào?',['Từ khi được cấp Giấy chứng nhận đăng ký quyền tác giả','Từ khi tác phẩm được sáng tạo và thể hiện dưới một hình thức vật chất nhất định, không phụ thuộc đã công bố hay đăng ký hay chưa','Từ khi tác phẩm được công bố','Từ khi tác giả qua đời'],1,'Quyền tác giả phát sinh tự động từ khi tác phẩm được sáng tạo và thể hiện; đăng ký chỉ là căn cứ chứng minh. Khác với quyền sở hữu công nghiệp.','CĐ1A SHTT; Luật SHTT');
+q(1,'shtt','Quyền sở hữu công nghiệp đối với sáng chế, kiểu dáng công nghiệp, nhãn hiệu được xác lập trên cơ sở nào?',['Tự động từ khi sáng tạo','Quyết định cấp văn bằng bảo hộ của cơ quan nhà nước có thẩm quyền (nhãn hiệu nổi tiếng, tên thương mại, bí mật kinh doanh có cơ chế riêng)','Chỉ cần nộp đơn','Thỏa thuận giữa các bên'],1,'Quyền sở hữu công nghiệp xác lập theo văn bản bảo hộ (Bằng độc quyền sáng chế, Giấy chứng nhận đăng ký kiểu dáng, nhãn hiệu…). Quyền đối với giống cây trồng xác lập theo Bằng bảo hộ giống cây trồng. Điều này quan trọng với thẩm định giá tài sản vô hình vì tài sản phải được pháp luật công nhận và bảo vệ.','CĐ1A SHTT; Luật SHTT');
+q(1,'shtt','Luật Sở hữu trí tuệ hiện hành được ban hành năm 2005 và đã được sửa đổi, bổ sung vào các năm nào?',['2009, 2019, 2022','2010, 2015, 2020','2012, 2018','Chưa sửa đổi lần nào'],0,'Luật Sở hữu trí tuệ 2005, sửa đổi bổ sung các năm 2009, 2019 và 2022 (theo bài giảng). Kiểm tra bản mới nhất khi ôn vì luật có thể tiếp tục được sửa.','CĐ1A SHTT');
+
+/* ===== NGUYÊN LÝ ===== */
+q(1,'nguyenly','Tài sản thẩm định giá gồm bốn loại cơ bản nào?',['Bất động sản; động sản; doanh nghiệp; tài sản vô hình','Đất đai; nhà ở; máy móc; hàng hóa','Tài sản cố định; tài sản lưu động; đầu tư tài chính; hàng tồn kho','Bất động sản; hàng hóa; dịch vụ; quyền sử dụng đất'],0,'Theo chuyên đề: bốn loại cơ bản là bất động sản, động sản, doanh nghiệp, tài sản vô hình. Gắn với đó có TĐG bất động sản; TĐG động sản (máy thiết bị, tài sản vô hình, động sản khác); TĐG doanh nghiệp.','CĐ2 mục 2.2.1.3');
+q(1,'nguyenly','Có bao nhiêu Chuẩn mực áp dụng chung và những chuẩn mực này nằm trong phạm vi học và thi phần pháp luật–nguyên lý?',['8 chuẩn mực áp dụng chung (đạo đức; phạm vi công việc; cơ sở giá trị; hồ sơ; thu thập và phân tích thông tin; ba cách tiếp cận thị trường, chi phí, thu nhập)','3 chuẩn mực','11 chuẩn mực đều thi như nhau','5 chuẩn mực'],0,'Tài liệu nêu 11 chuẩn mực, chia nhóm áp dụng chung (8) và nhóm áp dụng cho tài sản cụ thể (doanh nghiệp, tài sản vô hình, bất động sản). Theo hướng dẫn, "các chuẩn mực áp dụng chung" là nội dung học và thi ở phần này. Lưu ý số lượng chuẩn mực có thể thay đổi khi sửa đổi.','CĐ2 mục 2.2.3');
+q(1,'nguyenly','Thẩm định giá cùng một tài sản, cùng thời điểm nhưng cho mục đích khác nhau thì kết quả:',['Luôn bằng nhau','Có thể khác nhau, vì mục đích quyết định cơ sở giá trị và cách tiếp cận','Chỉ khác nếu đổi thẩm định viên','Phải bằng giá niêm yết'],1,'Mục đích như mua bán, thế chấp, bảo hiểm, tính thuế, thanh lý, đầu tư… dẫn đến cơ sở giá trị khác và vì vậy kết quả khác (ví dụ giá trị thị trường khác giá trị bắt buộc phải bán).','CĐ2 mục 2.2.1.4');
+q(1,'nguyenly','Đặc trưng nào của hoạt động thẩm định giá được nêu trong chuyên đề?',['Chỉ dùng đánh giá định tính','Nghiên cứu có lựa chọn một khu vực thị trường, một loại tài sản; dùng nhiều dữ liệu; dùng kỹ thuật phân tích định lượng; đòi hỏi kiến thức đa ngành; cung cấp ý kiến về giá trị dựa trên bằng chứng thị trường','Không cần dữ liệu','Một cuộc thẩm định có thể gồm mọi loại tài sản ở mọi thị trường'],1,'Năm đặc trưng chính theo chuyên đề; thẩm định viên không thể thực hiện một cuộc thẩm định cho nhiều loại tài sản ở nhiều khu vực thị trường khác nhau.','CĐ2 mục 2.2.1.2');
+q(1,'nguyenly','Tổng giá cả của toàn bộ hàng hóa trong nền kinh tế, khi tiền tệ không đổi giá trị, so với tổng giá trị thì:',['Luôn cao hơn','Luôn thấp hơn','Bằng nhau: giá cả hàng hóa nhóm này lệch cao hơn giá trị thì nhóm khác lệch thấp hơn','Không liên quan'],2,'Quy luật giá trị: giá cả xoay quanh giá trị; do quỹ mua hàng trong một thời gian xác định, khi giá nhóm hàng này tách rời cao hơn giá trị thì nhóm khác phải thấp hơn, nên tổng giá cả bằng tổng giá trị.','CĐ2 mục 2.1');
+/* ================= MÔN 2: THẨM ĐỊNH GIÁ BẤT ĐỘNG SẢN ================= */
+/* ===== TỔNG QUAN BĐS & THỊ TRƯỜNG ===== */
+q(2,'bds_tq','Theo khoản 1 Điều 107 Bộ luật Dân sự 2015, bất động sản gồm:',['Đất đai; nhà, công trình xây dựng gắn liền với đất đai; tài sản gắn liền với đất đai, nhà, công trình xây dựng; các tài sản khác gắn liền với đất đai; tài sản khác theo quy định của pháp luật','Chỉ đất đai','Đất đai và máy móc đặt trong nhà xưởng','Chỉ nhà ở và công trình thương mại'],0,'Danh mục gồm 5 nhóm. Máy, thiết bị chỉ là bất động sản khi thuộc "tài sản gắn liền với đất đai, nhà, công trình xây dựng" theo quy định, còn thông thường máy thiết bị là động sản.','CĐ4 Phần I; BLDS 2015 Đ.107');
+q(2,'bds_tq','Đặc điểm nào KHÔNG phải của bất động sản?',['Tính cố định về vị trí','Tính khan hiếm','Tính thanh khoản cao, dễ chuyển đổi thành tiền','Tính lâu bền'],2,'Chuyên đề nêu 8 đặc điểm: khan hiếm, cố định về vị trí, thanh khoản kém, lâu bền, giá trị lớn, khác biệt, thích ứng, ảnh hưởng lẫn nhau. Bất động sản có tính thanh khoản KÉM.','CĐ4 mục 1.1.2');
+q(2,'bds_tq','Đặc điểm nào sau đây là của thị trường bất động sản?',['Là thị trường cạnh tranh hoàn hảo','Cung và cầu ít co giãn; mang tính khu vực; cần các tổ chức trung gian; dạng điển hình của thị trường không hoàn hảo; chịu sự kiểm soát của Nhà nước','Giá hoàn toàn thống nhất trên toàn quốc','Hàng hóa và địa điểm giao dịch luôn ở cùng một nơi'],1,'Thị trường BĐS là dạng điển hình của thị trường không hoàn hảo; giao dịch các quyền và lợi ích hợp pháp liên quan đến BĐS; hàng hóa và địa điểm giao dịch tách biệt vì BĐS cố định.','CĐ4 mục 1.2.2');
+q(2,'bds_tq','Thẩm định giá bất động sản được hiểu là:',['Hoạt động tư vấn xác định giá trị của bất động sản tại một địa điểm, thời điểm, phục vụ mục đích nhất định, do doanh nghiệp hoặc hội đồng thẩm định giá thực hiện theo Chuẩn mực','Hoạt động định giá đất của Nhà nước','Hoạt động môi giới','Hoạt động xây dựng bảng giá đất'],0,'Cùng khái niệm tại Luật Giá, áp dụng cho đối tượng là bất động sản. Phạm vi công việc: trao đổi với bên yêu cầu, lập kế hoạch, thu thập và phân tích thông tin, chọn và áp dụng phương pháp, xác định giá trị, lập báo cáo và chứng thư.','CĐ4 Phần II');
+q(2,'bds_tq','Các phương pháp thẩm định giá bất động sản gồm (theo cách phân nhóm của chuyên đề):',['So sánh; chi phí thay thế, chi phí tái tạo; vốn hóa trực tiếp, dòng tiền chiết khấu; thặng dư','Chỉ so sánh và chi phí','Chỉ vốn hóa trực tiếp','So sánh, thặng dư, bình quân gia quyền'],0,'Cách tiếp cận thị trường → phương pháp so sánh; cách tiếp cận chi phí → chi phí thay thế, chi phí tái tạo; cách tiếp cận thu nhập → vốn hóa trực tiếp, dòng tiền chiết khấu; cách tiếp cận kết hợp → phương pháp thặng dư (dành cho BĐS có tiềm năng phát triển).','CĐ4 Phần III');
+
+/* ===== SO SÁNH ===== */
+q(2,'sosanh','Nguyên tắc điều chỉnh trong phương pháp so sánh theo giáo trình là:',['Lấy tài sản so sánh làm chuẩn; yếu tố tài sản mục tiêu không có thì trừ','Lấy BĐS mục tiêu (cần thẩm định) làm chuẩn; yếu tố có ở BĐS mục tiêu mà không có ở BĐS so sánh thì cộng thêm (+), và ngược lại','Chỉ điều chỉnh tăng','Không cần điều chỉnh khi có từ 3 tài sản'],1,'Điều chỉnh để đưa tài sản so sánh "về" tài sản thẩm định: so sánh kém hơn mục tiêu → điều chỉnh tăng; so sánh tốt hơn → giảm. Mỗi điều chỉnh phải có chứng cứ thị trường.','CĐ4 Bước 3 phương pháp so sánh');
+q(2,'sosanh','Thứ tự điều chỉnh đúng trong phương pháp so sánh là:',['Kinh tế–kỹ thuật trước, pháp lý sau','Nhóm pháp lý và tình trạng giao dịch trước; sau đó kinh tế–kỹ thuật (điều chỉnh số tiền tuyệt đối trước, tỷ lệ % sau); giá sau khi điều chỉnh tuyệt đối làm cơ sở điều chỉnh %','Theo thứ tự bất kỳ','Điều chỉnh tỷ lệ % trước rồi cộng tiền sau'],1,'Vì điều chỉnh pháp lý và điều kiện giao dịch (thanh toán, chi phí hợp thức hóa) thường là số tiền cụ thể, làm trước để có "giá cơ sở" chuẩn rồi mới áp dụng các tỷ lệ % về vị trí, hình dáng, hạ tầng...','CĐ4 Bước 3');
+q(2,'sosanh','Nguyên tắc khống chế khi điều chỉnh: chênh lệch giữa mỗi mức giá chỉ dẫn với giá trị trung bình của các mức giá chỉ dẫn:',['Không quá 5%','Không quá 10%','Không quá 15%','Không quá 30%'],2,'Nếu một mức giá chỉ dẫn lệch quá 15% so với trung bình thì tài sản so sánh đó kém tin cậy: cần rà lại điều chỉnh hoặc loại bỏ.','CĐ4 nguyên tắc khống chế');
+q(2,'sosanh','Khi có ba mức giá chỉ dẫn, tiêu chí nào giúp chọn mức giá làm đại diện?',['Chọn mức cao nhất','Phân tích chất lượng thông tin và các chỉ tiêu: tổng điều chỉnh gộp nhỏ nhất, số lần điều chỉnh ít nhất, biên độ điều chỉnh nhỏ nhất, tổng điều chỉnh thuần nhỏ nhất','Chọn tài sản gần nhất về thời gian','Luôn lấy trung bình cộng'],1,'Tài sản được điều chỉnh ít và nhỏ thì giống tài sản thẩm định nhất nên mức giá chỉ dẫn đáng tin cậy nhất. Trung bình cộng chỉ hợp lý khi chất lượng thông tin ngang nhau và các chỉ tiêu chênh lệch không đáng kể.','CĐ4 Bước 5; TT 32/2024');
+q(2,'sosanh','Giá đất mặt ngõ 8m bằng 90% giá đất mặt ngõ 10m. Tài sản thẩm định ở ngõ 10m, tài sản so sánh ở ngõ 8m. Tỷ lệ điều chỉnh (lấy tài sản thẩm định làm chuẩn) là:',['+10%','+11,11%','−10%','−9,09%'],1,'Điều chỉnh = giá trị mục tiêu ÷ giá trị so sánh − 1 = 100/90 − 1 = +11,11% (không phải +10%). Cẩn thận cách đọc đề: nếu đề nói "ngõ 10m CAO HƠN ngõ 8m 10%" thì hệ số là 1,10 và so sánh ngõ 8m được điều chỉnh +10%; nếu đề nói ngõ 8m BẰNG 90% ngõ 10m thì phải chia: 100/90. Giáo trình dùng cách tỷ lệ % rồi lấy 100/hệ số − 1 cho mọi yếu tố.','BÀI TẬP VẬN DỤNG BĐS, so sánh bài 1');
+q(2,'sosanh','Thông tin về tài sản so sánh thu được từ giao dịch thanh toán chậm 40% sau một năm (lãi suất vay 20%/năm). Để quy về thanh toán ngay một lần, cần:',['Cộng thêm lãi vay vào giá','Chiết khấu phần trả chậm về hiện tại, tính giá tương đương thanh toán ngay','Bỏ qua vì không ảnh hưởng giá','Giảm 20% giá bán'],1,'Điều kiện thanh toán là yếu tố điều chỉnh số tiền tuyệt đối: giá quy đổi = phần trả ngay + phần trả chậm / (1 + lãi suất)^t. Ví dụ giá 22 trđ/m², trả 60% ngay, 40% sau 1 năm, lãi 20%: 22×0,6 + 22×0,4/1,2 = 20,53 trđ/m² (điều chỉnh −1,47).','BÀI TẬP VẬN DỤNG BĐS, bài 1');
+q(2,'sosanh','"Phương pháp chiết trừ" trong thẩm định giá BĐS dùng để làm gì?',['Ước tính giá đất bằng cách lấy giá bán cả bất động sản trừ đi giá trị công trình xây dựng còn lại trên đất','Ước tính giá trị công trình bằng cách lấy giá đất trừ đi giá bán','Tính thuế sử dụng đất','Ước tính lãi vay'],0,'Giá đất = giá bán (đất + công trình) − giá trị còn lại của công trình (chi phí xây mới × tỷ lệ chất lượng còn lại). Sau đó quy về đơn giá /m² và điều chỉnh các yếu tố so sánh. Dùng khi không có giao dịch đất trống tương tự.','CĐ4; Đề thi 2017 câu 2a');
+q(2,'sosanh','Nhược điểm của phương pháp so sánh là:',['Quá phức tạp về kỹ thuật','Chất lượng thông tin giao dịch tương tự không tốt sẽ ảnh hưởng kết quả; thông tin mang tính lịch sử; chứa yếu tố chủ quan','Không được cơ quan pháp lý công nhận','Chỉ dùng được cho máy móc'],1,'Ưu điểm: ít khó khăn kỹ thuật, dựa trên giá thị trường nên được công nhận rộng rãi, là cơ sở cho nhiều phương pháp khác. Nhược điểm như trên.','CĐ4 mục 3.1.3');
+
+/* ===== CHI PHÍ ===== */
+q(2,'chiphi','Chi phí tái tạo khác chi phí thay thế ở điểm nào?',['Tái tạo tạo ra tài sản giống hệt tài sản thẩm định; thay thế tạo ra tài sản có chức năng, công dụng tương tự bằng công nghệ, vật liệu mới hơn','Hai khái niệm giống nhau','Tái tạo luôn thấp hơn thay thế','Tái tạo chỉ tính vật liệu'],0,'Chi phí tái tạo: tạo ra tài sản giống hệt khi mới 100% tại thời điểm thẩm định giá. Chi phí thay thế: tạo ra tài sản thay thế mới 100%. Công trình mới thì chi phí thay thế bằng chi phí tái tạo.','CĐ4 mục 3.2.2.1');
+q(2,'chiphi','Công thức của cách tiếp cận chi phí đối với bất động sản (đất có công trình) là:',['Giá trị đất + chi phí tái tạo (hoặc thay thế) của công trình − tổng giá trị hao mòn','Chi phí xây dựng + lợi nhuận','Giá đất × diện tích','Doanh thu − chi phí'],0,'Năm bước: (1) ước tính giá đất như đất trống, theo sử dụng tốt nhất và hiệu quả nhất; (2) chi phí xây dựng lại công trình; (3) ước tính hao mòn tích lũy; (4) giá trị hiện tại của công trình = (2) − (3); (5) cộng (1) và (4).','CĐ4 mục 3.2.2');
+q(2,'chiphi','Ba loại hao mòn trong cách tiếp cận chi phí là:',['Hao mòn vật lý, hao mòn chức năng, hao mòn ngoại biên (kinh tế, vị trí)','Hao mòn hữu hình, vô hình, tài chính','Hao mòn cơ học, nhiệt, điện','Hao mòn cố định, lưu động, thị trường'],0,'Mỗi loại lại chia hao mòn có thể khắc phục được và không thể khắc phục được (ngoại biên thường không khắc phục được). Cần tránh tính trùng giữa các loại hao mòn.','CĐ4 mục 3.2.2.2');
+q(2,'chiphi','Hao mòn chức năng do chi phí vận hành cao được ước tính bằng cách nào?',['Chi phí tái tạo − chi phí thay thế','Giá trị hiện tại của chênh lệch chi phí vận hành hàng năm (sau thuế) trong tuổi đời kinh tế còn lại','Chi phí khắc phục − thu thanh lý','Vốn hóa thu nhập mất đi'],1,'Hao mòn chức năng do chi phí vốn cao (không khắc phục được) = chi phí tái tạo − chi phí thay thế. Hao mòn chức năng khắc phục được = chi phí khắc phục − thu thanh lý. Hao mòn do chi phí vận hành cao = hiện giá của chênh lệch vận hành, trừ tác động thuế.','CĐ4 & CĐ5, phần hao mòn chức năng');
+q(2,'chiphi','Hao mòn ngoại biên được ước tính bằng cách nào?',['Phân tích thông tin thị trường của tài sản tương tự đã giao dịch, hoặc vốn hóa trực tiếp thu nhập bị mất do tác động bên ngoài','Lấy chi phí khắc phục','Dùng tuổi đời hiệu quả','Dùng tỷ lệ kết cấu chính'],0,'Nguyên nhân ngoại biên: các nhân tố bên ngoài tài sản như ô nhiễm, thay đổi quy hoạch, suy giảm thị trường, chính sách thuế. Ví dụ đề bài hao mòn kinh tế dây chuyền bia: thu nhập mất đi hàng năm × hệ số hiện giá niên kim.','CĐ4 mục 3.2.2.2c');
+q(2,'chiphi','Trong cách tiếp cận chi phí, tổng giá trị hao mòn theo kỹ thuật "tuổi đời" được tính theo tỷ lệ nào?',['Tuổi đời hiệu quả / tuổi đời kinh tế (hoặc vật lý)','Tuổi đời thực tế / tuổi đời hiệu quả','Tuổi đời kinh tế / tuổi đời hiệu quả','Tuổi đời còn lại / tuổi đời thực tế'],0,'Tỷ lệ hao mòn = tuổi đời hiệu quả ÷ tuổi đời kinh tế (hoặc vật lý) × 100%. Tuổi đời hiệu quả phản ánh tình trạng thực tế, phụ thuộc bảo dưỡng; có thể lớn hơn hoặc nhỏ hơn tuổi đời thực tế.','CĐ4/CĐ5; TT 32/2024 Điều 11');
+q(2,'chiphi','Chất lượng còn lại của công trình: móng có tỷ trọng 8% còn 68%, tường 18% còn 56%, sàn 16% còn 64%, mái 14% còn 56%. Chất lượng còn lại bình quân gia quyền là:',['56%','60%','64%','68%'],1,'(68×8 + 56×18 + 64×16 + 56×14) / (8+18+16+14) = (544+1008+1024+784)/56 = 3360/56 = 60%. Phải chia cho TỔNG tỷ trọng các kết cấu được xét.','BÀI TẬP VẬN DỤNG BĐS, chi phí bài 2');
+q(2,'chiphi','Cách tiếp cận chi phí thích hợp nhất trong trường hợp nào?',['Bất động sản có dòng thu nhập ổn định và nhiều giao dịch tương tự','Bất động sản đặc thù không có giao dịch, không dự báo được dòng tiền; thẩm định giá cho mục đích bảo hiểm, đấu thầu; hoặc để kiểm tra các phương pháp khác','Mọi trường hợp luôn ưu tiên','Chỉ đất trống'],1,'Hạn chế: chi phí không phải lúc nào cũng bằng giá trị; cách tiếp cận cộng tới nhưng tổng các bộ phận chưa chắc bằng giá trị toàn bộ; ước tính hao mòn chủ quan, đòi hỏi am hiểu kỹ thuật xây dựng.','CĐ4 mục 3.2.3–3.2.4');
+
+/* ===== THU NHẬP ===== */
+q(2,'thunhap','Công thức vốn hóa trực tiếp là:',['V = I × R','V = I / R (I: thu nhập thuần; R: tỷ suất vốn hóa)','V = R / I','V = CF / (1+r)'],1,'Điều 5 Chuẩn mực cách tiếp cận từ thu nhập. Ví dụ I = 600 triệu/năm, R = 12% thì V = 5.000 triệu. Công thức ngầm định dòng thu nhập ổn định, vĩnh viễn.','Chuẩn mực cách tiếp cận từ thu nhập Điều 5');
+q(2,'thunhap','Thu nhập thuần (I) theo Chuẩn mực được xác định như thế nào?',['Tổng thu nhập tiềm năng + thất thu − chi phí','Tổng thu nhập tiềm năng hoạt động − thất thu do không sử dụng hết 100% công suất và rủi ro thanh toán − chi phí hoạt động','Doanh thu − khấu hao','Giá bán − chi phí xây dựng'],1,'Điều 6: thất thu = tỷ lệ thất thu × tổng thu nhập tiềm năng, ước tính từ ít nhất 03 tài sản tương tự. Thu nhập và chi phí tính trước hay sau thuế phải nhất quán với cách xác định tỷ suất vốn hóa.','Chuẩn mực thu nhập Điều 6');
+q(2,'thunhap','Có hai cách xác định tỷ suất vốn hóa R theo Chuẩn mực. Đó là:',['Phương pháp so sánh; phương pháp phân tích vốn vay – vốn sở hữu','CAPM; WACC','Thống kê; hồi quy','Chi phí; thặng dư'],0,'Điều 7. Phương pháp so sánh cần ít nhất 03 tài sản so sánh. Phương pháp vốn vay – vốn sở hữu: R = M × Rm + (1 − M) × Re. CAPM, WACC, thống kê là cách xác định tỷ suất CHIẾT KHẤU r (Điều 12) trong phương pháp dòng tiền chiết khấu.','Chuẩn mực thu nhập Điều 7, 12');
+q(2,'thunhap','Tỷ lệ vay M = 70%, hệ số vốn hóa tiền vay Rm = 11%, tỷ suất vốn hóa vốn sở hữu Re = 9%. Tỷ suất vốn hóa R là:',['9,6%','10,0%','10,4%','11,0%'],2,'R = M × Rm + (1 − M) × Re = 0,7 × 11% + 0,3 × 9% = 7,7% + 2,7% = 10,4%.','Chuẩn mực thu nhập Điều 7');
+q(2,'thunhap','Hệ số vốn hóa tiền vay (Rm) được tính như thế nào?',['Lãi suất danh nghĩa của khoản vay','Khoản thanh toán mỗi kỳ (gốc + lãi) × số kỳ thanh toán trong năm ÷ tổng số tiền vay gốc','Tổng lãi vay ÷ số năm','Gốc vay ÷ giá bán'],1,'Rm là tỷ lệ khoản thanh toán nợ hàng năm (cả vốn và lãi) trên vốn vay gốc. Tỷ suất vốn hóa vốn sở hữu Re = lợi nhuận vốn chủ sở hữu hàng năm ÷ tổng vốn sở hữu.','Chuẩn mực thu nhập Điều 7');
+q(2,'thunhap','Một tài sản có dòng tiền đều A trong n năm, tỷ suất chiết khấu r, nhận cuối năm. Giá trị hiện tại là:',['A × n / r','A × [1 − (1+r)^(−n)] / r','A × (1+r)^n','A / (r × n)'],1,'Công thức niên kim hiện tại. Ví dụ A = 100, r = 10%, n = 5: V = 100 × (1 − 1,1^−5)/0,1 = 379,08. Khi n → ∞ thì V = A / r (vốn hóa trực tiếp).','CĐ4 mục 3.3.2 bước 5');
+q(2,'thunhap','Dòng tiền hai giai đoạn: sau năm n dòng tiền tăng đều g%/năm vĩnh viễn. Điều kiện của mô hình và giá trị cuối kỳ Vn là:',['g > r; Vn = CFn × (1+g)/(r−g)','g < r; Vn = CFn+1/(r − g) = CFn × (1+g)/(r − g)','g = 0; Vn = CFn × r','Không có điều kiện'],1,'Điều 8 Chuẩn mực: g < r. Giá trị cuối kỳ Vn = CF(n+1)/(r − g). Hiện giá toàn phần = tổng hiện giá các CF từ năm 1 đến n + Vn/(1+r)^n. Ví dụ CF1 = 100, r = 12%, g = 4%: V = 100/0,08 = 1.250 (nếu tăng trưởng đều ngay từ năm 1).','Chuẩn mực thu nhập Điều 8, 11');
+q(2,'thunhap','Giai đoạn dự báo dòng tiền cần căn cứ vào những yếu tố nào?',['Chỉ tuổi đời kinh tế','Tuổi đời kinh tế; giai đoạn dự định nắm giữ; độ tin cậy của thông tin; đủ dài để tài sản đạt thu nhập tương đối ổn định và tính được giá trị cuối kỳ','Chỉ giai đoạn vay vốn','Chỉ yêu cầu của khách hàng'],1,'Điều 9 Chuẩn mực.','Chuẩn mực thu nhập Điều 9');
+q(2,'thunhap','Tỷ suất chiết khấu r được xác định bằng các cách nào theo Điều 12 Chuẩn mực?',['Thống kê tỷ suất sinh lời trung bình của tài sản tương tự; chi phí sử dụng vốn bình quân gia quyền (WACC); mô hình định giá tài sản vốn (CAPM)','Chỉ lãi suất ngân hàng','Chỉ cổ tức','Chỉ lạm phát'],0,'Tỷ suất chiết khấu phải phản ánh giá trị thời gian của tiền, rủi ro dòng tiền và việc sử dụng tài sản; phải nhất quán với dòng tiền (trước hay sau thuế).','Chuẩn mực thu nhập Điều 12');
+q(2,'thunhap','Tính chung cư: tổng thu nhập thực tế 1.071 triệu, chi phí 35% thu nhập thực tế, thuế 25% lợi nhuận trước thuế, R = 20% (thu nhập sau thuế). Giá trị chung cư xấp xỉ:',['2.610 triệu','3.480 triệu','1.800 triệu','5.220 triệu'],0,'Chi phí = 0,35 × 1.071 = 374,85; LN trước thuế = 696,15; sau thuế = 522,11; V = 522,11/0,2 = 2.610 triệu. Nhất quán: thu nhập sau thuế phải đi với R sau thuế.','BÀI TẬP VẬN DỤNG BĐS, thu nhập bài 1');
+
+/* ===== THẶNG DƯ ===== */
+q(2,'thangdu','Phương pháp thặng dư áp dụng cho loại bất động sản nào và dựa trên nguyên tắc nào?',['Bất động sản đang cho thuê ổn định; nguyên tắc thay thế','Bất động sản có tiềm năng phát triển; nguyên tắc sử dụng tốt nhất và hiệu quả nhất, nguyên tắc đóng góp và dự kiến dòng lợi ích tương lai','Mọi bất động sản','Máy móc thiết bị'],1,'Giá trị BĐS = giá trị của sự phát triển (doanh thu) − tất cả chi phí để tạo ra sự phát triển (gồm lợi nhuận nhà đầu tư). Đó là giá trị còn lại, "thặng dư" dành cho đất.','CĐ4 mục 3.4.1');
+q(2,'thangdu','Năm bước của phương pháp thặng dư theo thứ tự đúng là:',['Chi phí → doanh thu → sử dụng tốt nhất → giá trị → giai đoạn','Xác định sử dụng tốt nhất và hiệu quả nhất → xác định giai đoạn dự báo dòng tiền → tổng doanh thu phát triển → tổng chi phí phát triển → giá trị bất động sản','Doanh thu → chi phí → lợi nhuận → thuế → giá trị','Giá trị → doanh thu → chi phí → lợi nhuận → thuế'],1,'Doanh thu phát triển và chi phí phát triển được xác định từ thông tin tối thiểu 03 BĐS tương tự, theo cách tiếp cận thị trường hoặc thu nhập. Việc xác định "sử dụng tốt nhất" căn cứ quy hoạch, quy định chuyển mục đích và đầu tư xây dựng.','CĐ4 mục 3.4.1.2');
+q(2,'thangdu','Tổng chi phí phát triển trong phương pháp thặng dư KHÔNG gồm khoản nào sau đây?',['Chi phí đầu tư xây dựng, thiết bị, tư vấn, quản lý dự án','Chi phí dự phòng; chi phí kinh doanh (quảng cáo, bán hàng)','Lợi nhuận của nhà đầu tư; chi phí tài chính; thuế','Giá trị quyền sử dụng đất cần thẩm định (chính là ẩn số của bài toán)'],3,'Giá đất là phần THẶNG DƯ cần tìm, không được đưa vào chi phí phát triển. Nếu bài cho giá đất trả bằng vốn vay thì phải gọi giá đất là ẩn số X và giải phương trình, vì lãi vay và lợi nhuận mua đất phụ thuộc X.','CĐ4 Bước 4; BÀI TẬP thặng dư bài 1');
+q(2,'thangdu','Dự án bán hết trong một năm, doanh thu 180.000 triệu, tổng chi phí phát triển (gồm lợi nhuận) 13.500 triệu. Giá trị mảnh đất theo phương pháp thặng dư là:',['166.500 triệu','180.000 triệu','193.500 triệu','13.500 triệu'],0,'V = DT − CP = 180.000 − 13.500 = 166.500 triệu (khi doanh thu và chi phí cùng phát sinh trong cùng một năm, tính theo mặt bằng giá tại thời điểm thẩm định giá, không cần chiết khấu).','CĐ4 Bước 5 trường hợp 1; Thặng dư bài 2');
+q(2,'thangdu','Doanh thu 1.210 triệu thu cuối năm 2; chi phí 600 triệu chi cuối năm 1; tỷ suất chiết khấu 10%. Giá trị thặng dư tại thời điểm thẩm định là:',['610 triệu','454,55 triệu','500 triệu','1.000 triệu'],1,'V = 1.210/1,1² − 600/1,1 = 1.000 − 545,45 = 454,55 triệu. Chi phí phát sinh năm nào phải chiết khấu đúng số năm đó. Một lỗi thường gặp: chiết khấu chi phí năm 2 như chi phí năm 1.','CĐ4 Bước 5 trường hợp 2');
+q(2,'thangdu','Tỷ suất chiết khấu trong phương pháp thặng dư cần phản ánh:',['Chỉ lạm phát','Giá trị biến đổi theo thời gian của tiền và rủi ro liên quan đến dòng tiền trong quá trình xây dựng, hoàn thành và vận hành dự án','Chỉ lãi vay','Chỉ lợi nhuận mong muốn'],1,'Có thể xác định theo Chuẩn mực cách tiếp cận từ thu nhập hoặc dựa trên lãi suất cho vay trung bình và các căn cứ khác như chuyên đề hướng dẫn.','CĐ4 xác định tỷ suất chiết khấu');
+
+/* ===== VẬN DỤNG TỔNG HỢP ===== */
+q(2,'vandung','Tài sản có tỷ suất sinh lợi 10%. Nhà đầu tư dùng 50% vốn vay, lãi vay 8%/năm. Tỷ suất sinh lợi trên vốn chủ sở hữu là:',['9%','10%','12%','18%'],2,'ROE = [10% − 50% × 8%] / 50% = 6%/50% = 12%. Vay có lợi vì lãi vay (8%) thấp hơn tỷ suất sinh lợi của tài sản (10%) nên đòn bẩy tài chính làm tăng sinh lợi trên vốn chủ.','Đề thi 2017 câu 2d, 2e');
+q(2,'vandung','Điều kiện để vay vốn đầu tư bất động sản có lợi cho nhà đầu tư (tăng tỷ suất sinh lợi trên vốn chủ sở hữu) là:',['Lãi suất vay lớn hơn tỷ suất sinh lợi của bất động sản','Lãi suất vay nhỏ hơn tỷ suất sinh lợi của bất động sản','Tỷ lệ vay phải bằng 100%','Lãi suất vay bằng 0'],1,'ROE = [y − M × i]/(1 − M) > y ⇔ i < y (với 0 < M < 1). Nên "lãi vay tối đa" để vay vẫn có lợi chính là tỷ suất sinh lợi của BĐS (đề 2017 câu 2e).','Đề thi 2017 câu 2e');
+q(2,'vandung','Lãi suất danh nghĩa 12%/năm ghép lãi hàng quý. Lãi suất thực (hiệu dụng) hằng năm là:',['12,00%','12,36%','12,55%','12,68%'],2,'(1 + 12%/4)^4 − 1 = 1,03^4 − 1 = 12,55%. Ngân hàng nào ghép lãi nhiều lần hơn trong năm thì lãi suất thực cao hơn so với cùng lãi danh nghĩa; phải so sánh lãi thực để chọn nguồn vay.','Toán ứng dụng, CĐ2');
+q(2,'vandung','Người thẩm định thu thập giá bán tài sản so sánh có thanh toán chậm; yếu tố nào được điều chỉnh đầu tiên khi lập bảng điều chỉnh?',['Hướng nhà','Điều kiện thanh toán/chi phí pháp lý (điều chỉnh số tiền tuyệt đối) cùng thời điểm giao dịch','Cảnh quan','Hạ tầng'],1,'Điều chỉnh về thời gian (nếu giá biến động) và điều kiện giao dịch, pháp lý đi trước, sau đó mới tới các yếu tố vật chất theo tỷ lệ %.','CĐ4; TT 32/2024');
+q(2,'vandung','Điều chỉnh pháp lý: lô đất so sánh chưa có sổ nhưng đủ điều kiện được cấp nếu nộp tiền sử dụng đất 30 triệu đồng/m². Lô đất thẩm định đã có sổ. Điều chỉnh với lô so sánh là:',['−30 triệu đồng/m²','+30 triệu đồng/m²','+30%','Không điều chỉnh'],1,'Lô thẩm định có lợi thế "đã có sổ" mà lô so sánh chưa có, nên cộng thêm chi phí hợp thức hóa vào giá lô so sánh để quy về cùng trạng thái pháp lý.','BÀI TẬP VẬN DỤNG BĐS, so sánh bài 2');
+
+/* ================= MÔN 3: ĐỘNG SẢN, MÁY THIẾT BỊ, TÀI SẢN VÔ HÌNH ================= */
+/* ===== MÁY THIẾT BỊ: CÁCH TIẾP CẬN & HAO MÒN ===== */
+q(3,'may_cp','Giá trị ước tính của máy, thiết bị theo phương pháp chi phí tái tạo là:',['Chi phí tái tạo (đã gồm lợi nhuận nhà sản xuất/nhà đầu tư) − tổng giá trị hao mòn','Chi phí thay thế + hao mòn','Giá nhập khẩu CIF','Giá bán lại × tuổi đời'],0,'Phương pháp chi phí thay thế dùng chi phí thay thế trừ hao mòn (không gồm phần hao mòn chức năng đã phản ánh trong chi phí thay thế). Phương pháp tổng cộng cộng giá trị các bộ phận cấu thành.','CĐ5 mục 5.2.5.2');
+q(3,'may_cp','Máy, thiết bị thay thế là:',['Máy cùng model, cùng năm sản xuất','Máy có chức năng tương tự và tính hữu dụng tương đương với máy thẩm định, được chế tạo bằng công nghệ, vật liệu, kỹ thuật mới hơn','Máy cũ cùng loại','Máy nhập khẩu'],1,'Thay thế (replacement) khác tái tạo (reproduction: giống hệt). Chi phí thay thế đã loại phần lỗi thời công nghệ nên không phải trừ hao mòn chức năng lần nữa.','CĐ5');
+q(3,'may_cp','Lợi nhuận của nhà sản xuất/nhà đầu tư trong chi phí tái tạo, thay thế được xác định theo Chuẩn mực như thế nào?',['Tỷ lệ cố định 10%','Tỷ lệ bình quân của lợi nhuận trước thuế TNDN trên tổng (giá vốn hàng bán + chi phí bán hàng + chi phí quản lý doanh nghiệp + chi phí tài chính) trong tối thiểu 03 năm gần nhất của ít nhất 03 doanh nghiệp, số liệu từ báo cáo tài chính đã kiểm toán; nhân với chi phí chưa gồm lợi nhuận','Do khách hàng quy định','Bằng lãi suất ngân hàng'],1,'Điều 9 Chuẩn mực cách tiếp cận từ chi phí. Nếu không xác định được theo cách trên thì dùng định mức do cơ quan nhà nước có thẩm quyền ban hành (nếu có).','TT 32/2024 Điều 9');
+q(3,'may_hm','Tuổi đời hiệu quả của máy, thiết bị là:',['Số năm kể từ khi chế tạo xong','Số năm thể hiện thực trạng của máy tại thời điểm thẩm định giá, phụ thuộc duy trì, bảo dưỡng; có thể bằng, lớn hơn hoặc nhỏ hơn tuổi đời thực tế','Thời gian khấu hao theo thuế','Thời gian bảo hành'],1,'Ví dụ xe ben dùng 3 năm nhưng hoạt động quá công suất nên tuổi đời hiệu quả 5 năm. Cần cẩu bảo dưỡng đúng quy trình: tuổi đời hiệu quả = tuổi đời thực tế. Tuổi đời kinh tế: thời gian sử dụng còn phát huy hiệu quả kinh tế.','CĐ5; Bài tập chi phí bài 1, 3');
+q(3,'may_hm','Cần cẩu có tuổi đời kinh tế 20 năm, tuổi đời hiệu quả 12 năm. Tỷ lệ hao mòn theo kỹ thuật tuổi đời là:',['12%','40%','60%','167%'],2,'12/20 × 100% = 60%.','Bài tập chi phí bài 3');
+q(3,'may_hm','Ô tô bán tải: hao mòn các bộ phận lần lượt động cơ 20%, khung gầm 15%, hệ thống điện 5%, hệ thống khác 5%; tỷ trọng giá trị tương ứng 55%, 15%, 20%, 10% (tổng 100%). Tỷ lệ hao mòn vật lý của xe là:',['14,75%','11,25%','45%','100%'],0,'H = Σ (hao mòn bộ phận × tỷ trọng) / Σ tỷ trọng = (20%×55% + 15%×15% + 5%×20% + 5%×10%)/100% = (11 + 2,25 + 1 + 0,5)% = 14,75%. Bẫy: nếu tổng tỷ trọng khác 100% phải chia cho tổng tỷ trọng.','Bài tập chi phí bài 2; công thức hao mòn kết cấu chính');
+q(3,'may_hm','Kỹ thuật "so sánh" xác định giá trị hao mòn đòi hỏi tối thiểu:',['01 tài sản tương tự trong 3 năm','Ít nhất 02 tài sản tương tự đã giao dịch thành công hoặc được chào mua/chào bán trong thời gian không quá 01 năm tính đến thời điểm thẩm định giá','Ít nhất 03 tài sản trong 24 tháng','Không giới hạn'],1,'Điều 10 Chuẩn mực cách tiếp cận từ chi phí. Các bước: điều chỉnh giá giao dịch → xác định chi phí tạo tài sản mới → hao mòn = chi phí mới − giá (đã loại giá đất) → tỷ lệ hao mòn → áp vào chi phí thay thế/tái tạo của tài sản thẩm định.','TT 32/2024 Điều 10');
+q(3,'may_hm','Xe so sánh 1: giá bán 870 triệu, chi phí thay thế mới 1.500 triệu, tuổi đời hiệu quả 4 năm. Tỷ lệ hao mòn lũy kế và tỷ lệ hao mòn hàng năm là:',['42% và 10,5%','58% và 9,67%','42% và 4%','58% và 14,5%'],0,'Hao mòn lũy kế = 1.500 − 870 = 630 → 630/1.500 = 42%; hàng năm = 42%/4 = 10,5%. (Xe so sánh 2: 58%, 9,67%.) Từ đó hao mòn của xe cần thẩm định: tỷ lệ năm bình quân × tuổi đời hiệu quả 5 năm ≈ 50,4%.','Bài tập chi phí bài 1');
+q(3,'may_hm','Dây chuyền có thu nhập thuần giảm từ 1.000 xuống 700 triệu/năm do thay đổi chính sách thuế, tuổi đời kinh tế còn lại 12 năm, tỷ suất 15%. Hao mòn kinh tế được tính:',['300 × 12','Hiện giá niên kim của 300 triệu trong 12 năm ở 15% ≈ 1.626,19 triệu','1.000 × 12 × 15%','700/15%'],1,'Hao mòn ngoại biên (kinh tế) = hiện tại hóa phần thu nhập bị mất hàng năm trong tuổi đời kinh tế còn lại: 300 × (1 − 1,15^−12)/0,15 = 300 × 5,4206 = 1.626,19.','Bài tập chi phí bài 4');
+
+/* ===== KHẤU HAO ===== */
+q(3,'may_hm','Doanh nghiệp khấu hao thiết bị theo phương pháp số dư giảm dần có điều chỉnh, thời gian trích khấu hao 4 năm. Hệ số điều chỉnh và tỷ lệ khấu hao nhanh năm đầu là:',['Hệ số 1,5; 37,5%','Hệ số 2; 50%','Hệ số 2,5; 62,5%','Hệ số 1; 25%'],0,'Quy định khấu hao: thời gian ≤ 4 năm hệ số 1,5; trên 4 đến 6 năm hệ số 2; trên 6 năm hệ số 2,5. Tỷ lệ nhanh = (1/4) × 1,5 = 37,5%. Đến những năm cuối, khi mức khấu hao theo số dư giảm dần thấp hơn mức bình quân giá trị còn lại/số năm còn lại thì chuyển sang khấu hao đường thẳng. (Quy định cụ thể có thể được sửa đổi; kiểm tra văn bản hiện hành.)','Bài tập thu nhập bài 2; TT 45/2013');
+
+/* ===== MÁY THIẾT BỊ: THỊ TRƯỜNG & THU NHẬP ===== */
+q(3,'may_tn','Tài sản so sánh được mua với thanh toán 40% ngay, 60% sau 1 năm, giá 120 triệu, lãi suất 12%/năm. Giá quy về thanh toán ngay là:',['120 triệu','112,29 triệu','108 triệu','117,6 triệu'],1,'48 + 72/1,12 = 48 + 64,29 = 112,29 triệu. Điều chỉnh về điều kiện thanh toán: chiết khấu phần trả chậm.','Bài tập thị trường bài 1');
+q(3,'may_tn','Giá máy ủi sản xuất 2012 bằng 110% giá máy sản xuất 2010. Máy thẩm định sản xuất 2012, máy so sánh 1 sản xuất 2010. Tỷ lệ điều chỉnh cho máy so sánh 1 theo giáo trình là:',['−10%','+10%','+110%','0%'],1,'Máy so sánh kém hơn (2010 < 2012) nên điều chỉnh TĂNG: 110% − 100% = +10%. Các điều chỉnh khác của bài: công suất −10%, trọng lượng +5%, lực ủi −7%.','Bài tập thị trường bài 2');
+q(3,'may_tn','Dây chuyền máy dự kiến dòng tiền thuần năm 1 là 700 triệu, mỗi năm sau tăng 10%, 5 năm, giá trị thu hồi cuối năm 5 là 50 triệu (trước thuế 20%), chi phí vốn 15%. Giá trị dây chuyền theo thu nhập khoảng:',['2.810 triệu','2.600 triệu','3.500 triệu','4.200 triệu'],0,'PV = Σ CFt/1,15^t + (50 × 0,8)/1,15^5 = 2.809,97 triệu. Giá thu hồi phải trừ thuế (50 × 80% = 40). Nếu giá chào là 2.800 thì IRR ≈ 15,14% (>15%) nên đáng mua.','Bài tập thu nhập bài 1');
+q(3,'may_tn','WACC của phương án đầu tư: 70% vốn chủ (16%), 30% vốn vay (13%), thuế TNDN 20%. WACC là:',['14,5%','14,32%','15,1%','13,9%'],1,'WACC = 0,7×16% + 0,3×13%×(1−20%) = 11,2% + 3,12% = 14,32%. Chi phí vay phải tính sau thuế vì lãi vay được trừ khi tính thuế.','Bài tập thu nhập bài 2');
+q(3,'may_tn','Quy tắc quyết định theo NPV và IRR cho một dự án đơn lẻ là:',['NPV < 0 và IRR > r thì chọn','NPV > 0 hoặc IRR > tỷ suất chiết khấu thì chấp nhận','Chọn dự án có IRR thấp nhất','NPV không liên quan đến quyết định'],1,'NPV > 0 ⇔ IRR > r (với dòng tiền thông thường). Khi chọn giữa các phương án loại trừ nhau thì ưu tiên NPV lớn hơn (ví dụ thiết bị X: NPV 27,61 triệu so với Y: 5,61 triệu).','Bài tập thu nhập bài 2, 3');
+
+/* ===== TÀI SẢN VÔ HÌNH ===== */
+q(3,'tsvh','Đặc điểm nào KHÔNG phải của tài sản vô hình theo Chuẩn mực?',['Không có hình thái vật chất','Nhận biết được và có bằng chứng hữu hình về sự tồn tại','Được pháp luật công nhận và bảo vệ, có thể được sở hữu tư nhân và chuyển giao','Giá trị không thể định lượng'],3,'Năm đặc điểm: không có hình thái vật chất; nhận biết được và có bằng chứng; pháp luật công nhận và bảo vệ; có khả năng tạo thu nhập; giá trị CÓ THỂ định lượng.','CĐ6 Tài sản vô hình');
+q(3,'tsvh','Ba phương pháp thẩm định giá tài sản vô hình trong cách tiếp cận từ thu nhập là:',['Tiền sử dụng tài sản vô hình; lợi nhuận vượt trội; thu nhập tăng thêm','Chiết khấu dòng cổ tức; FCFE; FCFF','So sánh; chi phí thay thế; chi phí tái tạo','Vốn hóa trực tiếp; thặng dư; tổng cộng'],0,'Cách tiếp cận từ thu nhập đối với tài sản vô hình: tiền sử dụng (relief-from-royalty), lợi nhuận vượt trội (premium profits: chênh lệch hai dòng tiền có và không có tài sản), thu nhập tăng thêm (multi-period excess earnings). Phương án B dành cho thẩm định giá doanh nghiệp.','Chuẩn mực thu nhập Điều 4; CĐ6');
+q(3,'tsvh','Phương pháp tiền sử dụng tài sản vô hình giả định gì?',['Chủ sở hữu bán tài sản ngay','Tổ chức không sở hữu tài sản vô hình phải trả tiền để sử dụng nó, nên giá trị là hiện giá của khoản tiền sử dụng tiết kiệm được (sau thuế) nhờ sở hữu tài sản','Doanh nghiệp được miễn thuế','Chi phí tạo ra tài sản bằng 0'],1,'Tiền sử dụng hoặc tỷ lệ tiền sử dụng xác định từ giao dịch tài sản tương tự trên thị trường hoặc từ việc chia tách lợi nhuận giữa bên cho phép và bên nhận chuyển nhượng. Dòng tiền, thuế, chi phí duy trì phải NHẤT QUÁN.','CĐ6 PP tiền sử dụng');
+q(3,'tsvh','Thương hiệu tạo doanh thu 1.000 triệu/năm, tỷ lệ tiền sử dụng 5%, thuế TNDN 20%, thời gian 1 năm, chiết khấu 14%. Tiền sử dụng tiết kiệm sau thuế năm đó là:',['50 triệu','40 triệu','10 triệu','200 triệu'],1,'1.000 × 5% = 50; sau thuế 50 × (1 − 20%) = 40 triệu; hiện giá ở r = 14%: 40/1,14 ≈ 35,09. Với chuỗi 5 năm doanh thu 1.000→1.400 thì tổng hiện giá ≈ 161,22 triệu (xem bài tập trong mục Bài tính).','Ví dụ minh họa dựa trên CĐ6');
+q(3,'tsvh','Phương pháp thu nhập tăng thêm xác định giá trị tài sản vô hình như thế nào?',['Hiện tại hóa dòng thu nhập phát sinh từ đóng góp của tài sản vô hình sau khi loại trừ phần đóng góp của các tài sản đóng góp khác (vốn lưu động, tài sản cố định hữu hình, các tài sản khác)','Lấy tổng doanh thu chia cho tuổi đời','Lấy chi phí xây dựng thương hiệu','So sánh với thương hiệu cùng ngành'],0,'Các bước: doanh thu kỳ vọng; thu nhập ròng; xác định thu nhập hợp lý của các tài sản đóng góp (giá trị thị trường × tỷ suất sinh lời hợp lý); loại trừ để còn dòng tiền riêng của tài sản vô hình (cộng lại khấu hao của tài sản đóng góp là tài sản cố định, trừ tiền mua sắm TSCĐ mới); chiết khấu về hiện tại.','CĐ6 PP thu nhập tăng thêm');
+q(3,'tsvh','Trong cách tiếp cận từ chi phí đối với tài sản vô hình, khi xác định hao mòn cần cân nhắc:',['Chỉ hao mòn vật lý','Chênh lệch chi phí nghiên cứu, triển khai; chênh lệch chi phí vận hành; lỗi thời kinh tế; tuổi đời kinh tế và tuổi đời hiệu quả','Chỉ thuế','Chỉ lợi nhuận kế toán'],1,'Tài sản vô hình không có hao mòn vật lý như máy móc, nên tập trung vào lỗi thời chức năng/công nghệ và kinh tế.','CĐ6 cách tiếp cận chi phí');
+q(3,'tsvh','Phương pháp lợi nhuận vượt trội ước tính giá trị tài sản vô hình dựa trên:',['Chênh lệch giữa giá trị hiện tại của hai dòng tiền chiết khấu: khi doanh nghiệp sử dụng tài sản vô hình (tạo thu nhập vượt trội) và khi không sử dụng','Chi phí tái tạo','Giá giao dịch trên sàn','Tỷ lệ tiền bản quyền'],0,'Ví dụ: thương hiệu cho phép bán giá cao hơn, lợi nhuận có nhãn hiệu trừ lợi nhuận hàng không nhãn hiệu, hiện tại hóa phần chênh lệch.','CĐ6 PP lợi nhuận vượt trội');
+// Bài tính có lời giải từng bước. Mọi số trong lời giải được tính bằng code khi hiển thị.
+const nf=(x,d=2)=>Number(x).toLocaleString('vi-VN',{minimumFractionDigits:d,maximumFractionDigits:d});
+const pct=(x,d=2)=>nf(x*100,d)+'%';
+const pa=(r,n)=>(1-Math.pow(1+r,-n))/r;
+const irrf=(cf)=>{let lo=-.9,hi=2;const f=r=>cf.reduce((s,c,i)=>s+c/Math.pow(1+r,i),0);for(let k=0;k<200;k++){const m=(lo+hi)/2;if(f(lo)*f(m)<=0)hi=m;else lo=m}return (lo+hi)/2};
+const EX=[];
+const ex=o=>{o.id='b'+(EX.length+1);EX.push(o)};
+
+/* ===== MÔN 1: TOÁN ỨNG DỤNG (Chuyên đề 2) ===== */
+ex({m:1,t:'toan',title:'Ông P: huy động thêm bao nhiêu để 5 năm sau mua căn hộ?',lv:'Cơ bản',src:'CĐ2 – Toán ứng dụng, bài 1a',
+prompt:'<p>Ông P dự kiến sau 5 năm mua căn hộ trị giá <b>5.000 triệu</b>. Hiện có <b>3.000 triệu</b>, lãi suất tiền gửi <b>7,5%/năm</b>. Tính số tiền ông phải huy động thêm để gửi ngay lúc này.</p>',
+unit:'triệu đồng',run(){const pv=5000/Math.pow(1.075,5);const a=pv-3000;return{ans:a,steps:[
+{h:'Nhận dạng',b:'Cần một khoản tiền gửi MỘT LẦN hôm nay để sau 5 năm thành 5.000: đây là bài hiện giá (PV) của một khoản tương lai.'},
+{h:'Công thức',b:'PV = FV / (1 + r)<sup>n</sup>'},
+{h:'Tính PV',b:`PV = 5.000 / 1,075<sup>5</sup> = 5.000 / ${nf(Math.pow(1.075,5),4)} = <b>${nf(pv)}</b> triệu`},
+{h:'Trừ số đang có',b:`Huy động thêm = ${nf(pv)} − 3.000 = <b>${nf(a)}</b> triệu`}],note:'Giáo trình: 482,79 triệu.'}}});
+ex({m:1,t:'toan',title:'Ông P: gửi đều cuối mỗi năm bao nhiêu?',lv:'Cơ bản',src:'CĐ2 – Toán ứng dụng, bài 1c',
+prompt:'<p>Cùng số liệu bài trước: ông P có 3.000 triệu, lãi 7,5%/năm, cần 5.000 triệu sau 5 năm. Nếu ngoài khoản 3.000 triệu ông gửi thêm một khoản <b>đều cuối mỗi năm</b>, khoản đó là bao nhiêu?</p>',
+unit:'triệu đồng/năm',run(){const g=Math.pow(1.075,5);const fv=3000*g;const sh=5000-fv;const A=sh*.075/(g-1);return{ans:A,steps:[
+{h:'Giá trị tương lai của 3.000 triệu hiện có',b:`3.000 × 1,075<sup>5</sup> = 3.000 × ${nf(g,4)} = ${nf(fv)} triệu`},
+{h:'Số còn thiếu sau 5 năm',b:`5.000 − ${nf(fv)} = <b>${nf(sh)}</b> triệu`},
+{h:'Công thức niên kim gửi cuối kỳ (FV)',b:'A = Thiếu × r / [(1+r)<sup>n</sup> − 1]'},
+{h:'Tính A',b:`A = ${nf(sh)} × 0,075 / (${nf(g,4)} − 1) = <b>${nf(A)}</b> triệu/năm`}],note:'Giáo trình: 119,33 triệu. Câu b: nếu gửi 140 triệu/năm thì tổng sau 5 năm = 5.120,06 triệu > 5.000 nên đủ tiền.'}}});
+ex({m:1,t:'toan',title:'Ông P: vay 2.000 triệu, trả đều 5 năm',lv:'Cơ bản',src:'CĐ2 – Toán ứng dụng, bài 1d',
+prompt:'<p>Ngân hàng cho ông P vay <b>2.000 triệu</b> (phần còn thiếu) với lãi <b>10%/năm</b>, 5 năm, trả đều cuối mỗi năm (gốc + lãi). Tính số tiền trả hằng năm.</p>',
+unit:'triệu đồng/năm',run(){const A=2000*.1/(1-Math.pow(1.1,-5));return{ans:A,steps:[
+{h:'Nhận dạng',b:'Khoản vay hôm nay = hiện giá của chuỗi trả nợ đều: PV = A × [1 − (1+r)<sup>−n</sup>]/r. Giải ngược ra A.'},
+{h:'Công thức',b:'A = PV × r / [1 − (1+r)<sup>−n</sup>]'},
+{h:'Tính',b:`A = 2.000 × 0,1 / (1 − 1,1<sup>−5</sup>) = 200 / ${nf(1-Math.pow(1.1,-5),5)} = <b>${nf(A)}</b> triệu/năm`}],note:'Giáo trình: 527,59 triệu.'}}});
+ex({m:1,t:'toan',title:'Ông N: chọn ngân hàng A (12%, ghép quý) hay B (12,2%, ghép nửa năm)?',lv:'Cơ bản',src:'CĐ2 – Toán ứng dụng, bài 2c',
+prompt:'<p>Hai ngân hàng cho vay 1 tỷ đồng, 5 năm, gốc trả khi đáo hạn. A: <b>12%/năm ghép lãi hàng quý</b>. B: <b>12,2%/năm ghép lãi 6 tháng/lần</b>. Tính lãi suất thực của A (nhập %) và cho biết nên vay ngân hàng nào.</p>',
+unit:'% (lãi thực của A)',run(){const a=Math.pow(1.03,4)-1,b=Math.pow(1.061,2)-1;return{ans:a*100,steps:[
+{h:'Nguyên tắc',b:'Khi kỳ ghép lãi khác nhau, so sánh LÃI SUẤT THỰC: r<sub>thực</sub> = (1 + r<sub>danh nghĩa</sub>/m)<sup>m</sup> − 1.'},
+{h:'Ngân hàng A',b:`m = 4: (1 + 0,12/4)<sup>4</sup> − 1 = 1,03<sup>4</sup> − 1 = <b>${pct(a)}</b>`},
+{h:'Ngân hàng B',b:`m = 2: (1 + 0,122/2)<sup>2</sup> − 1 = 1,061<sup>2</sup> − 1 = <b>${pct(b)}</b>`},
+{h:'Kết luận',b:`${pct(a)} < ${pct(b)} nên vay ngân hàng <b>A</b> (dù lãi danh nghĩa thấp hơn ít, thực tế chênh lệch nhỏ).`}],note:'Giáo trình: 12,55% và 12,57%.'}}});
+ex({m:1,t:'toan',title:'Ông N: trả nợ đều mỗi quý cho khoản vay 1 tỷ ở ngân hàng A',lv:'Cơ bản',src:'CĐ2 – Toán ứng dụng, bài 2d',
+prompt:'<p>Ông N vay <b>1.000 triệu</b> ở ngân hàng A (12%/năm, ghép quý), 5 năm, trả đều cuối mỗi quý (gốc + lãi). Tính số tiền trả mỗi quý.</p>',
+unit:'triệu đồng/quý',run(){const r=.03,n=20;const A=1000*r/(1-Math.pow(1+r,-n));return{ans:A,steps:[
+{h:'Đổi kỳ',b:'Lãi mỗi kỳ r = 12%/4 = 3%; số kỳ n = 5 × 4 = 20.'},
+{h:'Công thức',b:'A = PV × r / [1 − (1+r)<sup>−n</sup>]'},
+{h:'Tính',b:`A = 1.000 × 0,03 / (1 − 1,03<sup>−20</sup>) = 30 / ${nf(1-Math.pow(1.03,-20),5)} = <b>${nf(A)}</b> triệu/quý (≈ 67.215.708 đồng)`}],note:'Giáo trình: 67.215.708 đồng.'}}});
+
+/* ===== MÔN 2: BẤT ĐỘNG SẢN ===== */
+ex({m:2,t:'sosanh',title:'So sánh: thửa đất 56 m² (điều chỉnh theo yếu tố, lấy BĐS thẩm định làm chuẩn)',lv:'Khó',src:'BÀI TẬP VẬN DỤNG BĐS – So sánh bài 1',
+prompt:`<p>Thẩm định thửa đất ở <b>56 m²</b>. Thông tin 3 thửa so sánh:</p>
+<div class="tw"><table><tr><th>Yếu tố</th><th>Cần thẩm định</th><th>SS1</th><th>SS2</th><th>SS3</th></tr>
+<tr><td>Giá bán/m²</td><td>?</td><td>22 trđ</td><td>20 trđ</td><td>22,5 trđ</td></tr>
+<tr><td>Pháp lý</td><td>Có sổ</td><td>Chưa hợp thức</td><td>Có sổ</td><td>Có sổ</td></tr>
+<tr><td>Lợi thế kinh doanh</td><td>Ngõ 10m</td><td>Ngõ 10m</td><td>Ngõ 8m</td><td>2 mặt ngõ 8m</td></tr>
+<tr><td>Hạ tầng</td><td>Thoát nước kém</td><td>Tốt</td><td>Tốt</td><td>Tốt</td></tr>
+<tr><td>Hướng</td><td>Tây</td><td>Đông</td><td>Đông Nam</td><td>Bắc</td></tr>
+<tr><td>Cảnh quan</td><td>Khu dân cư</td><td>Khu dân cư</td><td>Khu dân cư</td><td>Công viên</td></tr>
+<tr><td>Thanh toán</td><td>Trả ngay</td><td>60% ngay, 40% sau 1 năm</td><td>Trả ngay</td><td>Trả ngay</td></tr></table></div>
+<p>Thị trường: chi phí hợp thức hóa SS1 = 1 trđ/m²; ngõ 10m cao hơn ngõ 8m 10%, kém 2 mặt ngõ 8m 5% (giáo trình quy: ngõ 8m = 90%, 2 mặt ngõ 8m = 105%); công viên cao hơn khu dân cư 5%; thoát nước tốt cao hơn kém 10%; hướng Tây = Bắc, kém Đông 5%, kém Đông Nam 10%; lãi vay 1 năm 20%/năm. Ước tính giá trị thửa đất.</p>`,
+unit:'triệu đồng (cả thửa)',tol:.015,run(){
+const base1=22*(.6+.4/1.2),a1=-22+base1;const p1=base1+1;
+const adj=(a,b)=>a/b-1;const ha=adj(100,110),dong=adj(100,105),dn=adj(100,110),nga8=adj(100,90),nga2=adj(100,105),cv=adj(100,105);
+const r=[{b:p1,a:[ha,dong],abs:[a1,1]},{b:20,a:[nga8,ha,dn],abs:[]},{b:22.5,a:[nga2,ha,cv],abs:[]}];
+const out=r.map(x=>{const t=x.a.reduce((s,y)=>s+y,0);const p=x.b*(1+t);const g=x.abs.reduce((s,y)=>s+Math.abs(y),0)+x.a.reduce((s,y)=>s+Math.abs(x.b*y),0);const net=x.abs.reduce((s,y)=>s+y,0)+x.b*t;return{p,t,g,net,k:x.abs.length+x.a.length}});
+const mean=(out[0].p+out[1].p+out[2].p)/3;const val=out[2].p*56;
+return{ans:val,steps:[
+{h:'1. Quy các thông tin thị trường về tỷ lệ so với tài sản thẩm định',b:`Ngõ: 10m = 100%, 8m = 90%, 2 mặt ngõ 8m = 105% → SS2: 100/90 − 1 = <b>+${pct(nga8)}</b>; SS3: 100/105 − 1 = <b>${pct(nga2)}</b>.<br>Hạ tầng tốt = 110% (thẩm định kém = 100%) → 100/110 − 1 = <b>${pct(ha)}</b>.<br>Hướng: Tây = Bắc = 100%, Đông = 105%, Đông Nam = 110% → SS1: <b>${pct(dong)}</b>; SS2: <b>${pct(dn)}</b>; SS3 (Bắc): 0.<br>Cảnh quan: công viên 105% → SS3: <b>${pct(cv)}</b>.`},
+{h:'2. Điều chỉnh số tiền tuyệt đối TRƯỚC (thanh toán, pháp lý) – chỉ SS1',b:`Thanh toán: 22 × 0,6 + 22 × 0,4 / 1,2 = ${nf(base1)} (điều chỉnh ${nf(a1)}).<br>Pháp lý: + 1 (chi phí hợp thức hóa) → ${nf(p1)} trđ/m². Đây là giá cơ sở cho các điều chỉnh %.`},
+{h:'3. Điều chỉnh tỷ lệ % trên giá cơ sở (cộng các tỷ lệ)',b:`SS1: ${nf(p1)} × (1 ${pct(ha)} ${pct(dong)}) → tổng ${pct(out[0].t)} → <b>${nf(out[0].p)}</b> trđ/m².<br>SS2: 20 × (1 + ${pct(nga8)} ${pct(ha)} ${pct(dn)}) → tổng ${pct(out[1].t)} → <b>${nf(out[1].p)}</b>.<br>SS3: 22,5 × (1 ${pct(nga2)} ${pct(ha)} ${pct(cv)}) → tổng ${pct(out[2].t)} → <b>${nf(out[2].p)}</b>.`},
+{h:'4. Kiểm tra nguyên tắc khống chế 15% và các chỉ tiêu chọn',b:`Trung bình ${nf(mean)}; chênh lệch ${out.map(o=>pct(o.p/mean-1)).join(' / ')} → đều &lt; 15%.<br>Số lần điều chỉnh: ${out.map(o=>o.k).join(' / ')}. Điều chỉnh gộp: ${out.map(o=>nf(o.g)).join(' / ')}; thuần: ${out.map(o=>nf(o.net)).join(' / ')}. SS3 nhỏ nhất về gộp và thuần, ít lần (3) → chọn SS3.`},
+{h:'5. Giá trị thửa đất',b:`${nf(out[2].p)} × 56 = <b>${nf(val)}</b> triệu ≈ 1.025 triệu (làm tròn).`}],
+note:'Giáo trình: 1.025 triệu. Sai khác nhỏ ở SS1 (giáo trình 18,49, tính lại ra 18,55) do làm tròn; kết luận chọn SS3 không đổi. Nếu dùng cách "trung bình cộng" của 3 mức giá chỉ dẫn thì ≈ 1.035 triệu: cả hai cách đều chấp nhận được nếu nêu lý do.'}}});
+
+ex({m:2,t:'sosanh',title:'So sánh: lô đất mặt phố Bà Triệu (điều chỉnh %, lấy giá tài sản so sánh làm chuẩn)',lv:'Khó',src:'BÀI TẬP VẬN DỤNG BĐS – So sánh bài 2',
+prompt:`<p>Lô đất mục tiêu: <b>4,5 m × 20 m = 90 m²</b>, đã có sổ, mặt phố Bà Triệu (một chiều), bên số chẵn (bên phải đường). Ba lô so sánh:</p>
+<ul><li>SS1 (số 265, số lẻ = bên TRÁI đường): 230 triệu/m²; có sổ. Lô thẩm định số 306 (số chẵn = bên PHẢI); đất bên phải có giá cao hơn bên trái 10% → SS1 điều chỉnh +10% (giáo trình điều chỉnh trực tiếp theo giá SS1).</li>
+<li>SS2: 240 triệu/m²; có sổ; mặt tiền 3,2 m (nhỏ); lợi thế kinh doanh kém.</li>
+<li>SS3: 210 triệu/m²; CHƯA có sổ nhưng đủ điều kiện; môi trường kém (xưởng cơ khí), phong thủy kém.</li></ul>
+<p>Mức điều chỉnh (tính trực tiếp theo giá hiện hành của tài sản so sánh): mặt tiền 4,5–5 m cao hơn mặt tiền 3,2 m 3% → SS2 +3%; lợi thế kinh doanh SS2 +2%; phong thủy SS3 +2%; môi trường SS3 +1%. Pháp lý điều chỉnh trước: nộp tiền sử dụng đất trong hạn mức (hạn mức 120 m², diện tích 81 m²) bằng 50% giá Nhà nước 60 triệu/m². Các tài sản đáng tin ngang nhau. Tính giá trị quyền sử dụng đất.</p>`,
+unit:'triệu đồng',run(){const l3=210+60*.5;const f=[1.10,1.05,1.03];const base=[230,240,l3];const p=base.map((b,i)=>b*f[i]);const m=p.reduce((s,x)=>s+x,0)/3;const v=m*90;return{ans:v,steps:[
+{h:'1. Điều chỉnh pháp lý trước (số tuyệt đối)',b:`SS3 chưa có sổ: tiền sử dụng đất trong hạn mức = 60 × 50% = 30 triệu/m² → giá SS3 = 210 + 30 = <b>${nf(l3)}</b> triệu/m². SS1 và SS2 đã có sổ nên giữ nguyên.`},
+{h:'2. Cộng tổng tỷ lệ điều chỉnh % trên giá đã điều chỉnh pháp lý',b:`SS1: +10% → hệ số 1,10. SS2: +2% (lợi thế) +3% (mặt tiền) = +5% → 1,05. SS3: +1% (môi trường) +2% (phong thủy) = +3% → 1,03.`},
+{h:'3. Mức giá chỉ dẫn',b:`SS1: 230 × 1,10 = <b>${nf(p[0],1)}</b>; SS2: 240 × 1,05 = <b>${nf(p[1],1)}</b>; SS3: ${nf(l3)} × 1,03 = <b>${nf(p[2],1)}</b> triệu/m².`},
+{h:'4. Chọn mức giá',b:`Độ tin cậy ngang nhau, chênh lệch so với trung bình đều nhỏ (&lt; 15%) → lấy bình quân: (${nf(p[0],1)} + ${nf(p[1],1)} + ${nf(p[2],1)})/3 = <b>${nf(m,2)}</b> triệu/m².`},
+{h:'5. Giá trị lô đất',b:`${nf(m,2)} × 90 = <b>${nf(v)}</b> triệu ≈ 22.566 triệu.`}],note:'Giáo trình: 22.566 triệu (≈ 250,73 triệu/m²).'}}});
+
+ex({m:2,t:'chiphi',title:'Chi phí kết hợp so sánh: tách giá đất rồi cộng giá trị công trình',lv:'Khó',src:'BÀI TẬP VẬN DỤNG BĐS – Chi phí bài 1',
+prompt:`<p>BĐS thẩm định: đất <b>60 m² (4 m × 15 m)</b>; nhà 3 tầng khung bê tông, sàn xây dựng <b>150 m²</b>, chất lượng còn lại 80%, đơn giá xây mới 3,5 triệu/m². Ba BĐS so sánh (giá bán trọn gói):</p>
+<div class="tw"><table><tr><th></th><th>SS1</th><th>SS2</th><th>SS3</th></tr><tr><td>Đất</td><td>80 m² (5×16)</td><td>60 m² (3×20)</td><td>90 m² (5×18)</td></tr><tr><td>Sàn XD</td><td>200 m²</td><td>150 m²</td><td>250 m²</td></tr><tr><td>Còn lại</td><td>75%</td><td>80%</td><td>80%</td></tr><tr><td>Đơn giá XD mới</td><td>3,5</td><td>3,2</td><td>3,3</td></tr><tr><td>Giá bán</td><td>1.235 triệu</td><td>924 triệu</td><td>1.470 triệu</td></tr></table></div>
+<p>Giá đất theo bề rộng: &gt;3,8–4 m = 100%; 3–3,8 m = 96%; &gt;4–6 m = 104%. Theo chiều dài: ≤16 m = 100%; &gt;16–25 m = 95%. Theo quy mô: 60–80 m² = 100%; &gt;80–100 m² = 93%. Ước tính giá trị BĐS.</p>`,
+unit:'triệu đồng',tol:.01,run(){
+const l=[1235-200*3.5*.75,924-150*3.2*.8,1470-250*3.3*.8];const area=[80,60,90];const u=l.map((x,i)=>x/area[i]);
+const adj=[[100/104-1],[100/96-1,100/95-1],[100/104-1,100/95-1,100/93-1]];
+const pu=u.map((x,i)=>x*(1+adj[i].reduce((s,y)=>s+y,0)));const m=pu.reduce((s,x)=>s+x,0)/3;
+const ct=150*3.5*.8;const land=pu[0]*60;const v=land+ct;return{ans:v,steps:[
+{h:'1. Giá trị còn lại của công trình trên mỗi BĐS so sánh (chiết trừ)',b:`SS1: 200 × 3,5 × 75% = 525 → đất = 1.235 − 525 = <b>${nf(l[0],0)}</b> → ${nf(u[0],3)} trđ/m².<br>SS2: 150 × 3,2 × 80% = 384 → đất = <b>${nf(l[1],0)}</b> → ${nf(u[1],3)}.<br>SS3: 250 × 3,3 × 80% = 660 → đất = <b>${nf(l[2],0)}</b> → ${nf(u[2],3)}.`},
+{h:'2. Điều chỉnh về bề rộng/chiều dài/quy mô (lấy đất thẩm định = 100%: rộng 4 m, dài 15 m, 60 m²)',b:`SS1: rộng 5 m (104%) → 100/104 − 1 = ${pct(adj[0][0])}. Dài 16 m, quy mô 80 m² = 100%: không đổi.<br>SS2: rộng 3 m (96%) → +${pct(adj[1][0])}; dài 20 m (95%) → +${pct(adj[1][1])}.<br>SS3: rộng 5 m → ${pct(adj[2][0])}; dài 18 m → +${pct(adj[2][1])}; quy mô 90 m² (93%) → +${pct(adj[2][2])}.`},
+{h:'3. Mức giá chỉ dẫn của đất',b:`SS1: <b>${nf(pu[0],4)}</b>; SS2: <b>${nf(pu[1],4)}</b>; SS3: <b>${nf(pu[2],4)}</b> trđ/m². Trung bình ${nf(m,4)}; lệch ${pu.map(x=>pct(x/m-1)).join(' / ')} (đều &lt; 15%).`},
+{h:'4. Chọn mức giá',b:`SS1 chỉ điều chỉnh 1 lần, điều chỉnh gộp và thuần nhỏ nhất → chọn SS1: ${nf(pu[0],4)} trđ/m².`},
+{h:'5. Giá trị đất + công trình',b:`Đất: ${nf(pu[0],4)} × 60 = <b>${nf(land)}</b>; công trình: 150 × 3,5 × 80% = <b>${nf(ct,0)}</b>.<br>BĐS = ${nf(land)} + ${nf(ct,0)} = <b>${nf(v)}</b> triệu ≈ 932 triệu.`}],note:'Giáo trình: 932 triệu (nếu lấy trung bình của ba mức giá: 9,3990 × 60 + 420 ≈ 983,9 triệu).'}}});
+
+ex({m:2,t:'chiphi',title:'Chi phí: đất (chiết trừ từ lô bên cạnh) + công trình theo hao mòn kết cấu',lv:'Trung bình',src:'BÀI TẬP VẬN DỤNG BĐS – Chi phí bài 2',
+prompt:`<p>BĐS A: đất <b>300 m²</b>, đủ pháp lý; nhà 3 tầng bê tông cốt thép, sàn <b>120 m²/tầng</b>. Hao mòn kết cấu: móng 32%, tường 44%, sàn 36%, mái 44%. Tỷ trọng kết cấu trong giá trị công trình: móng 8%, tường 18%, sàn 16%, mái 14%. Đơn giá xây mới 4 triệu/m². Chi phí khắc phục bếp lạc hậu 13 triệu.<br>Lô đất trống bên cạnh <b>250 m²</b>, chưa có sổ, vừa bán <b>2.250 triệu</b>; để được cấp sổ phải nộp tiền sử dụng đất = 100% giá Nhà nước (12 triệu/m²) cho toàn bộ diện tích. Ước tính giá trị BĐS A.</p>`,
+unit:'triệu đồng',run(){const nop=250*12;const tot=2250+nop;const u=tot/250;const land=300*u;const rem=[68*8,56*18,64*16,56*14].reduce((s,x)=>s+x,0)/(8+18+16+14)/100;const ct=120*3*4*rem-13;return{ans:land+ct,steps:[
+{h:'1. Quy lô đất bên cạnh về cùng trạng thái pháp lý (có sổ)',b:`Tiền sử dụng đất phải nộp = 250 × 12 = ${nf(nop,0)} triệu → giá khi hoàn chỉnh pháp lý = 2.250 + ${nf(nop,0)} = ${nf(tot,0)} triệu → <b>${nf(u,0)}</b> triệu/m².`},
+{h:'2. Giá đất BĐS A',b:`300 × ${nf(u,0)} = <b>${nf(land,0)}</b> triệu.`},
+{h:'3. Chất lượng còn lại của công trình (bình quân gia quyền)',b:`Còn lại: móng 68%, tường 56%, sàn 64%, mái 56%.<br>(68×8 + 56×18 + 64×16 + 56×14) / (8+18+16+14) = ${nf([68*8,56*18,64*16,56*14].reduce((s,x)=>s+x,0),0)} / 56 = <b>${pct(rem,0)}</b>.`},
+{h:'4. Giá trị công trình',b:`Chi phí xây mới: 120 × 3 × 4 = 1.440 triệu. Còn lại: 1.440 × ${pct(rem,0)} = ${nf(1440*rem,0)}; trừ chi phí khắc phục bếp 13 → <b>${nf(ct,0)}</b> triệu.`},
+{h:'5. Tổng',b:`${nf(land,0)} + ${nf(ct,0)} = <b>${nf(land+ct,0)}</b> triệu.`}],note:'Giáo trình: 7.151 triệu. Chi phí khắc phục bếp là hao mòn chức năng khắc phục được, trừ riêng ngoài hao mòn vật lý của kết cấu.'}}});
+
+ex({m:2,t:'thunhap',title:'Vốn hóa trực tiếp: chung cư 30 phòng cho thuê',lv:'Khó',src:'BÀI TẬP VẬN DỤNG BĐS – Thu nhập bài 1',
+prompt:`<p>Chung cư 30 phòng: 15 phòng loại 1 cho thuê <b>4 triệu/tháng</b>, 15 phòng loại 2 <b>3 triệu/tháng</b>. Ba chung cư tương tự: A 34 phòng, 31 có khách; B 30, 27; C 28, 25. Chi phí vận hành/thu nhập thực tế: A 435,6/1.210; B 374,5/1.070; C 340/1.000 (triệu/năm). Tổn thất do khách nợ dây dưa 5,16%. Tỷ suất vốn hóa 20% (áp cho thu nhập sau thuế). Thuế 25% lợi nhuận trước thuế. Ước tính giá trị (cách 1: cộng tỷ lệ thất thu).</p>`,
+unit:'triệu đồng',tol:.005,run(){const v=[[34,31],[30,27],[28,25]];const e=v.reduce((s,[a,b])=>s+(1-b/a),0)/3;const gross=15*4*12+15*3*12;const h=gross*(1-(e+.0516));const c=[435.6/1210,374.5/1070,340/1000];const cr=c.reduce((s,x)=>s+x,0)/3;const cp=h*cr;const ebt=h-cp;const net=ebt*.75;return{ans:net/.2,steps:[
+{h:'1. Tổng thu nhập tiềm năng',b:`15 × 4 × 12 + 15 × 3 × 12 = 720 + 540 = <b>${nf(gross,0)}</b> triệu/năm.`},
+{h:'2. Tỷ lệ phòng trống bình quân',b:`A: ${pct(1-31/34)}; B: ${pct(1-27/30)}; C: ${pct(1-25/28)} → bình quân <b>${pct(e)}</b>.`},
+{h:'3. Thu nhập thực tế (tổng thất thu = phòng trống + nợ dây dưa)',b:`Thất thu = ${pct(e)} + 5,16% = ${pct(e+.0516)} → thu nhập thực tế = ${nf(gross,0)} × (1 − ${pct(e+.0516)}) = <b>${nf(h)}</b> triệu.`},
+{h:'4. Chi phí',b:`Tỷ lệ chi phí/thu nhập: A ${pct(c[0],0)}, B ${pct(c[1],0)}, C ${pct(c[2],0)} → bình quân <b>${pct(cr,0)}</b>. Chi phí = ${nf(h)} × ${pct(cr,0)} = ${nf(cp)} triệu.`},
+{h:'5. Thu nhập thuần sau thuế',b:`Trước thuế: ${nf(h)} − ${nf(cp)} = ${nf(ebt)}; sau thuế (×75%) = <b>${nf(net)}</b> triệu.`},
+{h:'6. Vốn hóa',b:`V = I / R = ${nf(net)} / 20% = <b>${nf(net/.2)}</b> triệu.`}],note:'Giáo trình: 2.610,55 triệu (làm tròn tỷ lệ 9,84%). Cách 2 (thất thu tính nối tiếp) ≈ 2.626 triệu. Điểm thi: thu nhập sau thuế phải đi với R sau thuế.'}}});
+
+ex({m:2,t:'thunhap',title:'Vốn hóa vĩnh viễn: quán bia 400 m² đất',lv:'Trung bình',src:'BÀI TẬP VẬN DỤNG BĐS – Thu nhập bài 2',
+prompt:`<p>Quán bia: thu ăn uống <b>28 triệu/ngày</b> và dịch vụ khác <b>0,5 triệu/ngày</b> × 26 ngày/tháng. Chi hàng tháng: mua hàng 180; lương 20 × 1,5 = 30; điện 2; nước 1; an ninh 1,2; vệ sinh 0,3; quảng cáo 1; quản lý 20 (triệu). Chi hàng năm: bàn ghế bát đĩa 30; pháp lý, thuế 20 (triệu). Kinh doanh ổn định vĩnh viễn; tỷ suất sinh lời ngành 14%/năm. Ước tính giá trị BĐS.</p>`,
+unit:'triệu đồng',run(){const rev=(28+.5)*26*12;const mon=180+30+2+1+1.2+.3+1+20;const cost=mon*12+30+20;const I=rev-cost;return{ans:I/.14,steps:[
+{h:'1. Thu hằng năm',b:`(28 + 0,5) × 26 × 12 = <b>${nf(rev,0)}</b> triệu.`},
+{h:'2. Chi hằng năm',b:`Chi theo tháng = ${nf(mon,1)} triệu/tháng → × 12 = ${nf(mon*12,0)}; cộng chi hàng năm 30 + 20 → <b>${nf(cost,0)}</b> triệu.`},
+{h:'3. Thu nhập thuần',b:`${nf(rev,0)} − ${nf(cost,0)} = <b>${nf(I,0)}</b> triệu/năm.`},
+{h:'4. Vốn hóa vĩnh viễn',b:`V = I / R = ${nf(I,0)} / 0,14 = <b>${nf(I/.14)}</b> triệu.`}],note:'Giáo trình: 42.971,43 triệu. Lưu ý: bài không trừ thuế TNDN, và khấu hao không phải chi phí tiền mặt; chỉ cần nhất quán với R.'}}});
+
+ex({m:2,t:'thunhap',title:'Dòng tiền chiết khấu: tòa tháp đôi Vincom (còn 41 năm)',lv:'Khó',src:'BÀI TẬP VẬN DỤNG BĐS – DCF',
+prompt:`<p>Khu đất giao 50 năm, đã sử dụng 9 năm (còn <b>41 năm</b>). Sàn thương mại tầng 1–6: 4.100 m² xây dựng/sàn, diện tích sử dụng 70%; tầng 7–22 của 2 tháp: 1.400 m²/sàn/tháp, sử dụng 80%. Tỷ lệ lấp đầy 95%. Giá thuê (USD/m²/tháng): tầng 1: 100; tầng 2–6: 45; tầng 7–22: 30. Bãi xe 500.000 USD/năm, quảng cáo 500.000 USD/năm. Chi phí vận hành và thuế = 23% tổng thu. Chiết khấu 8%/năm (USD), dòng tiền đều 41 năm. Ước tính giá trị (triệu USD).</p>`,
+unit:'triệu USD',tol:.002,run(){const d1=4100*.7*.95*100*12,d2=4100*5*.7*.95*45*12,d3=1400*2*16*.8*.95*30*12;const tot=d1+d2+d3+1e6;const net=tot*.77;const v=net*pa(.08,41);return{ans:v/1e6,steps:[
+{h:'1. Thu thuê tầng 1',b:`4.100 × 70% × 95% × 100 × 12 = <b>${nf(d1,0)}</b> USD/năm.`},
+{h:'2. Thu thuê tầng 2–6',b:`4.100 × 5 tầng × 70% × 95% × 45 × 12 = <b>${nf(d2,0)}</b> USD/năm.`},
+{h:'3. Thu thuê tầng 7–22',b:`1.400 × 2 tháp × 16 tầng × 80% × 95% × 30 × 12 = <b>${nf(d3,0)}</b> USD/năm.`},
+{h:'4. Tổng thu và thu nhập thuần',b:`Cộng bãi xe + quảng cáo 1.000.000 → tổng thu ${nf(tot,0)}. Thu nhập thuần = × (1 − 23%) = <b>${nf(net,0)}</b> USD/năm.`},
+{h:'5. Hiện giá niên kim 41 năm, 8%',b:`Hệ số = [1 − 1,08<sup>−41</sup>]/0,08 = ${nf(pa(.08,41),4)} → V = ${nf(net,0)} × ${nf(pa(.08,41),4)} = <b>${nf(v,0)}</b> USD ≈ ${nf(v/1e6)} triệu USD.`}],note:'Giáo trình: 220.146.680 USD. Dòng tiền đều có thời hạn: dùng niên kim, không dùng V = I/R.'}}});
+
+ex({m:2,t:'thangdu',title:'Thặng dư: giá đất tối đa khi đấu giá lô 1 ha xây chung cư',lv:'Khó',src:'BÀI TẬP PP THẶNG DƯ – Bài 1',
+prompt:`<p>Lô đất <b>1 ha</b>, được xây <b>60%</b>. Xây 2 tòa chung cư, mỗi tầng mỗi tòa 20 căn, cao 25 tầng, thời gian 1 năm. Chi phí: quy hoạch 1.000; dọn mặt bằng 100; hạ tầng 1 triệu/m² đất; xây chung cư 10 triệu/m² sàn; phí đấu giá 20; chi phí khác cho đất 4% giá đất (triệu đồng). Vốn vay 10%/năm (chi phí xây vay 2 lần cách nhau 6 tháng, lãi 6 tháng = 5%). Lợi nhuận xây dựng 10% (quy hoạch + dọn + hạ tầng + xây); lợi nhuận đất 15% (giá đất + chi phí đất, không gồm lãi). Giá bán căn hộ: tầng 1–10: 3.200; tầng 11–25: 3.600 (triệu). Chi phí bán 500. Giá đất đấu giá tối đa?</p>`,
+unit:'triệu đồng',run(){const dt=20*2*10*3200+20*2*15*3600;const cx=6000*25*10,ht=10000;const lv=.1*(1000+100+ht+cx/2)+.05*cx/2;const ln=.1*(1000+100+ht+cx);const cp=1000+100+ht+cx+lv+ln+500;const res=dt-cp;const X=(res-25)/1.3;return{ans:X,steps:[
+{h:'1. Doanh thu phát triển',b:`Tầng 1–10: 20 × 2 × 10 × 3.200 = 1.280.000; tầng 11–25: 20 × 2 × 15 × 3.600 = 2.160.000 → <b>${nf(dt,0)}</b> triệu.`},
+{h:'2. Chi phí xây dựng và hạ tầng',b:`Diện tích sàn một tầng = 10.000 × 60% = 6.000 m² → xây dựng 6.000 × 25 × 10 = <b>${nf(cx,0)}</b>; hạ tầng 10.000 × 1 = <b>${nf(ht,0)}</b>.`},
+{h:'3. Lãi vay giai đoạn xây dựng',b:`10% × (1.000 + 100 + 10.000 + ${nf(cx/2,0)}) + 5% × ${nf(cx/2,0)} = <b>${nf(lv,0)}</b> (chi phí xây vay 2 lần: nửa đầu chịu lãi cả năm, nửa sau chịu lãi 6 tháng).`},
+{h:'4. Lợi nhuận xây dựng & chi phí bán',b:`10% × (1.000 + 100 + 10.000 + ${nf(cx,0)}) = <b>${nf(ln,0)}</b>; chi phí bán 500. Tổng chi phí giai đoạn xây dựng = <b>${nf(cp,0)}</b>.`},
+{h:'5. Giá trị thặng dư dành cho đất (đã gồm chi phí và lợi nhuận mua đất)',b:`${nf(dt,0)} − ${nf(cp,0)} = <b>${nf(res,0)}</b> triệu.`},
+{h:'6. Giải phương trình ẩn X (giá đất)',b:`Chi phí khác 0,04X; phí đấu giá 20; lãi vay = 10% × (X + 20 + 0,04X) = 0,104X + 2; lợi nhuận đất = 15% × (X + 0,04X + 20) = 0,156X + 3.<br>X + 20 + 0,04X + 0,104X + 2 + 0,156X + 3 = 1,3X + 25 = ${nf(res,0)} → X = (${nf(res,0)} − 25)/1,3 = <b>${nf(X)}</b> triệu.`}],note:'Giáo trình: 1.279.734,62 triệu. Kết luận: đây là mức giá TỐI ĐA mà nhà đầu tư chấp nhận được.'}}});
+
+ex({m:2,t:'thangdu',title:'Thặng dư: lô đất 1 ha phân lô bán, hoàn vốn 3 năm',lv:'Trung bình',src:'BÀI TẬP PP THẶNG DƯ – Bài 2 (có chỉnh lỗi)',
+prompt:`<p>Lô đất 10.000 m², được xây 60%. Chia 60 lô bán (6.000 m² → 100 m²/lô). Hạ tầng 0,5 triệu/m² đất; chi phí bán 1.000; thuế 1.500; lợi nhuận đòi hỏi 6.000 (triệu). Giá chuyển quyền lô 100 m²: 30 triệu/m². <b>Trường hợp 2</b>: hoàn vốn 3 năm; chi phí hạ tầng năm 1; chi phí bán năm 2; thuế và lợi nhuận năm 3; doanh thu năm 3; lãi suất 15%. Tính giá trị mảnh đất.</p>`,
+unit:'triệu đồng',run(){const dt=6000*30;const a=(dt-1500-6000)/Math.pow(1.15,3);const b=5000/1.15;const c=1000/Math.pow(1.15,2);const v=a-b-c;return{ans:v,steps:[
+{h:'1. Doanh thu phát triển',b:`Quy mô lô = 6.000/60 = 100 m² → giá 30 triệu/m² → DT = 6.000 × 30 = <b>${nf(dt,0)}</b> triệu (thu năm 3).`},
+{h:'2. Trường hợp 1 (bán hết trong 1 năm, không chiết khấu)',b:`V = 180.000 − (5.000 + 1.000 + 1.500 + 6.000) = <b>166.500</b> triệu.`},
+{h:'3. Trường hợp 2: chiết khấu theo đúng năm phát sinh',b:`Năm 3 (DT − thuế − lợi nhuận) = ${nf(dt-7500,0)} → /1,15<sup>3</sup> = ${nf(a)}.<br>Năm 1 (hạ tầng 5.000) → /1,15 = ${nf(b)}.<br>Năm 2 (chi phí bán 1.000) → /1,15<sup>2</sup> = ${nf(c)}.`},
+{h:'4. Giá trị',b:`V = ${nf(a)} − ${nf(b)} − ${nf(c)} = <b>${nf(v)}</b> triệu.`}],note:'LƯU Ý: lời giải trong giáo trình ghi 108.204,15 triệu vì chiết khấu chi phí bán (năm 2) bằng 1.000/1,15 = 869,57 thay vì 1.000/1,15² = 756,14. Theo đúng đề (chi phí bán năm 2) kết quả là 108.317,58 triệu; nếu thi, trình bày rõ năm phát sinh từng khoản.'}}});
+
+/* ----- Đề thi 2017 ----- */
+const E17={land:null};
+function e17(){
+const d=[{ar:97.5,fl:3,bu:8,q:.9,tot:7200,w:100,s:100,e:95},{ar:113.4,fl:2,bu:7,q:.8,tot:8000,w:120,s:90,e:100},{ar:75.6,fl:3,bu:7,q:.85,tot:5200,w:108,s:100,e:95}];
+const L=d.map(x=>{const ct=x.ar*x.fl*x.bu*x.q;const land=x.tot-ct;return{ct,land,u:land/x.ar}});
+const f=d.map(x=>(108/x.w)*(90/x.s)*(95/x.e));const pu=L.map((x,i)=>x.u*f[i]);const m=pu.reduce((s,x)=>s+x,0)/3;
+const landV=m*112;const ctS=112*3*7.5*.75;const V=landV+ctS;const y=[50*12/7200,55*12/8000,35*12/5200];const ya=y.reduce((s,x)=>s+x,0)/3;
+return{d,L,f,pu,m,landV,ctS,V,y,ya,rent:V*ya/12,roe:(ya-.3*.08)/.7}}
+ex({m:2,t:'de2017',title:'Đề 2017, câu 2a: phương pháp chiết trừ tìm giá đất (112 m²)',lv:'Đề thi',src:'Đề thi BĐS 2017 (kỳ thi XII, đề số 2) – lời giải do trợ giảng làm, KHÔNG phải đáp án chính thức',
+prompt:`<p>BĐS thẩm định: mặt tiền đường, đất <b>112 m² (5,6 m × 20 m)</b>, nhà 3 tầng khung bê tông, chất lượng còn lại 75%, môi trường kém, đơn giá xây mới 7,5 triệu/m². Ba BĐS vừa bán:</p>
+<div class="tw"><table><tr><th></th><th>BĐS1</th><th>BĐS2</th><th>BĐS3</th></tr><tr><td>Đất</td><td>97,5 m² (3,9×25)</td><td>113,4 m² (6,3×18)</td><td>75,6 m² (4,2×18)</td></tr><tr><td>Nhà</td><td>3 tầng, còn 90%</td><td>2 tầng, còn 80%</td><td>3 tầng, còn 85%</td></tr><tr><td>Môi trường</td><td>Kém</td><td>Tốt</td><td>Kém</td></tr><tr><td>Giá bán</td><td>7,2 tỷ</td><td>8 tỷ</td><td>5,2 tỷ</td></tr><tr><td>Đơn giá xây mới</td><td>8 triệu/m²</td><td>7</td><td>7</td></tr></table></div>
+<p>Tương quan giá đất: chiều rộng &gt;4–6 m cao hơn &gt;3,5–4 m là 8% và thấp hơn &gt;6–8 m là 10%; quy mô &gt;100 m² thấp hơn ≤100 m² là 10%; môi trường kém thấp hơn tốt 5%. <b>Giả định của lời giải</b>: đề không nêu diện tích sàn, coi mỗi tầng chiếm hết diện tích đất (sàn = đất × số tầng). Câu a) dùng phương pháp chiết trừ ước tính giá trị lô đất thẩm định.</p>`,
+unit:'triệu đồng',tol:.01,run(){const r=e17();return{ans:r.landV,steps:[
+{h:'1. Chiết trừ: giá đất của từng BĐS so sánh',b:`BĐS1: CTXD = 97,5 × 3 × 8 × 90% = ${nf(r.L[0].ct)} → đất = 7.200 − ${nf(r.L[0].ct)} = ${nf(r.L[0].land)} → <b>${nf(r.L[0].u,3)}</b> trđ/m².<br>BĐS2: 113,4 × 2 × 7 × 80% = ${nf(r.L[1].ct)} → đất = ${nf(r.L[1].land)} → <b>${nf(r.L[1].u,3)}</b>.<br>BĐS3: 75,6 × 3 × 7 × 85% = ${nf(r.L[2].ct)} → đất = ${nf(r.L[2].land)} → <b>${nf(r.L[2].u,3)}</b>.`},
+{h:'2. Lập thang tương quan (đặt mức thấp nhất = 100)',b:'Rộng: &gt;3,5–4 m = 100; &gt;4–6 m = 108; &gt;6–8 m = 108/0,9 = 120. Quy mô: ≤100 m² = 100; &gt;100 m² = 90. Môi trường: tốt = 100; kém = 95.<br>Tài sản thẩm định: rộng 5,6 m → 108; 112 m² → 90; môi trường kém → 95.'},
+{h:'3. Hệ số điều chỉnh = thẩm định / so sánh (từng yếu tố, nhân nối tiếp)',b:`BĐS1 (3,9 m → 100; 97,5 m² → 100; kém → 95): 108/100 × 90/100 × 95/95 = ${nf(r.f[0],4)}.<br>BĐS2 (6,3 m → 120; 113,4 m² → 90; tốt → 100): 108/120 × 90/90 × 95/100 = ${nf(r.f[1],4)}.<br>BĐS3 (4,2 m → 108; 75,6 m² → 100; kém → 95): 108/108 × 90/100 × 95/95 = ${nf(r.f[2],4)}.`},
+{h:'4. Mức giá chỉ dẫn của đất',b:`BĐS1: ${nf(r.L[0].u,3)} × ${nf(r.f[0],4)} = <b>${nf(r.pu[0],2)}</b>; BĐS2: <b>${nf(r.pu[1],2)}</b>; BĐS3: <b>${nf(r.pu[2],2)}</b> trđ/m². Trung bình ${nf(r.m,2)}; lệch ${r.pu.map(x=>pct(x/r.m-1,1)).join(' / ')} (đều &lt; 15%).`},
+{h:'5. Giá trị lô đất thẩm định',b:`${nf(r.m,2)} × 112 = <b>${nf(r.landV)}</b> triệu.`}],note:'Đây là cách làm của trợ giảng; đề không cho đủ dữ kiện (diện tích sàn). Khi thi hãy NÊU RÕ giả định và làm nhất quán; đề yêu cầu làm tròn 2 số lẻ.'}}});
+ex({m:2,t:'de2017',title:'Đề 2017, câu 2b: phương pháp chi phí tìm giá trị BĐS',lv:'Đề thi',src:'Đề thi BĐS 2017 – lời giải do trợ giảng làm',
+prompt:'<p>Dùng giá đất ở câu 2a (chiết trừ), ước tính giá trị thị trường của BĐS bằng phương pháp chi phí. Nhà 3 tầng, sàn giả định 112 × 3 m², đơn giá xây mới 7,5 triệu/m², chất lượng còn lại 75%.</p>',
+unit:'triệu đồng',tol:.01,run(){const r=e17();return{ans:r.V,steps:[
+{h:'1. Giá đất',b:`Từ câu 2a: <b>${nf(r.landV)}</b> triệu.`},
+{h:'2. Chi phí xây mới và hao mòn',b:`Sàn: 112 × 3 = 336 m² → chi phí xây mới 336 × 7,5 = 2.520 triệu. Chất lượng còn lại 75% → hao mòn 25% = 630 triệu.`},
+{h:'3. Giá trị công trình',b:`2.520 − 630 = <b>${nf(r.ctS,0)}</b> triệu.`},
+{h:'4. Giá trị BĐS',b:`${nf(r.landV)} + ${nf(r.ctS,0)} = <b>${nf(r.V)}</b> triệu. (Điều kiện môi trường kém đã được phản ánh trong giá đất so sánh nên không trừ hao mòn ngoại biên lần nữa, tránh tính trùng.)`}],note:'Đề chưa nói rõ có trừ hao mòn ngoại biên; nếu muốn, nêu giả định này trong bài.'}}});
+ex({m:2,t:'de2017',title:'Đề 2017, câu 2c–2e: thu nhập thuê, sinh lợi vốn chủ và lãi vay tối đa',lv:'Đề thi',src:'Đề thi BĐS 2017 – lời giải do trợ giảng làm',
+prompt:`<p>c) Tính thu nhập hằng tháng từ cho thuê BĐS thẩm định (theo tỷ suất thuê/giá bán của 3 BĐS so sánh: BĐS1 thuê 50 triệu/tháng, giá 7.200; BĐS2 55 triệu, giá 8.000; BĐS3 35 triệu, giá 5.200; dùng giá trị từ câu 2b).<br>d) Đầu tư bằng 30% vốn vay, lãi vay 8%/năm. Tính tỷ suất sinh lợi trên vốn chủ sở hữu và nhận xét.<br>e) Lãi vay tối đa để vay vẫn có lợi?</p><p>Nhập đáp số của <b>câu c</b> (triệu đồng/tháng).</p>`,
+unit:'triệu đồng/tháng',tol:.01,run(){const r=e17();return{ans:r.rent,steps:[
+{h:'c1. Tỷ suất thuê (sinh lợi gộp) từng BĐS so sánh',b:`BĐS1: 50 × 12/7.200 = <b>${pct(r.y[0])}</b>; BĐS2: 55 × 12/8.000 = <b>${pct(r.y[1])}</b>; BĐS3: 35 × 12/5.200 = <b>${pct(r.y[2])}</b> → bình quân <b>${pct(r.ya)}</b>/năm.`},
+{h:'c2. Thu nhập thuê của BĐS thẩm định',b:`${nf(r.V)} × ${pct(r.ya)} = ${nf(r.V*r.ya)} triệu/năm → <b>${nf(r.rent)}</b> triệu/tháng.`},
+{h:'d. Tỷ suất sinh lợi trên vốn chủ',b:`Vay 30% × lãi 8% = 2,4% chi phí lãi trên tổng vốn. ROE = (${pct(r.ya)} − 2,4%)/70% = <b>${pct(r.roe)}</b> > ${pct(r.ya)} (tỷ suất sinh lợi của BĐS) → <b>vay có lợi</b> (đòn bẩy dương), vì lãi vay 8% < tỷ suất sinh lợi ${pct(r.ya)}. Mức tăng nhỏ vì chênh lệch hai tỷ suất rất ít, trong khi rủi ro tài chính tăng.`},
+{h:'e. Lãi vay tối đa',b:`ROE > y ⇔ i < y → lãi vay phải thấp hơn tỷ suất sinh lợi của BĐS: tối đa <b>${pct(r.ya)}</b>/năm (không phụ thuộc tỷ lệ vay).`}],note:'Giả định đã nêu: thu nhập thuê gộp bằng tỷ lệ thuê/giá; đề không cho chi phí vận hành nên không tính thuế và chi phí. Nếu chi phí vận hành đáng kể thì dùng thu nhập thuần.'}}});
+ex({m:2,t:'de2017',title:'Đề 2017, câu 3: thặng dư khu đất 20.000 m² xây chung cư 18 tầng',lv:'Đề thi',src:'Đề thi BĐS 2017 – lời giải do trợ giảng làm',
+prompt:`<p>Khu đất <b>20.000 m²</b> đã chuyển mục đích sang đất ở, xây chung cư <b>18 tầng</b> để bán, được xây 60%. Hoàn thành và bán hết trong 1 năm. Diện tích căn hộ bán chiếm <b>80%</b> tổng diện tích sàn xây dựng. Đầu năm: chi phí thiết kế, quy hoạch dự án <b>1.200 triệu</b>. Cuối năm: hạ tầng <b>1,2 triệu/m²</b> (trên diện tích đất); xây nhà <b>6,5 triệu/m²</b> sàn; vay 60% hạ tầng + xây dựng, lãi 10%/năm; chi phí quảng cáo bán 1,5% doanh thu; quản lý dự án 10% (tổng chi phí hạ tầng + xây dựng); giá bán căn hộ <b>18 triệu/m²</b> (chưa VAT). Lợi nhuận nhà đầu tư 14% tổng chi phí trực tiếp và gián tiếp (không gồm chi phí tài chính). Tỷ suất chiết khấu 10%. Ước tính giá đất.</p>`,
+unit:'triệu đồng',tol:.01,run(){const land=20000,build=land*.6,fa=build*18,sale=fa*.8,rev=sale*18;const ht=land*1.2,xd=fa*6.5,design=1200,ql=.1*(ht+xd),qc=.015*rev,lv=.6*(ht+xd)*.1;const profit=.14*(ht+xd+design+ql+qc);const endc=ht+xd+ql+qc+lv+profit;const V=(rev-endc)/1.1-design;return{ans:V,steps:[
+{h:'1. Diện tích và doanh thu',b:`Diện tích xây dựng = 20.000 × 60% = 12.000 m²; tổng sàn = 12.000 × 18 = <b>${nf(fa,0)}</b> m²; diện tích bán = 80% = ${nf(sale,0)} m²; doanh thu = ${nf(sale,0)} × 18 = <b>${nf(rev,0)}</b> triệu.`},
+{h:'2. Chi phí trực tiếp',b:`Hạ tầng: 20.000 × 1,2 = <b>${nf(ht,0)}</b>; xây dựng: ${nf(fa,0)} × 6,5 = <b>${nf(xd,0)}</b>.`},
+{h:'3. Chi phí gián tiếp',b:`Quản lý dự án 10% × (${nf(ht,0)} + ${nf(xd,0)}) = <b>${nf(ql,0)}</b>; quảng cáo 1,5% × ${nf(rev,0)} = <b>${nf(qc,0)}</b>; thiết kế 1.200 (đầu năm).`},
+{h:'4. Lãi vay và lợi nhuận',b:`Lãi vay = 60% × ${nf(ht+xd,0)} × 10% = <b>${nf(lv,0)}</b>. Lợi nhuận = 14% × (${nf(ht+xd,0)} + 1.200 + ${nf(ql,0)} + ${nf(qc,0)}) = <b>${nf(profit,0)}</b>.`},
+{h:'5. Thặng dư tại cuối năm, chiết khấu về hiện tại',b:`Doanh thu − chi phí cuối năm = ${nf(rev,0)} − ${nf(endc,0)} = ${nf(rev-endc,0)}; chiết khấu 1 năm: /1,1 = ${nf((rev-endc)/1.1,0)}; trừ chi phí thiết kế đầu năm (không chiết khấu) 1.200 → <b>${nf(V,0)}</b> triệu.`}],note:'Đề không có đáp án chính thức, đây là một cách lập luận hợp lý. Nếu coi mọi khoản phát sinh đồng thời (không chiết khấu) thì V ≈ 1.179.452 triệu. Khi thi: nêu rõ giả định về thời điểm phát sinh từng khoản và nhất quán.'}}});
+
+/* ===== MÔN 3: MÁY THIẾT BỊ & TÀI SẢN VÔ HÌNH ===== */
+ex({m:3,t:'may_hm',title:'Hao mòn theo kỹ thuật so sánh: xe ben 4 chân',lv:'Trung bình',src:'Bài tập chi phí (CĐ5) – bài 1',
+prompt:'<p>Xe ben đời 2022, đã dùng 3 năm nhưng chạy quá công suất nên tuổi đời hiệu quả <b>5 năm</b>. Hai xe cùng loại vừa bán: SS1 giá <b>870 triệu</b> (tuổi đời hiệu quả 4 năm), SS2 giá <b>630 triệu</b> (6 năm). Xe mới 100% hiện bán <b>1.500 triệu</b>. Tính giá trị hao mòn của xe thẩm định.</p>',
+unit:'triệu đồng',tol:.01,run(){const h1=(1500-870)/1500,h2=(1500-630)/1500;const a1=h1/4,a2=h2/6;const rate=(a1+a2)/2*5;return{ans:rate*1500,steps:[
+{h:'1. Hao mòn lũy kế của từng xe so sánh',b:`SS1: 1.500 − 870 = 630 → ${pct(h1,0)}. SS2: 1.500 − 630 = 870 → ${pct(h2,0)}.`},
+{h:'2. Tỷ lệ hao mòn hàng năm',b:`SS1: ${pct(h1,0)}/4 = <b>${pct(a1)}</b>; SS2: ${pct(h2,0)}/6 = <b>${pct(a2)}</b>.`},
+{h:'3. Áp cho xe thẩm định (tuổi đời hiệu quả 5 năm)',b:`Bình quân hằng năm = (${pct(a1)} + ${pct(a2)})/2 = ${pct((a1+a2)/2,3)} → × 5 năm = <b>${pct(rate)}</b>.`},
+{h:'4. Giá trị hao mòn',b:`${pct(rate)} × 1.500 = <b>${nf(rate*1500)}</b> triệu.`}],note:'Giáo trình làm tròn 9,67% nên ra 50,43% và 756,45 triệu; sai khác 0,03%. Giá trị xe = 1.500 − 756,25 ≈ 743,75 triệu.'}}});
+ex({m:3,t:'may_hm',title:'Hao mòn vật lý theo kỹ thuật tổng cộng: ô tô bán tải',lv:'Cơ bản',src:'Bài tập chi phí (CĐ5) – bài 2',
+prompt:'<p>Chuyên gia đánh giá: hao mòn động cơ 20% (tỷ trọng 55%), khung gầm 15% (15%), hệ thống điện 5% (20%), hệ thống khác 5% (10%). Tính tỷ lệ hao mòn vật lý của xe.</p>',
+unit:'%',tol:.005,run(){const h=.2*.55+.15*.15+.05*.2+.05*.1;return{ans:h*100,steps:[
+{h:'Công thức',b:'H = Σ (hao mòn bộ phận i × tỷ trọng giá trị bộ phận i) / Σ tỷ trọng. Tổng tỷ trọng = 100% nên không cần chia.'},
+{h:'Tính',b:`20% × 55% = 11%; 15% × 15% = 2,25%; 5% × 20% = 1%; 5% × 10% = 0,5% → H = <b>${nf(h*100)}%</b>.`}],note:'Giáo trình: 14,75%.'}}});
+ex({m:3,t:'may_hm',title:'Hao mòn kinh tế của dây chuyền sản xuất bia thủ công',lv:'Trung bình',src:'Bài tập chi phí (CĐ5) – bài 4',
+prompt:'<p>Dây chuyền có tuổi đời kinh tế 20 năm, tuổi đời hiệu quả 8 năm. Dòng tiền thuần hiện nay 1.000 triệu/năm; do thuế tiêu thụ đặc biệt (sửa đổi) dự báo giảm còn 700 triệu/năm đến hết tuổi đời. Tỷ suất sinh lời trung bình ngành 15%. Tính hao mòn kinh tế.</p>',
+unit:'triệu đồng',run(){const a=300*pa(.15,12);return{ans:a,steps:[
+{h:'1. Thu nhập mất đi hàng năm',b:'1.000 − 700 = <b>300</b> triệu/năm.'},
+{h:'2. Số năm còn lại',b:'Tuổi đời kinh tế còn lại = 20 − 8 = <b>12</b> năm.'},
+{h:'3. Hiện tại hóa niên kim',b:`Hệ số = [1 − 1,15<sup>−12</sup>]/0,15 = ${nf(pa(.15,12),4)} → 300 × ${nf(pa(.15,12),4)} = <b>${nf(a)}</b> triệu.`}],note:'Giáo trình: 1.626,19 triệu. Đây là hao mòn NGOẠI BIÊN (do thuế, thị trường) và không khắc phục được.'}}});
+ex({m:3,t:'may_cp',title:'Chi phí tái tạo trạm trộn bê tông và giá trị sau hao mòn',lv:'Trung bình',src:'Bài tập chi phí (CĐ5) – bài 5',
+prompt:'<p>Trạm trộn bê tông của công ty X (mua từ ABB): thiết bị nhập khẩu CIF <b>300.000 USD</b> (tỷ giá 25.000 đ/USD, thuế nhập khẩu 0%), vận chuyển 10 triệu; phần trong nước: nguyên vật liệu 370 triệu, máy thiết bị 220, nhân công 310, lắp đặt 40; quản lý phân xưởng 120, quản lý doanh nghiệp 130; lợi nhuận 10% tổng chi phí. Tuổi đời kinh tế 30 năm, hiệu quả 6 năm. Tính giá trị trạm.</p>',
+unit:'triệu đồng',run(){const imp=300000*25000/1e6;const tot=imp+10+370+220+310+40+120+130;const prof=tot*.1;const rc=tot+prof;const hm=6/30;return{ans:rc*(1-hm),steps:[
+{h:'1. Chi phí trực tiếp',b:`Nhập khẩu: 300.000 × 25.000 = <b>${nf(imp,0)}</b> triệu; vận chuyển 10; vật liệu 370; máy 220; nhân công 310; lắp đặt 40.`},
+{h:'2. Chi phí gián tiếp và tổng',b:`Quản lý phân xưởng 120 + quản lý DN 130 = 250 → tổng chi phí = <b>${nf(tot,0)}</b> triệu.`},
+{h:'3. Lợi nhuận và chi phí tái tạo',b:`Lợi nhuận 10% = ${nf(prof,0)} → chi phí tái tạo = <b>${nf(rc,0)}</b> triệu (mới 100%).`},
+{h:'4. Hao mòn theo tuổi đời',b:`6/30 = <b>${pct(hm,0)}</b>.`},
+{h:'5. Giá trị',b:`${nf(rc,0)} × (1 − 20%) = <b>${nf(rc*(1-hm),0)}</b> triệu.`}],note:'Giáo trình: 7.656 triệu (9.570 × 80%).'}}});
+ex({m:3,t:'may_tn',title:'So sánh: máy ủi bánh xích Komatsu 2012',lv:'Trung bình',src:'Bài tập thị trường (CĐ5) – bài 2',
+prompt:`<p>Máy ủi thẩm định: SX 2012, công suất 50 m³/h, 18 tấn, lực ủi 7.000 kg. So sánh: SS1 (2010, 50, 18 tấn, 7.500 kg) giá 2.400; SS2 (2012, 60, 15 tấn, 7.000 kg) giá 2.610; SS3 (2012, 50, 15 tấn, 7.500 kg) giá 2.530 (triệu). Tương quan giá: SX 2012 = 110% so với 2010; công suất 50 = 90% so với 60; 18 tấn = 105% so với 15 tấn; lực ủi 7.000 = 93% so với 7.500. Chất lượng còn lại như nhau. Ước tính giá trị (cộng tổng tỷ lệ điều chỉnh trên giá gốc, cách giáo trình).</p>`,
+unit:'triệu đồng',tol:.005,run(){const p=[2400*(1+.10-.07),2610*(1-.10+.05),2530*(1+.05-.07)];const m=p.reduce((s,x)=>s+x,0)/3;return{ans:m,steps:[
+{h:'1. Tỷ lệ điều chỉnh từng yếu tố (đưa về thẩm định)',b:'Năm SX: SS1 +10% (2010 → 2012). Công suất: SS2 90% − 100% = −10%. Trọng lượng: SS2, SS3 +5%. Lực ủi: SS1, SS3 93% − 100% = −7%.'},
+{h:'2. Giá chỉ dẫn (cộng tổng tỷ lệ)',b:`SS1: 2.400 × (1 + 10% − 7%) = <b>${nf(p[0],1)}</b>.<br>SS2: 2.610 × (1 − 10% + 5%) = <b>${nf(p[1],1)}</b>.<br>SS3: 2.530 × (1 + 5% − 7%) = <b>${nf(p[2],1)}</b>.`},
+{h:'3. Kiểm tra chênh lệch (&lt; 15%)',b:`Trung bình ${nf(m,2)}; lệch ${p.map(x=>pct(x/m-1,1)).join(' / ')}. Chênh lệch rất nhỏ.`},
+{h:'4. Chọn',b:`Phương án 1: trung bình <b>${nf(m,2)}</b> triệu. Phương án 2 (chọn SS3 vì gộp, biên độ, thuần nhỏ nhất): 2.479,4 triệu.`}],note:'Giáo trình: 2.476,97 triệu (hoặc 2.479,4). Nếu nhân nối tiếp các hệ số thay vì cộng tỷ lệ, kết quả hơi thấp hơn (~2.464); cả hai đều được nếu nêu rõ.'}}});
+ex({m:3,t:'may_tn',title:'Điều chỉnh điều kiện thanh toán của máy so sánh',lv:'Cơ bản',src:'Bài tập thị trường (CĐ5) – bài 1',
+prompt:'<p>Máy so sánh bán 120 triệu, trả 40% sau ký hợp đồng và 60% sau 1 năm; lãi suất vay thương mại 12%/năm. Tài sản thẩm định mua trong điều kiện thương mại bình thường (trả ngay). Tính giá máy so sánh sau điều chỉnh.</p>',
+unit:'triệu đồng',run(){const v=48+72/1.12;return{ans:v,steps:[
+{h:'1. Tách phần trả ngay và trả chậm',b:'Trả ngay 40% × 120 = 48 triệu; trả chậm 60% × 120 = 72 triệu sau 1 năm.'},
+{h:'2. Chiết khấu phần trả chậm',b:`72 / 1,12 = <b>${nf(72/1.12)}</b> triệu.`},
+{h:'3. Giá tương đương trả ngay',b:`48 + ${nf(72/1.12)} = <b>${nf(v)}</b> triệu.`}],note:'Giáo trình: 112.285.715 đồng.'}}});
+ex({m:3,t:'may_tn',title:'Thu nhập: giá trị dây chuyền máy và IRR',lv:'Trung bình',src:'Bài tập thu nhập (CĐ5) – bài 1',
+prompt:'<p>Dòng tiền thuần năm 1 là 700 triệu, mỗi năm tăng 10% (5 năm). Giá trị thu hồi năm 5: 50 triệu (trước thuế 20%). Vốn chủ 100%, chi phí vốn 15%, dòng tiền cuối năm. Tính giá trị dây chuyền; và IRR nếu giá mua 2.800 triệu.</p>',
+unit:'triệu đồng (giá trị)',run(){const cf=[700,770,847,931.7,1024.87];const sal=40;const pv=cf.reduce((s,c,i)=>s+c/Math.pow(1.15,i+1),0)+sal/Math.pow(1.15,5);const irr=irrf([-2800,...cf.slice(0,4),cf[4]+sal]);return{ans:pv,steps:[
+{h:'1. Dòng tiền thuần các năm',b:'700; 770; 847; 931,7; 1.024,87 (mỗi năm × 1,1).'},
+{h:'2. Giá trị thu hồi sau thuế',b:'50 × (1 − 20%) = <b>40</b> triệu (thu cuối năm 5).'},
+{h:'3. Hiện giá ở 15%',b:`Σ CF<sub>t</sub>/1,15<sup>t</sup> + 40/1,15<sup>5</sup> = <b>${nf(pv)}</b> triệu.`},
+{h:'4. IRR khi giá mua 2.800',b:`NPV tại 15% = ${nf(pv-2800)} (> 0) nên IRR > 15%; tại 16% NPV ≈ −60,11. Nội suy (hoặc giải chính xác): IRR ≈ <b>${pct(irr)}</b> > 15% → đáng mua.`}],note:'Giáo trình: 2.809,97 triệu; IRR 15,14%.'}}});
+ex({m:3,t:'may_tn',title:'Chọn nhà cung cấp thiết bị bằng NPV với WACC',lv:'Khó',src:'Bài tập thu nhập (CĐ5) – bài 3',
+prompt:'<p>X: giá 5.150, tuổi đời 8 năm, dòng tiền thuần 1.100/năm, thanh lý 50 (trước thuế). Y: giá 5.650, 8 năm, 1.200/năm, thanh lý 80. Vốn chủ 75% (15%), vay 25% (12%, lãi trả hàng năm, gốc cuối kỳ), thuế 20%. Tính NPV của X (triệu đồng) và chọn nhà cung cấp.</p>',
+unit:'triệu đồng (NPV của X)',tol:.02,run(){const w=.75*.15+.25*.12*.8;const nx=-5150+1100*pa(w,8)+50*.8/Math.pow(1+w,8);const ny=-5650+1200*pa(w,8)+80*.8/Math.pow(1+w,8);return{ans:nx,steps:[
+{h:'1. WACC (chi phí vay sau thuế)',b:`WACC = 0,75 × 15% + 0,25 × 12% × (1 − 20%) = 11,25% + 2,4% = <b>${pct(w)}</b>.`},
+{h:'2. NPV của X',b:`Niên kim 8 năm = ${nf(pa(w,8),4)}; thanh lý sau thuế = 50 × 0,8 = 40 → NPV<sub>X</sub> = −5.150 + 1.100 × ${nf(pa(w,8),4)} + 40/(1+WACC)<sup>8</sup> = <b>${nf(nx)}</b>.`},
+{h:'3. NPV của Y',b:`NPV<sub>Y</sub> = −5.650 + 1.200 × ${nf(pa(w,8),4)} + 64/(1+WACC)<sup>8</sup> = <b>${nf(ny)}</b>.`},
+{h:'4. Kết luận',b:`NPV<sub>X</sub> (${nf(nx)}) > NPV<sub>Y</sub> (${nf(ny)}) → <b>chọn X</b>. IRR của X khoảng ${pct(irrf([-5150,...Array(7).fill(1100),1100+40]))}.`}],note:'Giáo trình: NPV X = 27,61; NPV Y = 5,61 → chọn X. Lưu ý khác với các bài vốn hóa: ở đây tổng dòng tiền phải chiết khấu theo từng năm.'}}});
+ex({m:3,t:'may_tn',title:'Khấu hao số dư giảm dần có điều chỉnh, NPV và IRR của thiết bị',lv:'Khó',src:'Bài tập thu nhập (CĐ5) – bài 2',
+prompt:'<p>Mua thiết bị 1.200 triệu, 4 năm, dòng tiền thuần (chưa kể khấu hao) 75; 110; 140; 150. Khấu hao theo số dư giảm dần có điều chỉnh (hệ số 1,5), thanh lý 40 (trước thuế 20%). Vốn chủ 70% (16%), vay 30% (13%). Thuế 20%. Tính NPV (triệu) theo kiểu giáo trình: dòng tiền = thu thuần + khấu hao (không xét lá chắn thuế).</p>',
+unit:'triệu đồng (NPV)',tol:.02,run(){const d1=1200*.375,d2=(1200-d1)*.375;const rest=1200-d1-d2;const dep2=[d1,d2,rest/2,rest/2];const cf=[75,110,140,150].map((c,i)=>c+dep2[i]);const w=.7*.16+.3*.13*.8;const npv=cf.reduce((s,c,i)=>s+c/Math.pow(1+w,i+1),0)+32/Math.pow(1+w,4)-1200;const irr=irrf([-1200,cf[0],cf[1],cf[2],cf[3]+32]);return{ans:npv,steps:[
+{h:'1. Tỷ lệ khấu hao nhanh',b:'(1/4) × 1,5 = <b>37,5%</b>.'},
+{h:'2. Bảng khấu hao',b:`Năm 1: 1.200 × 37,5% = ${nf(d1)}; còn lại ${nf(1200-d1)}.<br>Năm 2: ${nf(1200-d1)} × 37,5% = ${nf(d2)}; còn lại ${nf(rest)}.<br>Năm 3–4: mức khấu hao nhanh nhỏ hơn mức đường thẳng phần còn lại, chuyển đường thẳng = ${nf(rest)}/2 = ${nf(rest/2)}/năm.`},
+{h:'3. Dòng tiền',b:`Năm 1: 75 + ${nf(dep2[0])} = ${nf(cf[0])}; năm 2: ${nf(cf[1])}; năm 3: ${nf(cf[2])}; năm 4: ${nf(cf[3])} + thanh lý sau thuế 40 × 0,8 = 32.`},
+{h:'4. WACC',b:`0,7 × 16% + 0,3 × 13% × 0,8 = <b>${pct(w)}</b>.`},
+{h:'5. NPV và IRR',b:`NPV = <b>${nf(npv)}</b> triệu > 0 → <b>nên mua</b>. IRR ≈ <b>${pct(irr)}</b> > WACC.`}],note:'Giáo trình: NPV = +52,97 triệu; IRR = 16,58%.'}}});
+ex({m:3,t:'tsvh',title:'Tài sản vô hình: phương pháp tiền sử dụng (ví dụ minh họa)',lv:'Trung bình',src:'Ví dụ của trợ giảng minh họa Chuẩn mực/CĐ6 (không phải đề gốc)',
+prompt:'<p>Một thương hiệu giúp doanh nghiệp có doanh thu dự báo 5 năm: 1.000; 1.100; 1.200; 1.300; 1.400 (triệu). Tỷ lệ tiền sử dụng thương hiệu trên thị trường 5% doanh thu, thuế TNDN 20%, tỷ suất chiết khấu 14%, thu cuối năm. Ước tính giá trị thương hiệu (không có giá trị cuối kỳ).</p>',
+unit:'triệu đồng',run(){const s=[1000,1100,1200,1300,1400];const cf=s.map(x=>x*.05*.8);const pv=cf.reduce((a,c,i)=>a+c/Math.pow(1.14,i+1),0);return{ans:pv,steps:[
+{h:'1. Tiền sử dụng tiết kiệm được mỗi năm',b:`Doanh thu × 5%: ${s.map(x=>nf(x*.05,0)).join('; ')}.`},
+{h:'2. Sau thuế 20%',b:`× 0,8: ${cf.map(x=>nf(x,0)).join('; ')}.`},
+{h:'3. Hiện tại hóa ở 14%',b:`${cf.map((x,i)=>nf(x,0)+'/1,14<sup>'+(i+1)+'</sup>').join(' + ')} = <b>${nf(pv)}</b> triệu.`}],note:'Nhất quán: nếu tiền sử dụng đã gồm chi phí duy trì thương hiệu thì không trừ chi phí này nữa; nếu không gồm thì phải trừ chi phí duy trì khỏi dòng tiền. Có thể cộng thêm giá trị cuối kỳ nếu thương hiệu tiếp tục tạo thu nhập.'}}});
+// Bài học. t = mã chủ đề (khớp với câu hỏi và bài tính). k = các ý cần nhớ.
+const MON={1:{n:'Môn 1',t:'Pháp luật và nguyên lý',d:'Luật Giá 2023, doanh nghiệp, thuế, hợp đồng, sở hữu trí tuệ, cơ sở giá trị, toán ứng dụng'},2:{n:'Môn 2',t:'Thẩm định giá bất động sản',d:'Ba cách tiếp cận, phương pháp thặng dư, bài tính và đề 2017'},3:{n:'Môn 3',t:'Động sản: máy, thiết bị, tài sản vô hình',d:'Hao mòn, cách tiếp cận chi phí, thu nhập, thị trường; tài sản vô hình'}};
+const LES=[];
+const L=(m,t,title,sum,html,k)=>LES.push({m,t,title,sum,html,k});
+
+/* ====== MÔN 1 ====== */
+L(1,'luatgia','Luật Giá 2023: khái niệm, nguyên tắc, điều tiết giá','Hiệu lực 01/07/2024. Thẩm định giá là tư vấn, khác định giá.',`
+<p>Luật Giá 2023 có hiệu lực từ <b>01/07/2024</b>; hướng dẫn bởi Nghị định <b>85/2024/NĐ-CP</b> (chi tiết Luật) và <b>78/2024/NĐ-CP</b> (về thẩm định giá). Phần thẩm định giá của Luật nằm ở Điều 40–66.</p>
+<h4>Khái niệm cần phân biệt</h4>
+<div class="tw"><table><tr><th>Khái niệm</th><th>Nội dung (Điều 4)</th></tr>
+<tr><td>Thẩm định giá (k16)</td><td>Hoạt động <b>tư vấn</b> xác định giá trị tài sản tại một địa điểm, thời điểm, cho một mục đích nhất định, do doanh nghiệp thẩm định giá hoặc hội đồng thẩm định giá thực hiện theo Chuẩn mực</td></tr>
+<tr><td>Định giá (k11)</td><td>Cơ quan nhà nước có thẩm quyền hoặc tổ chức, cá nhân kinh doanh xác định <b>giá</b> hàng hóa, dịch vụ</td></tr>
+<tr><td>Điều tiết giá (k8)</td><td>Bình ổn giá; định giá; hiệp thương giá; kê khai giá, niêm yết giá, giá tham chiếu; kiểm tra yếu tố hình thành giá</td></tr></table></div>
+<h4>Hai loại hoạt động thẩm định giá (Điều 40)</h4>
+<ul><li><b>Dịch vụ thẩm định giá</b>: doanh nghiệp thẩm định giá, hợp đồng dân sự.</li><li><b>Thẩm định giá của Nhà nước</b>: hội đồng thẩm định giá, theo quyết định của người có thẩm quyền (Điều 59).</li></ul>
+<h4>Nguyên tắc thẩm định giá (Điều 41): ba ý</h4>
+<p>Tuân thủ pháp luật và Chuẩn mực; độc lập, khách quan, trung thực; chịu trách nhiệm theo quy định của pháp luật. Chuẩn mực do <b>Bộ trưởng Bộ Tài chính</b> ban hành (Điều 42).</p>
+<h4>Quản lý nhà nước và hành vi cấm</h4>
+<p>Chính phủ thống nhất quản lý; <b>Bộ Tài chính</b> chịu trách nhiệm trước Chính phủ; bộ quản lý trong lĩnh vực của mình; UBND cấp tỉnh ở địa phương. Điều 7 cấm riêng từng nhóm: cơ quan quản lý, tổ chức cá nhân, doanh nghiệp thẩm định giá, thẩm định viên, hội đồng và thành viên, khách hàng và bên thứ ba. Chung cho các nhóm: <b>mua chuộc, hối lộ, cấu kết làm sai lệch giá trị</b>, thông đồng về giá.</p>
+<p>Danh mục <b>bình ổn giá</b> (Phụ lục 1): xăng dầu thành phẩm; LPG; sữa trẻ em dưới 06 tuổi; thóc tẻ, gạo tẻ; phân đạm, DAP, NPK; thức ăn chăn nuôi, thủy sản; vắc-xin phòng bệnh gia súc, gia cầm; thuốc bảo vệ thực vật; thuốc thiết yếu tại cơ sở khám chữa bệnh.</p>
+<p>Giá dịch vụ thẩm định giá do hai bên thỏa thuận trong hợp đồng, bảo đảm <b>bù đắp chi phí thực tế hợp lý</b> (Điều 57). Tranh chấp: thương lượng/hòa giải, trọng tài thương mại, Tòa án (Điều 58).</p>`,
+['Luật Giá 2023 hiệu lực 01/07/2024','Thẩm định giá = tư vấn; định giá = xác định giá','Điều 41: 3 nguyên tắc','Chuẩn mực do Bộ trưởng BTC ban hành','Danh mục bình ổn giá: nhớ sữa trẻ em dưới 06 tuổi']);
+
+L(1,'tdv','Thẻ thẩm định viên và hành nghề','Dự thi (Điều 44) khác đăng ký hành nghề (Điều 45).',`
+<h4>Dự thi cấp thẻ (Điều 44 k2)</h4>
+<ul><li>Năng lực hành vi dân sự đầy đủ.</li><li>Bằng đại học trở lên.</li><li>Chứng chỉ đào tạo nghiệp vụ thẩm định giá phù hợp lĩnh vực, <b>trừ</b> người có bằng cao đẳng trở lên chuyên ngành giá hoặc thẩm định giá.</li></ul>
+<p>Thẻ có hai lĩnh vực: <b>thẩm định giá tài sản</b> và <b>thẩm định giá doanh nghiệp</b>. Người có thẻ lĩnh vực doanh nghiệp được hành nghề cả hai; thẻ tài sản không được thẩm định giá doanh nghiệp.</p>
+<h4>Đăng ký hành nghề (Điều 45 k1)</h4>
+<div class="tw"><table><tr><th>Điều kiện</th><th>Chi tiết</th></tr>
+<tr><td>a</td><td>Năng lực hành vi dân sự đầy đủ</td></tr>
+<tr><td>b</td><td>Hợp đồng lao động còn hiệu lực với doanh nghiệp (trừ người đại diện theo pháp luật)</td></tr>
+<tr><td>c</td><td>Làm việc tại DN thẩm định giá, cơ quan quản lý giá và thẩm định giá với trình độ đại học trở lên <b>đủ 36 tháng</b>; <b>24 tháng</b> nếu đại học chuyên ngành giá/thẩm định giá theo chương trình định hướng ứng dụng</td></tr>
+<tr><td>d</td><td>Đã cập nhật kiến thức (trừ thẻ cấp dưới 01 năm)</td></tr>
+<tr><td>đ</td><td>Không thuộc diện không được hành nghề</td></tr></table></div>
+<h4>Ai không được hành nghề (k2)</h4>
+<p>Cán bộ, công chức; sĩ quan, quân nhân chuyên nghiệp, công nhân quốc phòng; sĩ quan, hạ sĩ quan nghiệp vụ, chuyên môn kỹ thuật, công nhân công an; người đang bị cấm hành nghề; đang bị khởi tố, truy tố, xét xử; đã bị kết án một số tội kinh tế, chức vụ chưa xóa án tích; người đang bị tước thẻ…</p>
+<p>Đăng ký với Bộ Tài chính <b>thông qua doanh nghiệp thẩm định giá</b>; <b>không</b> được đăng ký đồng thời ở hai doanh nghiệp. Thẩm định viên về giá (Điều 46) = có thẻ + đã đăng ký hành nghề + Bộ Tài chính thông báo.</p>
+<h4>Quyền, nghĩa vụ, hành vi cấm (Điều 47, Điều 7 k4)</h4>
+<p>Quyền: ký chứng thư, báo cáo; quan điểm độc lập; yêu cầu khách hàng phối hợp; <b>từ chối</b> khi không đúng lĩnh vực hoặc hồ sơ không đủ, không tin cậy. Cấm: thông tin sai về trình độ; giả mạo, cho thuê, cho mượn thẻ; lập chứng thư với tư cách cá nhân; ký sai lĩnh vực; thẩm định giá cho người có liên quan; lập khống; mua chuộc, thông đồng.</p>`,
+['Dự thi: đại học + chứng chỉ nghiệp vụ (trừ CĐ chuyên ngành giá)','Hành nghề: HĐLĐ + 36 tháng (24 tháng) + cập nhật kiến thức','Không đăng ký đồng thời 2 doanh nghiệp','Có thẻ chưa phải là thẩm định viên: phải đăng ký và được BTC thông báo','Cấm: ký với tư cách cá nhân, cho mượn thẻ']);
+
+L(1,'dntdg','Doanh nghiệp thẩm định giá','Điều kiện, đình chỉ và thu hồi, nghĩa vụ.',`
+<h4>Điều kiện cấp giấy chứng nhận đủ điều kiện (Điều 49)</h4>
+<div class="tw"><table><tr><th>Loại hình</th><th>Điều kiện</th></tr>
+<tr><td>Chung</td><td>Ít nhất <b>05</b> người có thẻ thẩm định viên đủ điều kiện hành nghề tại doanh nghiệp</td></tr>
+<tr><td>DNTN, TNHH một thành viên, hợp danh</td><td>Chủ doanh nghiệp/người đại diện đáp ứng Điều 51; chủ sở hữu cá nhân hoặc các thành viên hợp danh phải là người có thẻ hành nghề tại doanh nghiệp</td></tr>
+<tr><td>TNHH hai thành viên trở lên, cổ phần</td><td>Ít nhất <b>02</b> thành viên/cổ đông có thẻ hành nghề tại DN; thành viên là tổ chức: tổng vốn góp <b>không quá 35%</b> vốn điều lệ; vốn góp của thành viên/cổ đông là thẩm định viên <b>trên 50%</b> vốn điều lệ</td></tr></table></div>
+<h4>Người đại diện theo pháp luật, Giám đốc/Tổng giám đốc (Điều 51)</h4>
+<p>Ghi tên trên Giấy chứng nhận đăng ký doanh nghiệp; là thẩm định viên tại doanh nghiệp đó; <b>đủ 36 tháng</b> là thẩm định viên; duy trì điều kiện hành nghề; không từng giữ vị trí này ở doanh nghiệp bị thu hồi giấy chứng nhận (12 tháng nếu thu hồi lần 1, 60 tháng nếu lần 2).</p>
+<h4>Mất điều kiện, đình chỉ, thu hồi</h4>
+<div class="tw"><table><tr><th>Tình huống</th><th>Hậu quả</th></tr>
+<tr><td>Không đáp ứng điều kiện Điều 49, 50</td><td>Báo cáo Bộ Tài chính trong <b>10 ngày</b>; khắc phục trong tối đa <b>03 tháng</b></td></tr>
+<tr><td><b>Đình chỉ</b> (Điều 54 k1)</td><td>Không đáp ứng Điều 49 k1 trong 03 tháng liên tục; phát hành chứng thư do người không phải thẩm định viên ký; các trường hợp theo luật khác</td></tr>
+<tr><td><b>Thu hồi</b> giấy chứng nhận (k2)</td><td>Kê khai gian lận hồ sơ; không phát hành chứng thư trong 12 tháng liên tục; 60 ngày sau đình chỉ vẫn không khắc phục; tự chấm dứt; bị thu hồi đăng ký doanh nghiệp</td></tr></table></div>
+<p>Nghĩa vụ (Điều 53 k2): kiểm soát chất lượng báo cáo; chứng thư tuân thủ Chuẩn mực; bồi thường thiệt hại; <b>mua bảo hiểm trách nhiệm nghề nghiệp hoặc trích lập dự phòng rủi ro nghề nghiệp</b>; quản lý thẩm định viên; lưu trữ hồ sơ.</p>`,
+['5 thẻ; 2 thành viên/cổ đông có thẻ','Tổ chức ≤ 35%; thẩm định viên > 50% vốn điều lệ','Báo cáo 10 ngày, khắc phục ≤ 3 tháng','Đình chỉ (3 tháng, ký sai) khác thu hồi (12 tháng không phát hành, gian lận)']);
+
+L(1,'hdtdg','Thẩm định giá của Nhà nước và hội đồng thẩm định giá','Điều 59–64: thành phần, họp, biểu quyết.',`
+<p>Thẩm định giá của Nhà nước (Điều 59) là một trong các cơ sở để xem xét, quyết định, phê duyệt giá khi bán, thanh lý, cho thuê, liên doanh, liên kết, chuyển giao tài sản công hoặc mua, thuê hàng hóa, dịch vụ, tài sản có dùng vốn nhà nước. <b>Không áp dụng</b> với hàng hóa, dịch vụ thuộc Danh mục Nhà nước định giá. Thực hiện qua <b>hội đồng thẩm định giá</b>.</p>
+<div class="tw"><table><tr><th>Nội dung</th><th>Quy định (Điều 60)</th></tr>
+<tr><td>Số thành viên</td><td>Tối thiểu <b>03</b>, gồm Chủ tịch; là cán bộ, công chức, viên chức, người lao động thuộc quyền quản lý của người thành lập; cần thiết có thể thuê người có chứng nhận chuyên môn</td></tr>
+<tr><td>Chuyên môn</td><td>Ít nhất <b>50%</b> thành viên, gồm cả Chủ tịch, có một trong: bằng CĐ trở lên chuyên ngành giá/thẩm định giá; thẻ thẩm định viên; chứng chỉ đào tạo nghiệp vụ thẩm định giá; chứng chỉ bồi dưỡng thẩm định giá nhà nước</td></tr>
+<tr><td>Họp</td><td>Tập thể, quyết định theo đa số; có mặt ít nhất <b>2/3</b>; hội đồng 3 người phải đủ 3; vắng mặt phải có văn bản nêu lý do và ý kiến độc lập</td></tr>
+<tr><td>Biểu quyết</td><td>Theo đa số; ngang nhau thì ý kiến bên có biểu quyết của <b>Chủ tịch</b> là quyết định; thành viên có quyền bảo lưu</td></tr></table></div>
+<p>Quyền của hội đồng: yêu cầu cung cấp thông tin; thuê tổ chức giám định; thuê doanh nghiệp thẩm định giá làm một phần hoặc toàn bộ (phải rà soát đánh giá quá trình); báo cáo cấp có thẩm quyền khi không đủ thông tin. Thông báo kết quả và báo cáo của hội đồng chỉ có giá trị trong thời gian hiệu lực, đúng mục đích, đúng tài sản và số lượng (Điều 64).</p>`,
+['≥ 3 thành viên; ≥ 50% có chứng nhận chuyên môn (gồm Chủ tịch)','Họp: ≥ 2/3; hội đồng 3 người phải đủ 3','Ngang phiếu: bên Chủ tịch','Không áp dụng với hàng hóa Nhà nước định giá']);
+
+L(1,'chungthu','Chứng thư, báo cáo thẩm định giá và hồ sơ','Chữ ký, hiệu lực 6 tháng, lưu trữ 10 năm.',`
+<div class="tw"><table><tr><th></th><th>Báo cáo thẩm định giá</th><th>Chứng thư thẩm định giá</th></tr>
+<tr><td>Bản chất</td><td>Văn bản trình bày quá trình thẩm định giá, căn cứ để lập chứng thư</td><td>Văn bản thông báo giá trị tài sản và nội dung chính của báo cáo cho khách hàng, bên liên quan</td></tr>
+<tr><td>Chữ ký (Điều 55)</td><td>Thẩm định viên thực hiện ký; người đại diện theo pháp luật <b>phê duyệt</b></td><td>Thẩm định viên thực hiện ký; người đại diện theo pháp luật (hoặc người đứng đầu chi nhánh) ký và <b>đóng dấu</b></td></tr>
+<tr><td>Quan hệ</td><td colspan="2">Báo cáo <b>không thể tách rời</b> chứng thư. Cả hai chỉ có giá trị trong thời hạn hiệu lực, đúng mục đích, đúng thông tin và số lượng tài sản trong hợp đồng.</td></tr></table></div>
+<ul><li><b>Hiệu lực chứng thư</b> (Chuẩn mực Hồ sơ, Điều 7): tính từ ngày phát hành; xác định theo đặc điểm tài sản, biến động pháp lý/thị trường, mục đích; <b>tối đa 06 tháng</b>. Thông báo kết quả của hội đồng cũng tối đa 06 tháng.</li>
+<li>Người đại diện được ủy quyền cho người quản lý doanh nghiệp ký chứng thư, duyệt báo cáo; người được ủy quyền phải là <b>thẩm định viên tại doanh nghiệp</b>.</li>
+<li>Chứng thư phải được cập nhật vào <b>Cơ sở dữ liệu quốc gia về giá</b> (trừ bí mật nhà nước).</li>
+<li>Báo cáo cần thuyết minh, lập luận, phân tích; số liệu dẫn chiếu nguồn cụ thể; có thể phát hành điện tử với chữ ký điện tử.</li>
+<li><b>Lưu trữ hồ sơ</b>: tối thiểu <b>10 năm</b> kể từ ngày phát hành chứng thư. Hồ sơ gồm báo cáo, chứng thư, hợp đồng, tài liệu tài sản và tài sản so sánh, báo cáo chuyên gia, biên bản khảo sát, ảnh, tài liệu phân tích.</li></ul>`,
+['Chứng thư ≤ 6 tháng; lưu hồ sơ ≥ 10 năm','Báo cáo: ký + phê duyệt; chứng thư: ký + đóng dấu','Người được ủy quyền ký phải là thẩm định viên tại DN','Cập nhật CSDL quốc gia về giá']);
+
+L(1,'cosogt','Cơ sở giá trị và giả thiết','Năm cơ sở giá trị, khi nào dùng giả thiết đặc biệt.',`
+<p>Cơ sở giá trị là nền tảng của thẩm định giá: ảnh hưởng đến chọn phương pháp, thông tin đầu vào, giả thiết, quan điểm giá trị. Xác định theo <b>mục đích</b> và tình huống giao dịch, sau khi trao đổi với bên yêu cầu.</p>
+<div class="tw"><table><tr><th>Cơ sở giá trị</th><th>Từ khóa</th></tr>
+<tr><td>Giá trị thị trường</td><td>Khoản tiền <b>ước tính</b>; người sẵn sàng mua – bán; giao dịch khách quan, độc lập; tiếp thị đầy đủ; hiểu biết, thận trọng, không bị ép buộc. Không phải giá bán thực tế hay mức ấn định trước</td></tr>
+<tr><td>Giá trị thuê thị trường</td><td>Ước tính để thuê một quyền lợi từ BĐS theo điều khoản thuê thích hợp; dùng khi thẩm định hợp đồng thuê</td></tr>
+<tr><td>Giá trị đầu tư</td><td>Đối với <b>một</b> chủ sở hữu hoặc chủ sở hữu tiềm năng cụ thể, cho hoạt động đầu tư cụ thể; đo hiệu quả đầu tư</td></tr>
+<tr><td>Giá trị bắt buộc phải bán</td><td>Bán trong thời gian hạn chế, <b>không tiếp thị đầy đủ</b>; người mua có thể không kiểm tra đủ</td></tr>
+<tr><td>Giá trị ngang bằng</td><td>Hai bên đã xác định cụ thể, phản ánh lợi ích tương ứng của hai bên</td></tr>
+<tr><td>Giá trị hợp lý</td><td>Theo pháp luật về lập báo cáo tài chính và IFRS</td></tr></table></div>
+<h4>Giả thiết và giả thiết đặc biệt (Điều 10)</h4>
+<ul><li><b>Giả thiết</b>: dùng khi thông tin còn hạn chế, chưa chắc chắn mà không khắc phục được (hạn chế hồ sơ pháp lý, đặc điểm tài sản, thông tin khác).</li>
+<li><b>Giả thiết đặc biệt</b>: tình trạng tài sản <b>khác thực tế</b> tại thời điểm thẩm định giá nhưng phù hợp mục đích; phải <b>thông báo</b> và có <b>đồng thuận bằng văn bản</b> của bên yêu cầu, phù hợp pháp luật. Nếu làm thẩm định giá không khả thi thì loại bỏ.</li></ul>`,
+['Giá trị thị trường là ước tính','Đầu tư: chủ thể cụ thể; ngang bằng: hai bên cụ thể','Bắt buộc phải bán: thiếu tiếp thị','Giả thiết đặc biệt cần văn bản đồng thuận']);
+
+L(1,'thongtin','Thu thập, đánh giá, phân tích thông tin','Chuẩn mực áp dụng chung: nguồn, bằng chứng, 03 tài sản so sánh.',`
+<ul><li><b>Xem xét thông tin</b>: dùng thông tin tin cậy, phù hợp. Khi hồ sơ khách hàng khác kết quả khảo sát hoặc không đầy đủ: <b>kịp thời trao đổi</b> để bổ sung, làm rõ, bảo đảm khách quan; nghiêm cấm tác động ảnh hưởng đến giá trị.</li>
+<li><b>Phân tích thông tin</b> theo nhóm: thông tin bên yêu cầu, mục đích, thời điểm, căn cứ pháp lý, cơ sở giá trị; đặc điểm pháp lý, kinh tế–kỹ thuật; thị trường; <b>sử dụng tốt nhất và hiệu quả nhất (chỉ BĐS)</b>.</li>
+<li><b>Sử dụng tốt nhất và hiệu quả nhất</b>: phù hợp pháp luật, khả thi về vật chất, kỹ thuật, mang lại hiệu quả kinh tế cao nhất.</li>
+<li><b>Tài sản so sánh</b>: ít nhất <b>03</b> tài sản từ các tổ chức, cá nhân khác nhau; thời điểm giao dịch/chào giá gần nhất, không quá <b>24 tháng</b> (hướng dẫn trong chuyên đề); ưu tiên gần nhất về khoảng cách, không bị giới hạn bởi ranh giới hành chính cấp xã, huyện trong tỉnh; mở rộng ra ngoài tỉnh phải nêu lý do.</li>
+<li>Biến động giá theo thời gian: điều chỉnh <b>về thời điểm thẩm định giá trước</b>, rồi mới điều chỉnh yếu tố so sánh. Giá chào bán/mua cần đánh giá để tìm mức giá phù hợp.</li>
+<li><b>Bằng chứng</b>: phiếu thu thập thông tin có chữ ký; trên internet phải dẫn chiếu đường link, lưu hình ảnh, chỉ từ website chính thức của cơ quan, tổ chức hoạt động hợp pháp; báo giá chào phải có tên, địa chỉ, mã số thuế (nếu có), dấu, thời điểm, hiệu lực.</li>
+<li><b>Thuần và gộp</b>: tổng điều chỉnh thuần có dấu (+/−); tổng điều chỉnh gộp cộng giá trị tuyệt đối.</li></ul>`,
+['≥ 03 tài sản so sánh, ≤ 24 tháng','Điều chỉnh về thời điểm trước','Tốt nhất và hiệu quả nhất: chỉ BĐS','Thuần có dấu, gộp là tuyệt đối']);
+
+L(1,'phapluatdn','Pháp luật doanh nghiệp','Loại hình, tư cách pháp nhân, vốn, phá sản.',`
+<div class="tw"><table><tr><th>Loại hình</th><th>Pháp nhân?</th><th>Trách nhiệm</th><th>Số thành viên</th><th>Ghi nhớ</th></tr>
+<tr><td>TNHH một thành viên</td><td>Có</td><td>Hữu hạn</td><td>1 (cá nhân/tổ chức)</td><td>Không phát hành cổ phần; hợp mô hình công ty mẹ–con</td></tr>
+<tr><td>TNHH hai thành viên trở lên</td><td>Có</td><td>Hữu hạn</td><td>2–<b>50</b></td><td>Ưu tiên các thành viên khác khi chuyển nhượng; không phát hành cổ phần</td></tr>
+<tr><td>Công ty cổ phần</td><td>Có</td><td>Hữu hạn</td><td>≥ <b>3</b> cổ đông</td><td>Vốn chia cổ phần bằng nhau; tự do chuyển nhượng; được phát hành chứng khoán</td></tr>
+<tr><td>Công ty hợp danh</td><td>Có</td><td>Thành viên hợp danh <b>vô hạn</b>; thành viên góp vốn hữu hạn</td><td>≥ 2 thành viên hợp danh (cá nhân)</td><td>Không phát hành chứng khoán</td></tr>
+<tr><td>Doanh nghiệp tư nhân</td><td><b>Không</b></td><td>Vô hạn</td><td>1 cá nhân</td><td>Không phát hành chứng khoán</td></tr></table></div>
+<ul><li><b>Pháp nhân</b> (BLDS Điều 84): thành lập hợp pháp; cơ cấu tổ chức chặt chẽ; tài sản độc lập và tự chịu trách nhiệm; nhân danh mình tham gia quan hệ pháp luật.</li>
+<li><b>Vốn điều lệ</b>: vốn góp hoặc cam kết góp trong thời hạn nhất định, ghi vào Điều lệ (DNTN: vốn đăng ký). <b>Vốn pháp định</b>: mức tối thiểu để thành lập ở ngành đặc thù.</li>
+<li>Đối tượng bị cấm thành lập doanh nghiệp: cơ quan nhà nước, đơn vị vũ trang; cán bộ, công chức, quân nhân; lãnh đạo DN 100% vốn nhà nước; người hạn chế hoặc mất năng lực hành vi; người bị phạt tù hoặc cấm kinh doanh.</li>
+<li>Hạn chế chuyển nhượng: cổ đông sáng lập không tự do chuyển nhượng ra ngoài trong <b>3 năm</b> kể từ khi thành lập; cổ phần phát hành riêng lẻ: 1 năm (Luật Chứng khoán).</li>
+<li>Đại diện theo pháp luật: (Tổng) Giám đốc hoặc Chủ tịch HĐTV/HĐQT (TNHH, cổ phần); Chủ tịch công ty (TNHH một thành viên); chủ doanh nghiệp (DNTN); thành viên hợp danh.</li>
+<li><b>Phá sản</b>: Luật Phá sản 2014 (hiệu lực 01/01/2015); chủ nợ không bảo đảm hoặc bảo đảm một phần, đại diện doanh nghiệp, cổ đông đại diện 20% cổ phần phổ thông… có quyền nộp đơn.</li></ul>`,
+['TNHH 2+ TV: tối đa 50; cổ phần: tối thiểu 3 cổ đông','DNTN không là pháp nhân; hợp danh vẫn là pháp nhân','Cổ đông sáng lập hạn chế chuyển nhượng 3 năm','Phá sản: Luật 2014']);
+
+L(1,'thue','Pháp luật thuế và quản lý thuế','Đặc trưng, tự khai tự nộp, kiểm tra và thanh tra.',`
+<p>Nguồn trong bộ tài liệu chỉ nêu khái quát; phần số liệu thuế suất GTGT, TNDN cần tra thêm luật hiện hành (không có trong tài liệu dự án).</p>
+<ul><li><b>Đặc trưng của thuế</b>: bắt buộc; không hoàn trả trực tiếp; không đối giá; không đối khoản; do Quốc hội quyết định bằng luật.</li>
+<li><b>Cấu trúc luật thuế</b>: tên gọi; phạm vi áp dụng (đối tượng chịu thuế, người nộp thuế, đối tượng không chịu thuế); căn cứ tính thuế (giá tính thuế, thuế suất); chế độ thu nộp; miễn giảm; điều khoản thi hành.</li>
+<li><b>Các loại thuế</b>: GTGT; TNDN; TTĐB; TNCN; xuất nhập khẩu; sử dụng đất nông nghiệp; sử dụng đất phi nông nghiệp; tài nguyên; bảo vệ môi trường.</li>
+<li><b>Trốn thuế</b> (gian lận): giảm hoặc không nộp thuế. <b>Tránh thuế</b>: chọn mức thuế thấp để nộp (chuyển giá, thiên đường thuế); giải pháp: quản lý giá và định mức chi phí, thỏa thuận trước về phương pháp xác định giá tính thuế (APA).</li>
+<li>Cơ sở pháp lý quản lý thuế: <b>Luật Quản lý thuế 2019</b>. Cơ chế <b>tự khai, tự nộp</b>.</li>
+<li><b>Kiểm tra thuế</b> tại trụ sở người nộp thuế: không quá <b>5 ngày</b>, gia hạn một lần không quá 5 ngày. <b>Thanh tra thuế</b>: tối đa <b>30 ngày</b>, gia hạn không quá 30 ngày; quy trình: quyết định → thanh tra → kết luận → giao quyết định.</li>
+<li>Quyền tự vệ của doanh nghiệp: từ chối khi không có quyết định; từ chối thông tin không liên quan; nhận biên bản, kết luận; bảo lưu ý kiến; khiếu nại, khởi kiện, tố cáo.</li></ul>`,
+['Thuế: không đối giá, không đối khoản','Kiểm tra tại trụ sở: ≤ 5 ngày (+5)','Thanh tra: ≤ 30 ngày (+30)','Luật Quản lý thuế 2019; tự khai, tự nộp']);
+
+L(1,'hopdong','Pháp luật hợp đồng và giải quyết tranh chấp','Vô hiệu, thời hiệu, hòa giải, trọng tài, Tòa án.',`
+<ul><li><b>Hợp đồng vô hiệu</b>: chỉ vô hiệu khi có tuyên bố của Tòa án (hoặc trọng tài); có thể vô hiệu toàn bộ, từng phần hoặc không vô hiệu. <b>Hậu quả</b>: các bên khôi phục tình trạng ban đầu, hoàn trả; bên có lỗi bồi thường thiệt hại.</li>
+<li><b>Thời hiệu</b> đề nghị tuyên vô hiệu: <b>2 năm</b> kể từ ngày giao dịch được xác lập; một số trường hợp không hạn chế thời hiệu.</li>
+<li><b>Giải quyết tranh chấp</b>: thương lượng, hòa giải; trọng tài thương mại (cần có <b>thỏa thuận trọng tài</b>, giải quyết một lần); Tòa án theo tố tụng dân sự.</li>
+<li>Áp dụng cho thẩm định giá: hợp đồng thẩm định giá là hợp đồng dân sự (Điều 40, 57, 58 Luật Giá); khách hàng và bên thứ ba có tên trong hợp đồng có quyền, nghĩa vụ riêng (Điều 56).</li></ul>`,
+['Thời hiệu tuyên vô hiệu 2 năm','Vô hiệu: hoàn trả, bên có lỗi bồi thường','Trọng tài cần thỏa thuận; giải quyết một lần']);
+
+L(1,'shtt','Sở hữu trí tuệ','Xác lập quyền và đối tượng bảo hộ; nền cho tài sản vô hình.',`
+<ul><li>Luật Sở hữu trí tuệ 2005, sửa đổi bổ sung 2009, 2019, 2022.</li>
+<li><b>Quyền tác giả và quyền liên quan</b>: phát sinh từ khi tác phẩm được sáng tạo và thể hiện dưới hình thức vật chất nhất định, <b>không phụ thuộc</b> đã công bố hoặc đăng ký hay chưa.</li>
+<li><b>Quyền sở hữu công nghiệp</b> (sáng chế, kiểu dáng công nghiệp, thiết kế bố trí, nhãn hiệu, chỉ dẫn địa lý…): xác lập trên cơ sở <b>quyết định cấp văn bằng bảo hộ</b> của cơ quan có thẩm quyền; các đối tượng như tên thương mại, bí mật kinh doanh, nhãn hiệu nổi tiếng có quy tắc xác lập riêng.</li>
+<li><b>Quyền đối với giống cây trồng</b>: Bằng bảo hộ giống cây trồng.</li>
+<li>Thời hạn bảo hộ theo từng đối tượng quy định trong Luật SHTT; ôn thêm trong bài giảng vì có thể được hỏi.</li>
+<li>Hành vi xâm phạm điển hình: sử dụng sáng chế, kiểu dáng, nhãn hiệu, chỉ dẫn địa lý được bảo hộ khi chưa được phép.</li>
+<li>Ý nghĩa với thẩm định giá: tài sản vô hình phải được pháp luật công nhận và bảo vệ (đặc điểm thứ ba của tài sản vô hình).</li></ul>`,
+['Quyền tác giả phát sinh tự động','Quyền công nghiệp theo văn bằng bảo hộ','Luật SHTT sửa đổi 2009, 2019, 2022']);
+
+L(1,'nguyenly','Nguyên lý hình thành giá và nguyên lý căn bản về thẩm định giá','Bốn loại tài sản, đặc trưng, mục đích, vai trò.',`
+<h4>Nguyên lý hình thành giá cả thị trường (tóm lược)</h4>
+<p>Giá cả là biểu hiện bằng tiền của giá trị hàng hóa. Quy luật giá trị: giá cả xoay quanh giá trị; trong điều kiện tiền tệ ổn định và quỹ mua hàng xác định, tổng giá cả bằng tổng giá trị (nhóm hàng giá cao hơn giá trị thì nhóm khác thấp hơn). Cung cầu tác động lên giá; các hình thái giá trị phát triển từ giản đơn đến tiền tệ.</p>
+<h4>Nguyên lý căn bản về thẩm định giá</h4>
+<ul><li><b>Đối tượng</b>: tài sản, hàng hóa, dịch vụ được yêu cầu thẩm định giá. Tài sản thẩm định giá gồm <b>4 loại</b>: bất động sản, động sản, doanh nghiệp, tài sản vô hình.</li>
+<li><b>Đặc trưng</b>: (1) nghiên cứu có lựa chọn một khu vực thị trường, một loại tài sản; (2) dùng nhiều dữ liệu, phải kiểm chứng nguồn; (3) kỹ thuật phân tích định lượng; (4) kiến thức đa ngành và kinh nghiệm; (5) ý kiến về giá trị dựa trên bằng chứng thị trường.</li>
+<li><b>Mục đích</b>: mua bán, chuyển nhượng, thế chấp, bảo hiểm, tính thuế, đền bù, cho thuê, thanh lý, đầu tư, cổ phần hóa, sáp nhập, thi hành án… Cùng tài sản, cùng thời điểm, <b>mục đích khác thì kết quả có thể khác</b>.</li>
+<li><b>Vai trò</b>: minh bạch hóa thị trường; hỗ trợ Nhà nước quản lý tài sản, ngân sách; hỗ trợ người dân, doanh nghiệp giao dịch và đầu tư; thuận lợi cho hội nhập.</li>
+<li><b>Chuẩn mực</b>: 11 chuẩn mực, trong đó <b>8 chuẩn mực áp dụng chung</b> (đạo đức nghề nghiệp; phạm vi công việc; cơ sở giá trị; hồ sơ; thu thập và phân tích thông tin; cách tiếp cận thị trường; chi phí; thu nhập) là nội dung thi của phần này; 3 chuẩn mực cho tài sản cụ thể (doanh nghiệp, vô hình, BĐS).</li></ul>`,
+['4 loại tài sản','8 chuẩn mực áp dụng chung','Mục đích khác thì giá trị có thể khác']);
+
+L(1,'toan','Toán ứng dụng: giá trị thời gian của tiền','Các công thức nền cho cả ba môn.',`
+<p>Kí hiệu: r lãi suất mỗi kỳ; n số kỳ; PV hiện giá; FV giá trị tương lai; A khoản tiền đều mỗi kỳ (cuối kỳ).</p>
+<div class="tw"><table><tr><th>Cần tính</th><th>Công thức</th><th>Ví dụ (r = 7,5%, n = 5)</th></tr>
+<tr><td>FV của một khoản</td><td>FV = PV × (1+r)<sup>n</sup></td><td>3.000 × 1,075<sup>5</sup> = 4.306,89</td></tr>
+<tr><td>PV của một khoản</td><td>PV = FV / (1+r)<sup>n</sup></td><td>5.000 / 1,075<sup>5</sup> = 3.482,79</td></tr>
+<tr><td>FV niên kim</td><td>FV = A × [(1+r)<sup>n</sup> − 1] / r</td><td>140 × 5,8084 = 813,17</td></tr>
+<tr><td>A để đạt FV</td><td>A = FV × r / [(1+r)<sup>n</sup> − 1]</td><td>693,11 × 0,075/0,4356 = 119,33</td></tr>
+<tr><td>PV niên kim</td><td>PV = A × [1 − (1+r)<sup>−n</sup>] / r</td><td></td></tr>
+<tr><td>A trả nợ đều</td><td>A = PV × r / [1 − (1+r)<sup>−n</sup>]</td><td>2.000 (10%) → 527,59</td></tr>
+<tr><td>Lãi suất thực</td><td>(1 + r<sub>dn</sub>/m)<sup>m</sup> − 1</td><td>12%, m = 4 → 12,55%</td></tr></table></div>
+<ul><li>Luôn đổi <b>kỳ</b> và <b>lãi suất mỗi kỳ</b> về cùng đơn vị (quý: r/4, n × 4).</li>
+<li>Muốn so sánh nguồn vay ghép lãi khác nhau: so <b>lãi suất thực</b>.</li>
+<li>Dòng tiền sau thuế đi với tỷ suất sau thuế; chi phí vay đưa vào WACC phải nhân (1 − t).</li></ul>`,
+['PV, FV, niên kim, trả nợ đều','So lãi thực khi kỳ ghép khác nhau','WACC: vay × (1 − thuế)']);
+
+/* ====== MÔN 2 ====== */
+L(2,'bds_tq','Tổng quan bất động sản, thị trường BĐS và thẩm định giá BĐS','Điều 107 BLDS, 8 đặc điểm, khái niệm, phạm vi công việc.',`
+<h4>Khái niệm (BLDS 2015, Điều 107 k1)</h4>
+<p>BĐS gồm: đất đai; nhà, công trình xây dựng gắn liền với đất; tài sản gắn liền với đất, nhà, công trình xây dựng; các tài sản khác gắn liền với đất; tài sản khác theo quy định của pháp luật.</p>
+<h4>Tám đặc điểm của BĐS</h4>
+<p>Khan hiếm · cố định về vị trí · <b>thanh khoản kém</b> · lâu bền · giá trị lớn · khác biệt · thích ứng · ảnh hưởng lẫn nhau.</p>
+<h4>Phân loại và yếu tố ảnh hưởng giá</h4>
+<ul><li>Theo đặc tính vật chất: đất đai; công trình xây dựng và tài sản gắn liền; tài sản khác gắn liền. Theo khả năng phát triển: có / không có khả năng phát triển.</li>
+<li>Yếu tố ảnh hưởng: quan hệ <b>cung cầu</b>; nhóm yếu tố liên quan trực tiếp (tự nhiên, kinh tế, pháp lý); nhóm khác (chính sách Nhà nước, quy hoạch, vĩ mô, xã hội).</li></ul>
+<h4>Thị trường BĐS</h4>
+<p>Dạng điển hình của thị trường <b>không hoàn hảo</b>; mang tính khu vực; cung cầu ít co giãn; hàng hóa và địa điểm giao dịch tách biệt; chịu kiểm soát của Nhà nước; liên hệ mật thiết với thị trường tài chính, tiền tệ, tín dụng; cần tổ chức trung gian; giao dịch các quyền và lợi ích hợp pháp liên quan đến BĐS.</p>
+<h4>Thẩm định giá BĐS</h4>
+<p>Khái niệm như Luật Giá, đối tượng là BĐS. Phạm vi công việc: trao đổi với bên yêu cầu → lập kế hoạch → thu thập, phân tích thông tin → chọn và áp dụng phương pháp → xác định giá trị → lập báo cáo, chứng thư. Cơ sở giá trị: thị trường, thuê thị trường, đầu tư, bắt buộc phải bán, ngang bằng, hợp lý.</p>
+<table class="tw"><tr><th>Cách tiếp cận</th><th>Phương pháp</th></tr><tr><td>Thị trường</td><td>So sánh (kèm chiết trừ)</td></tr><tr><td>Chi phí</td><td>Chi phí thay thế; chi phí tái tạo</td></tr><tr><td>Thu nhập</td><td>Vốn hóa trực tiếp; dòng tiền chiết khấu</td></tr><tr><td>Kết hợp</td><td>Thặng dư (BĐS có tiềm năng phát triển)</td></tr></table>`,
+['BĐS: 5 nhóm theo Điều 107','Thanh khoản kém','Thị trường BĐS không hoàn hảo, mang tính khu vực','3 cách tiếp cận + thặng dư']);
+
+L(2,'sosanh','Phương pháp so sánh (và chiết trừ)','5 bước, thứ tự điều chỉnh, nguyên tắc khống chế 15%.',`
+<p><b>Khái niệm.</b> Đối chiếu, phân tích, đánh giá các yếu tố so sánh của tài sản so sánh với tài sản thẩm định, rồi điều chỉnh giá của tài sản so sánh làm cơ sở ước tính giá trị.</p>
+<h4>5 bước</h4>
+<ol><li>Khảo sát, thu thập thông tin tài sản so sánh (≥ 03, ≤ 24 tháng).</li><li>Phân tích thông tin (định lượng: theo cặp, thống kê, hồi quy, chi phí; định tính: so sánh tương quan, xếp hạng, phỏng vấn).</li><li>Điều chỉnh sự khác biệt.</li><li>Xác định mức giá chỉ dẫn.</li><li>Xác định giá trị tài sản thẩm định.</li></ol>
+<h4>Quy tắc điều chỉnh</h4>
+<ul><li>Lấy <b>BĐS thẩm định làm chuẩn</b>: yếu tố có ở mục tiêu mà tài sản so sánh không có thì cộng (+) và ngược lại.</li>
+<li>Thứ tự: nhóm <b>pháp lý và điều kiện giao dịch</b> trước (thời gian, thanh toán, hợp thức hóa); sau đó <b>kinh tế–kỹ thuật</b> (số tiền tuyệt đối trước, tỷ lệ % sau; % tính trên giá sau điều chỉnh tuyệt đối).</li>
+<li>Tỷ lệ điều chỉnh: <b>mục tiêu / so sánh − 1</b> theo thang quy đổi (đưa các tình huống về thang 100). Đọc kỹ đề: "A cao hơn B 10%" nghĩa là A = 110% B.</li>
+<li><b>Nguyên tắc khống chế</b>: mỗi mức giá chỉ dẫn lệch so với trung bình các mức giá chỉ dẫn <b>không quá 15%</b>.</li></ul>
+<h4>Chọn kết quả (bước 5)</h4>
+<p>Phân tích chất lượng thông tin và 4 chỉ tiêu: tổng điều chỉnh <b>gộp</b> nhỏ nhất; <b>số lần</b> điều chỉnh ít nhất; <b>biên độ</b> điều chỉnh một yếu tố nhỏ nhất; tổng điều chỉnh <b>thuần</b> nhỏ nhất. Nếu chất lượng thông tin ngang nhau và chênh lệch nhỏ: lấy bình quân.</p>
+<h4>Chiết trừ</h4>
+<p>Giá đất = giá bán cả BĐS − giá trị còn lại công trình (xây mới × chất lượng còn lại) → đơn giá đất/m² → điều chỉnh các yếu tố của đất. Dùng khi thiếu giao dịch đất trống. Nhiều bài tập chỉ đòi hỏi điều chỉnh nhiều yếu tố nối tiếp hoặc cộng tổng tỷ lệ; chọn một cách, nêu rõ và dùng nhất quán.</p>
+<h4>Ưu, nhược điểm và trường hợp áp dụng</h4>
+<p>Ưu: ít khó khăn kỹ thuật, dựa trên giá thị trường, được công nhận, là cơ sở cho các phương pháp khác. Nhược: phụ thuộc chất lượng thông tin; thông tin mang tính lịch sử; chủ quan. Áp dụng: BĐS đồng nhất (căn hộ, đất trống, dãy nhà cùng kiểu); mục đích mua bán, thế chấp, tính thuế.</p>`,
+['Lấy BĐS thẩm định làm chuẩn','Pháp lý, thanh toán điều chỉnh trước','Lệch ≤ 15% so với trung bình','Chọn: gộp, số lần, biên độ, thuần nhỏ nhất']);
+
+L(2,'chiphi','Cách tiếp cận chi phí cho bất động sản','Đất + công trình − hao mòn; ba loại hao mòn.',`
+<p>Dựa trên <b>nguyên tắc thay thế</b>: giá trị BĐS có thể đo bằng chi phí tạo ra BĐS tương tự.</p>
+<h4>5 bước</h4>
+<ol><li>Ước tính giá đất (như đất trống, sử dụng tốt nhất và hiệu quả nhất).</li><li>Chi phí xây lại công trình hiện có.</li><li>Tổng hao mòn tích lũy (mọi nguyên nhân).</li><li>Giá trị hiện tại của công trình = (2) − (3).</li><li>Giá trị BĐS = (1) + (4).</li></ol>
+<h4>Chi phí tái tạo và thay thế</h4>
+<p><b>Tái tạo</b>: giống hệt, mới 100%. <b>Thay thế</b>: chức năng, công dụng tương tự, công nghệ vật liệu mới hơn. Công trình mới: thay thế = tái tạo. Thành phần: vật liệu, máy thiết bị, nhân công, thiết kế, tư vấn, quản lý, tài chính, thuế không hoàn lại, lắp đặt chạy thử, lợi nhuận nhà thầu/nhà đầu tư, thuế phí.</p>
+<h4>Hao mòn</h4>
+<div class="tw"><table><tr><th>Loại</th><th>Cách ước tính</th></tr>
+<tr><td>Vật lý</td><td>Chi phí khắc phục − thu thanh lý; hoặc theo mức độ đã dùng / thiết kế; hoặc tuổi đời hiệu quả / tuổi đời vật lý; hoặc bình quân gia quyền tỷ lệ hao mòn các kết cấu chính theo tỷ trọng giá trị</td></tr>
+<tr><td>Chức năng</td><td>Khắc phục được: chi phí khắc phục − thu thanh lý. Chi phí vốn cao: chi phí tái tạo − chi phí thay thế. Chi phí vận hành cao: hiện giá chênh lệch vận hành hằng năm (sau thuế)</td></tr>
+<tr><td>Ngoại biên</td><td>Phân tích giá giao dịch tương tự; hoặc vốn hóa thu nhập bị mất</td></tr></table></div>
+<p>Ba kỹ thuật chung: <b>so sánh</b> (hao mòn từ giao dịch tài sản tương tự), <b>tuổi đời</b>, <b>tổng cộng</b> (cộng các loại hao mòn). Tránh tính trùng hao mòn.</p>
+<p><b>Ưu/nhược.</b> Dùng khi không có thị trường để so sánh hoặc không dự báo được dòng tiền; bảo hiểm, đấu thầu; kiểm tra cho phương pháp khác. Nhược: chi phí ≠ giá trị; tổng các bộ phận chưa chắc bằng giá trị cả; hao mòn chủ quan; cần am hiểu kỹ thuật xây dựng.</p>`,
+['Giá trị = đất + chi phí xây lại − hao mòn','Ba hao mòn: vật lý, chức năng, ngoại biên','Chi phí vận hành cao: chiết khấu chênh lệch sau thuế','Tránh tính trùng hao mòn']);
+
+L(2,'thunhap','Cách tiếp cận từ thu nhập: vốn hóa trực tiếp và dòng tiền chiết khấu','Khung 5 mảnh: khái niệm, công thức, các bước, điều kiện, ưu nhược.',`
+<div class="tw"><table><tr><th></th><th>Vốn hóa trực tiếp</th><th>Dòng tiền chiết khấu</th></tr>
+<tr><td>Khái niệm</td><td>Quy đổi thu nhập thuần ổn định hằng năm về giá trị bằng tỷ suất vốn hóa</td><td>Quy đổi các dòng tiền dự báo trong tương lai về hiện tại bằng tỷ suất chiết khấu</td></tr>
+<tr><td>Công thức</td><td><b>V = I / R</b></td><td>V = Σ CF<sub>t</sub>/(1+r)<sup>t</sup>; đều: V = A × [1−(1+r)<sup>−n</sup>]/r; hai giai đoạn: + V<sub>n</sub>/(1+r)<sup>n</sup>, V<sub>n</sub> = CF<sub>n+1</sub>/(r−g)</td></tr>
+<tr><td>Các bước</td><td>Thu nhập thuần → tỷ suất vốn hóa → V</td><td>Giai đoạn dự báo → dòng tiền → giá trị cuối kỳ V<sub>n</sub> → tỷ suất chiết khấu → V</td></tr>
+<tr><td>Điều kiện</td><td>Thu nhập ổn định, dài hạn; có ≥ 03 tài sản tương tự</td><td>Dòng tiền dự báo được, thay đổi theo năm</td></tr></table></div>
+<h4>Thu nhập thuần (I)</h4>
+<p>I = tổng thu nhập tiềm năng − thất thu (do không sử dụng hết công suất, rủi ro thanh toán = tỷ lệ thất thu × thu nhập tiềm năng) − chi phí hoạt động. Ước tính từ ≥ 03 tài sản tương tự. Tính trước hay sau thuế phải <b>nhất quán với R</b>.</p>
+<h4>Tỷ suất vốn hóa R</h4>
+<ul><li><b>Phương pháp so sánh</b>: rút từ R của ≥ 03 tài sản tương tự.</li>
+<li><b>Vốn vay – vốn sở hữu</b>: R = M × R<sub>m</sub> + (1 − M) × R<sub>e</sub>. R<sub>m</sub> = (thanh toán mỗi kỳ × số kỳ/năm) / gốc vay; R<sub>e</sub> = lợi nhuận vốn chủ hằng năm / vốn sở hữu.</li></ul>
+<h4>Dòng tiền chiết khấu</h4>
+<ul><li>Giai đoạn dự báo n căn cứ: tuổi đời kinh tế, giai đoạn nắm giữ, độ tin cậy thông tin, đủ dài để đạt thu nhập ổn định.</li>
+<li>Dòng tiền = thu nhập − chi phí (có tính lãi vay), trước hay sau thuế nhất quán với r.</li>
+<li>Giá trị cuối kỳ: giá thanh lý, giá thị trường tài sản tương tự, hoặc công thức hai giai đoạn (<b>g &lt; r</b>).</li>
+<li>Tỷ suất chiết khấu r: thống kê tỷ suất sinh lời trung bình tài sản tương tự; WACC; CAPM. Phản ánh giá trị thời gian của tiền và rủi ro.</li></ul>
+<p><b>Ưu/nhược.</b> Đơn giản, chính xác tương đối khi có chứng cứ thương vụ so sánh; nhưng cần nhiều điều chỉnh, giả định về tương lai hạn chế, thường dùng một R cố định.</p>`,
+['V = I / R','R = M·Rm + (1−M)·Re','CF đều: niên kim; hai giai đoạn: Vn = CFn+1/(r−g)','Sau thuế đi với R sau thuế']);
+
+L(2,'thangdu','Phương pháp thặng dư','Giá trị đất = giá trị phát triển − mọi chi phí phát triển.',`
+<p><b>Khái niệm.</b> Giá trị BĐS có tiềm năng phát triển = giá trị ước tính của sự phát triển giả định − tất cả chi phí để tạo ra sự phát triển đó (<b>gồm lợi nhuận nhà đầu tư</b>). Nguyên tắc: sử dụng tốt nhất và hiệu quả nhất; đóng góp; dự kiến lợi ích tương lai.</p>
+<h4>5 bước</h4>
+<ol><li>Xác định phương án <b>sử dụng tốt nhất và hiệu quả nhất</b> (đặc điểm BĐS, quy hoạch sử dụng đất, quy hoạch xây dựng, giao thông, chuyển mục đích, quy định đầu tư xây dựng).</li><li>Giai đoạn dự báo dòng tiền.</li><li>Tổng doanh thu phát triển (≥ 03 BĐS tương tự; cách tiếp cận thị trường hoặc thu nhập).</li><li>Tổng chi phí phát triển.</li><li>Giá trị BĐS.</li></ol>
+<h4>Chi phí phát triển gồm</h4>
+<p>Chi phí đầu tư xây dựng (hạ tầng, công trình, thiết bị, tư vấn, quản lý dự án); chi phí dự phòng; chi phí kinh doanh (quảng cáo, bán hàng, quản lý vận hành); chi phí tài chính, thuế; chi phí hợp lý khác; <b>lợi nhuận nhà đầu tư</b>.</p>
+<h4>Công thức</h4>
+<ul><li>Thu và chi cùng một năm: <b>V = DT − CP</b> (mặt bằng giá tại thời điểm thẩm định giá).</li>
+<li>Kéo dài nhiều năm: <b>V = Σ (DT<sub>t</sub> − CP<sub>t</sub>)/(1+r)<sup>t</sup></b>. Chiết khấu <b>đúng số năm</b> phát sinh của từng khoản.</li>
+<li>Giá đất là ẩn số nếu lãi vay và lợi nhuận mua đất phụ thuộc vào nó: đặt X rồi giải phương trình.</li></ul>
+<p>Tỷ suất chiết khấu phản ánh giá trị thời gian của tiền và rủi ro dòng tiền trong quá trình xây dựng, hoàn thành, vận hành.</p>`,
+['V = DT − CP (lợi nhuận NĐT nằm trong CP)','Nhiều năm: chiết khấu đúng năm phát sinh','Giá đất cần tìm không đưa vào CP; dùng ẩn X nếu có lãi vay trên giá đất']);
+
+L(2,'de2017','Đề thi BĐS 2017 (kỳ thi XII): cấu trúc và cách làm','Đề 150 phút: lý thuyết 2 điểm, bài tập 5 điểm, thặng dư 3 điểm.',`
+<div class="tw"><table><tr><th>Câu</th><th>Điểm</th><th>Nội dung</th><th>Làm gì</th></tr>
+<tr><td>1</td><td>2</td><td>Cách tiếp cận từ thu nhập: khái niệm, công thức, các bước, điều kiện áp dụng của phương pháp vốn hóa trực tiếp</td><td>Trả lời theo <b>khung 5 mảnh</b>; xem bài học thu nhập</td></tr>
+<tr><td>2</td><td>5</td><td>BĐS 112 m² mặt tiền, nhà 3 tầng: a) chiết trừ ra giá đất; b) chi phí ra giá trị BĐS; c) thu nhập thuê hằng tháng; d) tỷ suất sinh lợi vốn chủ khi vay 30% lãi 8%; e) lãi vay tối đa</td><td>Làm 4 bài tính trong mục "Bài tính" (Đề 2017)</td></tr>
+<tr><td>3</td><td>3</td><td>Thặng dư: khu đất 20.000 m² xây chung cư 18 tầng</td><td>Bài tính "Đề 2017, câu 3"</td></tr></table></div>
+<ul><li>Đề ghi chú: các số % và tiền <b>làm tròn 2 số lẻ</b>.</li>
+<li>Đề không cho diện tích sàn xây dựng trực tiếp và không cho đáp án; lời giải trên web là cách làm của trợ giảng, <b>nêu rõ giả định</b> (sàn = đất × số tầng). Khi thi nên ghi giả định ở đầu bài.</li>
+<li>Câu d, e (đòn bẩy tài chính): vay có lợi khi lãi vay thấp hơn tỷ suất sinh lợi tài sản; lãi vay tối đa bằng tỷ suất sinh lợi đó.</li></ul>
+<p>Các đề 2017 và 2019 trong dự án là ảnh quét; đề thi các kỳ gần đây không công bố công khai, nên chỉ có thể luyện theo dạng.</p>`,
+['Câu 1: khung 5 mảnh cho vốn hóa trực tiếp','Câu 2: chiết trừ → chi phí → thu nhập thuê → đòn bẩy','Câu 3: thặng dư, chiết khấu 1 năm, đòn bẩy vay 60%']);
+
+/* ====== MÔN 3 ====== */
+L(3,'may_cp','Máy, thiết bị: cách tiếp cận chi phí','Chi phí tái tạo, thay thế, lợi nhuận nhà sản xuất, phương pháp tổng cộng.',`
+<ul><li><b>Cách tiếp cận chi phí</b>: giá trị = chi phí tạo ra máy giống hệt hoặc tương tự − hao mòn.</li>
+<li><b>Phương pháp chi phí thay thế</b>: Giá trị = chi phí thay thế (đã gồm lợi nhuận NSX/nhà đầu tư) − tổng hao mòn (không gồm hao mòn chức năng đã phản ánh trong chi phí thay thế).</li>
+<li><b>Phương pháp chi phí tái tạo</b>: Giá trị = chi phí tái tạo (gồm lợi nhuận) − tổng hao mòn.</li>
+<li><b>Phương pháp tổng cộng</b> (tài sản): cộng giá trị các bộ phận cấu thành; dùng khi giá trị máy phụ thuộc chủ yếu vào giá trị các bộ phận.</li>
+<li><b>Thành phần chi phí</b>: vật liệu; máy thiết bị; nghiên cứu, thử nghiệm; nhân công, vận chuyển, thiết kế; tư vấn, quản lý; tài chính trong thời gian chế tạo; thuế không hoàn lại; lắp đặt, chạy thử; lợi nhuận nhà thầu, nhà sản xuất; thuế phí.</li>
+<li><b>Lợi nhuận NSX</b>: tỷ lệ bình quân lợi nhuận trước thuế / (giá vốn + bán hàng + quản lý + tài chính) trong ≥ 03 năm gần nhất, ≥ 03 doanh nghiệp, số liệu từ báo cáo tài chính đã kiểm toán; nhân với chi phí chưa gồm lợi nhuận. Không xác định được thì dùng định mức nhà nước (nếu có).</li>
+<li>Máy nhập khẩu: chi phí = giá CIF × tỷ giá + thuế nhập khẩu + vận chuyển, lắp đặt, chạy thử… Dùng cho máy mới hoặc được chế tạo; để đối chiếu với các cách tiếp cận khác.</li></ul>`,
+['Giá trị = chi phí tái tạo/thay thế − hao mòn','Lợi nhuận NSX: ≥ 3 năm, ≥ 3 DN, BCTC kiểm toán','Tổng cộng: cộng giá trị bộ phận']);
+
+L(3,'may_hm','Máy, thiết bị: ba loại hao mòn và các kỹ thuật','So sánh, tuổi đời, tổng cộng; tuổi đời hiệu quả.',`
+<h4>Ba loại hao mòn</h4>
+<ul><li><b>Vật lý</b>: tổn thất tính hữu dụng do sử dụng, thời gian, tác động môi trường.</li><li><b>Chức năng</b>: do chi phí vốn cao hoặc chi phí vận hành cao so với máy thay thế.</li><li><b>Ngoại biên</b>: do nhân tố bên ngoài (thị trường, thuế, quy định); thường không khắc phục được.</li></ul>
+<p>Mỗi loại chia khắc phục được và không khắc phục được (chỉ coi là khắc phục được nếu chi phí khắc phục nhỏ hơn giá trị tăng thêm).</p>
+<h4>Ba kỹ thuật xác định giá trị hao mòn</h4>
+<div class="tw"><table><tr><th>Kỹ thuật</th><th>Công thức/cách làm</th></tr>
+<tr><td><b>So sánh</b> (≥ 02 tài sản, ≤ 01 năm)</td><td>Hao mòn tài sản so sánh = chi phí mới − giá bán (đã loại giá đất nếu BĐS) → tỷ lệ hao mòn lũy kế → chia số năm (hao mòn hằng năm) → áp cho tuổi đời hiệu quả của tài sản thẩm định</td></tr>
+<tr><td><b>Tuổi đời</b></td><td>Tỷ lệ hao mòn = tuổi đời hiệu quả / tuổi đời kinh tế (hoặc vật lý) × 100%</td></tr>
+<tr><td><b>Tổng cộng</b></td><td>Cộng hao mòn vật lý (chi phí khắc phục; hoặc theo giá trị sử dụng; hoặc tuổi đời; hoặc Σ hao mòn bộ phận × tỷ trọng), chức năng, ngoại biên</td></tr></table></div>
+<h4>Ba khái niệm tuổi đời</h4>
+<ul><li><b>Thực tế</b>: số năm từ khi chế tạo xong.</li><li><b>Hiệu quả</b>: thể hiện thực trạng tại thời điểm thẩm định, phụ thuộc bảo dưỡng; có thể lớn hơn hoặc nhỏ hơn tuổi đời thực tế.</li><li><b>Kinh tế</b>: thời gian sử dụng còn phát huy hiệu quả kinh tế.</li></ul>
+<h4>Hao mòn chức năng do chi phí vận hành cao (6 bước)</h4>
+<p>Chi phí vận hành/đơn vị sản phẩm của máy thẩm định → của máy thay thế → chênh lệch; thời gian sử dụng còn lại; chênh lệch hằng năm (× sản lượng); giảm trừ thuế TNDN trên phần thu nhập tăng thêm; <b>hiện tại hóa</b> tổng chênh lệch.</p>
+<h4>Khấu hao (nền kiến thức)</h4>
+<p>Ba phương pháp: đường thẳng; số dư giảm dần có điều chỉnh (hệ số 1,5 cho thời gian ≤ 4 năm; 2 cho trên 4–6 năm; 2,5 cho trên 6 năm; cuối kỳ chuyển đường thẳng); theo sản lượng. Khung thời gian trích khấu hao trong tài liệu theo Thông tư 45/2013 (ví dụ: cần cẩu 10–20 năm; phương tiện vận tải đường bộ 6–10 năm; thiết bị viễn thông, điện tử, tin học 3–15 năm). Văn bản này đã được sửa đổi nhiều lần; kiểm tra bản hiện hành trước khi thi.</p>`,
+['Hao mòn = vật lý + chức năng + ngoại biên','Tuổi đời hiệu quả ≠ thực tế','Kỹ thuật so sánh: ≥ 2 tài sản, ≤ 1 năm','Khấu hao nhanh: hệ số 1,5 / 2 / 2,5']);
+
+L(3,'may_tn','Máy, thiết bị: cách tiếp cận thị trường và thu nhập','Điều chỉnh thanh toán, bảng điều chỉnh, NPV, IRR, WACC.',`
+<h4>Thị trường (phương pháp so sánh)</h4>
+<ul><li>Yếu tố so sánh của máy: nhãn hiệu, năm sản xuất, công suất, kích thước, trọng lượng, tình trạng, điều kiện thanh toán, thời điểm bán…</li>
+<li>Điều chỉnh <b>điều khoản thanh toán</b> = phần trả ngay + phần trả chậm/(1+r)<sup>t</sup>.</li>
+<li>Bảng điều chỉnh: giá thị trường → điều chỉnh từng yếu tố (tỷ lệ %, mức điều chỉnh, giá sau điều chỉnh) → giá chỉ dẫn → trung bình, chênh lệch so với trung bình (≤ 15%) → tổng điều chỉnh gộp, số lần, biên độ, tổng điều chỉnh thuần.</li>
+<li>Chọn giá: bình quân (chất lượng thông tin ngang nhau) hoặc theo tài sản có gộp, số lần, biên độ, thuần nhỏ nhất.</li></ul>
+<h4>Thu nhập (máy, dây chuyền)</h4>
+<ul><li><b>Giá trị</b> = hiện giá dòng tiền thuần + hiện giá giá trị thu hồi <b>sau thuế</b> (thu hồi × (1 − t)).</li>
+<li><b>WACC</b> = E% × r<sub>e</sub> + D% × r<sub>d</sub> × (1 − t).</li>
+<li><b>NPV</b> = −Vốn đầu tư + Σ CF/(1+r)<sup>t</sup>; <b>IRR</b>: tỷ suất làm NPV = 0 (nội suy hoặc giải). Chấp nhận khi NPV &gt; 0, tức IRR &gt; r. Hai phương án loại trừ nhau: chọn NPV lớn hơn.</li>
+<li>Khấu hao không là dòng tiền; theo cách giáo trình bài khấu hao: dòng tiền thuần = thu thuần (chưa khấu hao) + khấu hao (xem bài tính).</li></ul>`,
+['Quy phần trả chậm về hiện tại','Giá thu hồi nhân (1 − thuế)','WACC dùng chi phí vay sau thuế','NPV > 0 ⇔ IRR > r']);
+
+L(3,'tsvh','Thẩm định giá tài sản vô hình','Khái niệm, năm đặc điểm, các cách tiếp cận và phương pháp.',`
+<h4>Tài sản vô hình</h4>
+<p>Năm đặc điểm: (1) không có hình thái vật chất; (2) nhận biết được, có bằng chứng hữu hình về sự tồn tại; (3) được pháp luật công nhận, bảo vệ, có thể sở hữu tư nhân và chuyển giao; (4) có khả năng tạo thu nhập; (5) giá trị <b>có thể định lượng</b>.</p>
+<p>Nhóm: tài sản trí tuệ và quyền SHTT; quyền mang lại lợi ích kinh tế (theo hợp đồng hoặc quy định); các mối quan hệ phi hợp đồng; tài sản vô hình khác thỏa điều kiện.</p>
+<h4>Ba cách tiếp cận</h4>
+<div class="tw"><table><tr><th>Cách tiếp cận</th><th>Phương pháp và ý chính</th></tr>
+<tr><td>Thu nhập</td><td><b>Tiền sử dụng tài sản vô hình</b>: giá trị = hiện giá khoản tiền sử dụng tiết kiệm được sau thuế (như thể phải thuê/trả để dùng). Tỷ lệ tiền sử dụng từ giao dịch tương tự hoặc chia tách lợi nhuận giữa bên cho phép và bên nhận. Dòng tiền, thuế, chi phí duy trì phải nhất quán.<br><b>Lợi nhuận vượt trội</b>: chênh lệch hiện giá hai dòng tiền: có và không có tài sản vô hình.<br><b>Thu nhập tăng thêm</b>: hiện giá phần thu nhập đóng góp riêng của tài sản vô hình sau khi loại trừ đóng góp của các tài sản khác (vốn lưu động, TSCĐ hữu hình…).</td></tr>
+<tr><td>Chi phí</td><td>Chi phí thay thế, chi phí tái tạo trừ hao mòn: chênh lệch chi phí nghiên cứu triển khai; chênh lệch chi phí vận hành; lỗi thời kinh tế; tuổi đời kinh tế và hiệu quả. Lợi nhuận NSX theo Chuẩn mực chi phí.</td></tr>
+<tr><td>Thị trường</td><td>Phương pháp so sánh với giao dịch tài sản vô hình tương tự (quyền liên quan, điều khoản hợp đồng, ngành nghề, khu vực, tuổi đời…)</td></tr></table></div>
+<h4>Thu nhập tăng thêm: 5 bước</h4>
+<ol><li>Dòng doanh thu kỳ vọng liên quan đến tài sản vô hình.</li><li>Dòng thu nhập ròng sau chi phí, khấu hao, thuế.</li><li>Xác định khoản đóng góp của các tài sản đóng góp (giá trị thị trường × tỷ suất sinh lời hợp lý).</li><li>Thu nhập riêng của tài sản vô hình = thu nhập ròng − đóng góp các tài sản khác (cộng lại khấu hao TSCĐ đóng góp, trừ tiền mua TSCĐ mới).</li><li>Chiết khấu về hiện tại.</li></ol>`,
+['5 đặc điểm; giá trị định lượng được','Thu nhập: tiền sử dụng, lợi nhuận vượt trội, thu nhập tăng thêm','Chi phí: thay thế/tái tạo; lỗi thời kinh tế','Dòng tiền, thuế, chi phí duy trì nhất quán']);
+
+L(2,'vandung','Vận dụng: đòn bẩy tài chính, lãi thực, điều chỉnh thanh toán và pháp lý','Các điểm tính toán hay bị hỏi chéo giữa các phương pháp.',`
+<h4>Đòn bẩy tài chính (vay vốn đầu tư)</h4>
+<p>Tỷ suất sinh lợi trên vốn chủ: <b>ROE = [R<sub>0</sub> − i × (D/V)] / (E/V)</b>, với R<sub>0</sub> là tỷ suất sinh lợi của tài sản, i lãi vay, D/V tỷ lệ vay, E/V = 1 − D/V.</p>
+<ul><li>Ví dụ: R<sub>0</sub> = 10%, vay 50%, lãi vay 8% → ROE = (10% − 8% × 50%) / 50% = <b>12%</b>.</li>
+<li>Vay có lợi khi <b>lãi vay &lt; tỷ suất sinh lợi của tài sản</b>; khi lãi vay lớn hơn thì vay càng nhiều ROE càng thấp.</li></ul>
+<h4>Lãi suất thực</h4>
+<p>Lãi danh nghĩa 12%/năm ghép quý: (1 + 12%/4)<sup>4</sup> − 1 = <b>12,55%</b>. Dùng lãi thực để so sánh các nguồn vốn có kỳ ghép lãi khác nhau.</p>
+<h4>Điều chỉnh khi so sánh</h4>
+<ul><li>Điều chỉnh <b>điều kiện thanh toán và điều kiện tài chính trước</b>, vì phải quy giá về giá tiền mặt tương đương rồi mới điều chỉnh các yếu tố khác.</li>
+<li>Pháp lý: nếu tài sản so sánh chưa có sổ nhưng đủ điều kiện cấp, cộng/trừ khoản nghĩa vụ tài chính phải nộp (ví dụ tiền sử dụng đất) để đưa về cùng mặt bằng pháp lý với tài sản thẩm định.</li>
+<li>Điều chỉnh theo tỷ lệ hay theo số tiền phải <b>nhất quán</b> trong cả bảng; tổng điều chỉnh thuần/gộp lớn là dấu hiệu tài sản không đủ tương đồng.</li></ul>`,
+['ROE = [R0 − i·D/V] / (E/V)','Vay có lợi khi lãi vay < sinh lợi tài sản','Lãi thực = (1 + r/m)^m − 1','Điều chỉnh thanh toán, tài chính trước']);
+/* ===== ỨNG DỤNG ===== */
+const KEY='tdv-on-luyen-v1';
+let P={q:{},ex:{}};
+try{const s=localStorage.getItem(KEY);if(s)P=Object.assign(P,JSON.parse(s))}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(P))}catch(e){}};
+const $app=document.getElementById('app');
+const TOP={};LES.forEach(l=>TOP[l.m+':'+l.t]=l);
+const LT={};LES.forEach(l=>LT[l.t]=l);
+const exCache={};
+const runEx=e=>exCache[e.id]||(exCache[e.id]=e.run());
+const isExId=s=>/^b\d+$/.test(s);
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const go=h=>{if(location.hash==='#'+h)render();else location.hash=h};
+let QS=null; // phiên trắc nghiệm đang chạy
+const qOf=t=>Q.filter(q=>q.t===t),eOf=t=>EX.filter(e=>e.t===t);
+const stQ=m=>{const l=Q.filter(q=>!m||q.m===m);return{tot:l.length,seen:l.filter(q=>P.q[q.id]).length,ok:l.filter(q=>P.q[q.id]&&P.q[q.id].ok).length}};
+const stE=m=>{const l=EX.filter(e=>!m||e.m===m);return{tot:l.length,done:l.filter(e=>P.ex[e.id]&&P.ex[e.id].done).length}};
+const bar=(a,b)=>`<div class="bar"><i style="width:${b?Math.round(a/b*100):0}%"></i></div>`;
+const L_=['A','B','C','D','E','F'];
+
+function parseNum(s){s=String(s).trim().replace(/\s/g,'').replace(/[^\d.,\-]/g,'');if(!s)return NaN;
+ if(s.includes(',')&&s.includes('.')){if(s.lastIndexOf(',')>s.lastIndexOf('.'))s=s.replace(/\./g,'').replace(',','.');else s=s.replace(/,/g,'')}
+ else if(s.includes(',')){s=/^-?\d{1,3}(,\d{3})+$/.test(s)?s.replace(/,/g,''):s.replace(',','.')}
+ else if(s.includes('.')){if(/^-?\d{1,3}(\.\d{3})+$/.test(s))s=s.replace(/\./g,'')}
+ return parseFloat(s)}
+
+/* ---------- Trang chủ ---------- */
+function vHome(){
+ const a=stQ(),b=stE();const wrong=Q.filter(q=>P.q[q.id]&&!P.q[q.id].ok).length;
+ let h=`<h1>Ôn luyện thi thẻ thẩm định viên về giá</h1>
+ <p class="lead">Bài học ngắn theo ba môn, ${Q.length} câu trắc nghiệm có giải thích, và ${EX.length} bài tính giải từng bước. Nội dung bám theo tài liệu K181 trong dự án của bạn.</p>
+ <div class="card"><div class="stat"><div><b>${a.ok}/${a.tot}</b><span class="mut sm">câu đã làm đúng</span></div><div><b>${wrong}</b><span class="mut sm">câu đang sai</span></div><div><b>${b.done}/${b.tot}</b><span class="mut sm">bài tính đã xong</span></div></div>
+ ${bar(a.ok,a.tot)}
+ <div class="row" style="margin-top:12px"><button class="btn" data-go="luyen-mix">Làm nhanh 10 câu ngẫu nhiên</button>${wrong?`<button class="btn g" data-go="luyen-sai">Ôn ${wrong} câu đã sai</button>`:''}</div></div>
+ <h2>Ba môn thi</h2><div class="grid">`;
+ for(const m of [1,2,3]){const q=stQ(m),e=stE(m),n=LES.filter(l=>l.m===m).length;
+  h+=`<div class="card"><span class="pill">${MON[m].n}</span><h3 style="margin-top:8px">${MON[m].t}</h3><p class="mut sm" style="margin:0 0 8px">${MON[m].d}</p>
+  ${bar(q.ok,q.tot)}<div class="sm mut">${n} bài học · ${q.ok}/${q.tot} câu đúng · ${e.done}/${e.tot} bài tính</div>
+  <div class="row" style="margin-top:10px"><a class="btn s" href="#hoc">Học</a><button class="btn s g" data-go="luyen-m${m}">Luyện câu hỏi</button><button class="btn s g" data-go="bai-m${m}">Bài tính</button></div></div>`}
+ h+=`</div><h2>Cách ôn gợi ý</h2><ol class="lead" style="padding-left:20px"><li>Đọc một bài học, ghi nhớ khung “Nhớ nhanh”.</li><li>Làm ngay câu hỏi cùng chủ đề; đọc phần giải thích kể cả khi đã đúng.</li><li>Với bài tính: tự làm, nhập kết quả để kiểm tra, rồi mới mở từng bước.</li><li>Cuối mỗi tuần ôn lại toàn bộ câu đã sai.</li></ol>
+ <details class="card"><summary><b>Lưu ý về nguồn và độ tin cậy</b></summary><ul class="sm" style="padding-left:18px">
+ <li>Không tìm thấy đáp án chính thức công khai của các kỳ thi. Lời giải đề BĐS 2017 là phép tính của người soạn với giả định ghi rõ trong bài, không phải đáp án của Hội đồng thi.</li>
+ <li>Một số số liệu trong giáo trình lệch nhẹ so với tính lại (đã chú thích trong bài tính liên quan, ví dụ thặng dư bài 2: 108.317,58 chứ không phải 108.204,15).</li>
+ <li>Hai tệp .ppt (Luật kinh doanh BĐS, Nguyên lý HTĐG 2025) chưa đọc được; phần pháp luật thuế (GTGT, TNDN) còn mỏng. Văn bản pháp luật có thể đã sửa đổi, hãy đối chiếu bản hiện hành trước khi thi.</li>
+ <li>Chưa có tài liệu thẩm định giá doanh nghiệp trong dự án nên web không có phần này.</li>
+ <li>Tiến độ lưu trong trình duyệt này, không đồng bộ sang thiết bị khác.</li></ul>
+ <button class="btn s g" data-act="reset">Xóa tiến độ</button></details>`;
+ return h}
+
+/* ---------- Bài học ---------- */
+function vHocIdx(){
+ let h=`<h1>Bài học</h1><p class="lead">Chọn một bài; cuối mỗi bài có liên kết sang câu hỏi và bài tính cùng chủ đề.</p>`;
+ for(const m of [1,2,3]){h+=`<h2>${MON[m].n} · ${MON[m].t}</h2><ul class="tree">`;
+  LES.filter(l=>l.m===m).forEach((l,i)=>{const qs=qOf(l.t),ok=qs.filter(q=>P.q[q.id]&&P.q[q.id].ok).length,ne=eOf(l.t).length;
+   h+=`<li><a class="it" href="#hoc-${l.t}"><span class="n">${i+1}</span><span class="tt">${l.title}<small>${l.sum}</small></span><span class="pill ${qs.length&&ok===qs.length?'o':''}">${ok}/${qs.length} câu${ne?` · ${ne} bài`:''}</span></a></li>`});
+  h+='</ul>'}
+ return h}
+function vLes(t){
+ const l=LT[t];if(!l)return vHocIdx();const i=LES.indexOf(l),pv=LES[i-1],nx=LES[i+1];
+ const qs=qOf(t),ok=qs.filter(q=>P.q[q.id]&&P.q[q.id].ok).length,es=eOf(t);
+ let h=`<div class="crumb"><a href="#hoc">Bài học</a> › ${MON[l.m].n}</div><h1>${l.title}</h1><p class="lead">${l.sum}</p><div class="les">${l.html}</div>`;
+ if(l.k&&l.k.length)h+=`<div class="key"><b>Nhớ nhanh</b><ul>${l.k.map(x=>`<li>${x}</li>`).join('')}</ul></div>`;
+ h+=`<div class="card"><b>Luyện tập chủ đề này</b><div class="row" style="margin-top:10px">`;
+ if(qs.length)h+=`<button class="btn" data-go="luyen-${t}">${qs.length} câu trắc nghiệm (đúng ${ok})</button>`;
+ if(es.length)h+=`<button class="btn g" data-go="bai-${t}">${es.length} bài tính</button>`;
+ if(!qs.length&&!es.length)h+='<span class="mut sm">Chưa có bài luyện riêng cho chủ đề này.</span>';
+ h+=`</div></div><div class="row" style="justify-content:space-between;margin-top:18px">${pv?`<a class="btn s g" href="#hoc-${pv.t}">← ${pv.title.slice(0,32)}${pv.title.length>32?'…':''}</a>`:'<span></span>'}${nx?`<a class="btn s g" href="#hoc-${nx.t}">${nx.title.slice(0,32)}${nx.title.length>32?'…':''} →</a>`:''}</div>`;
+ return h}
+
+/* ---------- Trắc nghiệm ---------- */
+function startQuiz(list,label){
+ QS={label,list:list.map(q=>{const perm=shuffle(q.o.map((_,k)=>k));return{q,perm,pick:null}}),i:0}}
+let SETUP={m:'',t:'',mode:'all',n:'20'};
+function vSetup(){
+ const f=SETUP;
+ const tops=LES.filter(l=>(!f.m||l.m==f.m)&&qOf(l.t).length);
+ const opt=(v,t,c)=>`<option value="${v}"${c==v?' selected':''}>${t}</option>`;
+ return `<h1>Luyện trắc nghiệm</h1><p class="lead">Mỗi câu có giải thích vì sao đáp án đúng và nguồn tài liệu. Thứ tự đáp án được xáo mỗi lần.</p>
+ <div class="card"><div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr))">
+ <label class="f">Môn<select id="fm">${opt('','Tất cả',f.m)}${[1,2,3].map(m=>opt(m,MON[m].n+' · '+MON[m].t,f.m)).join('')}</select></label>
+ <label class="f">Chủ đề<select id="ft">${opt('','Tất cả chủ đề',f.t)}${tops.map(l=>opt(l.t,l.title.replace(/:.*/,''),f.t)).join('')}</select></label>
+ <label class="f">Lọc<select id="fmode">${opt('all','Tất cả câu',f.mode)}${opt('new','Chưa làm',f.mode)}${opt('wrong','Đã làm sai',f.mode)}</select></label>
+ <label class="f">Số câu<select id="fn">${opt('10','10',f.n)}${opt('20','20',f.n)}${opt('40','40',f.n)}${opt('999','Tất cả',f.n)}</select></label></div>
+ <div class="row" style="margin-top:14px"><button class="btn" data-act="startq">Bắt đầu</button><span class="mut sm" id="cnt"></span></div></div>`}
+function filtQ(f){return Q.filter(q=>(!f.m||q.m==f.m)&&(!f.t||q.t===f.t)&&(f.mode==='all'||(f.mode==='new'?!P.q[q.id]:(P.q[q.id]&&!P.q[q.id].ok))))}
+function readSetup(){return{m:$app.querySelector('#fm').value,t:$app.querySelector('#ft').value,mode:$app.querySelector('#fmode').value,n:$app.querySelector('#fn').value}}
+function vQuiz(){
+ const S=QS,tot=S.list.length;
+ if(S.i>=tot)return vSum();
+ const it=S.list[S.i],q=it.q,done=it.pick!==null;
+ let h=`<div class="crumb"><button class="link" data-act="quit">← Thoát</button> · ${S.label}</div>
+ <div class="row" style="justify-content:space-between"><span class="pill">${MON[q.m].n} · ${(LT[q.t]||{title:q.t}).title.replace(/:.*/,'')}</span><span class="mut sm num">Câu ${S.i+1}/${tot}</span></div>${bar(S.i+(done?1:0),tot)}
+ <div class="q">${q.s}</div>`;
+ it.perm.forEach((k,j)=>{let c='';if(done){if(k===q.a)c=' ok';else if(k===it.pick)c=' bad'}
+  h+=`<button class="opt${c}" data-opt="${j}"${done?' disabled':''}><b>${L_[j]}</b><span>${q.o[k]}</span></button>`});
+ if(done){const good=it.pick===q.a;
+  h+=`<div class="exp ${good?'ok':'bad'}"><b>${good?'Đúng.':'Chưa đúng.'} Đáp án: ${L_[it.perm.indexOf(q.a)]}. ${q.o[q.a]}</b><div style="margin-top:6px">${q.w}</div><div class="src">Nguồn: ${q.src}</div></div>
+  <div class="row"><button class="btn" data-act="next">${S.i+1<tot?'Câu tiếp':'Xem kết quả'}</button>${LT[q.t]?`<a class="btn g" href="#hoc-${q.t}">Xem lại bài học</a>`:''}</div>`}
+ return h}
+function vSum(){
+ const S=QS,ok=S.list.filter(x=>x.pick===x.q.a),bad=S.list.filter(x=>x.pick!==x.q.a);
+ let h=`<h1>Kết quả</h1><div class="card"><div class="stat"><div><b>${ok.length}/${S.list.length}</b><span class="mut sm">câu đúng</span></div><div><b>${Math.round(ok.length/S.list.length*100)}%</b><span class="mut sm">tỷ lệ</span></div></div>${bar(ok.length,S.list.length)}</div>`;
+ if(bad.length){h+=`<h2>Các câu cần xem lại</h2>`;bad.forEach(x=>{const q=x.q;h+=`<div class="card" style="margin-bottom:10px"><div style="font-weight:600">${q.s}</div><div class="sm" style="margin:6px 0"><span class="pill b">Bạn chọn</span> ${q.o[x.pick]}<br><span class="pill o">Đúng</span> ${q.o[q.a]}</div><div class="sm">${q.w}</div>${LT[q.t]?`<a class="sm" href="#hoc-${q.t}" style="color:var(--ac)">Bài học: ${LT[q.t].title.replace(/:.*/,'')}</a>`:''}</div>`})}
+ h+=`<div class="row" style="margin-top:14px">${bad.length?`<button class="btn" data-act="redo">Làm lại ${bad.length} câu sai</button>`:''}<button class="btn g" data-act="quit">Chọn bộ câu khác</button><a class="btn g" href="#">Trang chủ</a></div>`;
+ return h}
+
+/* ---------- Bài tính ---------- */
+function vExIdx(f){
+ let h=`<h1>Bài tính</h1><p class="lead">Tự làm trước, nhập kết quả để kiểm tra, rồi mở từng bước để so cách làm. Mọi con số trong lời giải do máy tính lại.</p>`;
+ const m=/^m\d$/.test(f||'')?+f[1]:0,t=f&&!m?f:'';
+ const chips=`<div class="row" style="margin-bottom:14px"><a class="pill ${!f?'':'w'}" href="#bai">Tất cả</a>${[1,2,3].map(k=>`<a class="pill ${m===k?'':'w'}" href="#bai-m${k}">${MON[k].n}</a>`).join('')}${t?`<span class="pill">Chủ đề: ${(LT[t]||{title:t}).title.replace(/:.*/,'')}</span>`:''}</div>`;
+ h+=chips;
+ for(const k of [1,2,3]){if(m&&m!==k)continue;const es=EX.filter(e=>e.m===k&&(!t||e.t===t));if(!es.length)continue;
+  h+=`<h2>${MON[k].n} · ${MON[k].t}</h2><ul class="tree">`;
+  es.forEach(e=>{const d=P.ex[e.id]&&P.ex[e.id].done;h+=`<li><a class="it" href="#bai-${e.id}"><span class="n">${e.id.slice(1)}</span><span class="tt">${e.title}<small>${e.src}</small></span><span class="pill ${d?'o':'w'}">${d?'Đã xong':e.lv}</span></a></li>`});h+='</ul>'}
+ return h}
+let EV={shown:0,id:null,res:null};
+function vEx(id){
+ const e=EX.find(x=>x.id===id);if(!e)return vExIdx();
+ if(EV.id!==id)EV={shown:0,id,res:null};
+ const r=runEx(e),n=r.steps.length,all=EV.shown>=n;
+ let h=`<div class="crumb"><a href="#bai">Bài tính</a> › ${MON[e.m].n} › <span>${e.lv}</span></div><h1>${e.title}</h1><p class="mut sm">Nguồn: ${e.src}</p><div class="card les">${e.prompt}</div>
+ <div class="card" style="margin-top:12px"><b>Kiểm tra kết quả của bạn</b><div class="row" style="margin-top:8px"><input type="text" inputmode="decimal" id="myans" placeholder="Nhập số" style="width:160px"><span class="mut sm">${e.unit||''}</span><button class="btn s" data-act="chk">Kiểm tra</button></div>
+ <div id="chkout" class="sm" style="margin-top:8px">${EV.res||''}</div></div>
+ <h2>Lời giải từng bước</h2>`;
+ for(let i=0;i<EV.shown;i++)h+=`<div class="step"><h4>${r.steps[i].h}</h4><div class="les">${r.steps[i].b}</div></div>`;
+ if(all){h+=`<div class="ans">Kết quả: ${nf(r.ans)} ${e.unit||''}</div>${r.note?`<div class="note"><b>Lưu ý:</b> ${r.note}</div>`:''}`}
+ h+=`<div class="row">${all?'':`<button class="btn" data-act="step">Xem bước ${EV.shown+1}/${n}</button><button class="btn g" data-act="stepall">Xem hết</button>`}</div>`;
+ const i=EX.indexOf(e);
+ h+=`<div class="row" style="justify-content:space-between;margin-top:20px">${EX[i-1]?`<a class="btn s g" href="#bai-${EX[i-1].id}">← Bài trước</a>`:'<span></span>'}${LT[e.t]?`<a class="btn s g" href="#hoc-${e.t}">Bài học liên quan</a>`:''}${EX[i+1]?`<a class="btn s g" href="#bai-${EX[i+1].id}">Bài sau →</a>`:'<span></span>'}</div>`;
+ return h}
+
+/* ---------- Công thức ---------- */
+const CALC=[
+ {t:'Giá trị tương lai / hiện tại của một khoản',fx:'FV = PV × (1+r)ⁿ',f:[['PV','1000'],['r %/kỳ','7.5'],['n kỳ','5']],run:(a)=>{const[pv,r,n]=a;return`FV = ${nf(pv*Math.pow(1+r/100,n))}`}},
+ {t:'Niên kim cuối kỳ',fx:'PV = A·[1−(1+r)⁻ⁿ]/r ; FV = A·[(1+r)ⁿ−1]/r',f:[['A','100'],['r %/kỳ','10'],['n kỳ','5']],run:(a)=>{const[A,r,n]=a,i=r/100;return`PV = ${nf(A*pa(i,n))} · FV = ${nf(A*(Math.pow(1+i,n)-1)/i)}`}},
+ {t:'Trả nợ đều mỗi kỳ',fx:'A = PV·r/[1−(1+r)⁻ⁿ]',f:[['Vay','2000'],['r %/kỳ','10'],['n kỳ','5']],run:(a)=>{const[v,r,n]=a;return`A = ${nf(v/pa(r/100,n))}`}},
+ {t:'Lãi suất thực',fx:'(1 + r/m)ᵐ − 1',f:[['r danh nghĩa %/năm','12'],['m kỳ ghép/năm','4']],run:(a)=>{const[r,m]=a;return`Lãi thực = ${nf((Math.pow(1+r/100/m,m)-1)*100)}%/năm`}},
+ {t:'Vốn hóa trực tiếp',fx:'V = I / R   (I: thu nhập ròng; R: tỷ suất vốn hóa)',f:[['I (thu nhập ròng/năm)','1000'],['R %','8']],run:(a)=>{const[I,R]=a;return`V = ${nf(I/(R/100))}`}},
+ {t:'Đòn bẩy tài chính',fx:'ROE = [R₀ − i·(D/V)] / (E/V)',f:[['R₀ % sinh lợi tài sản','10'],['i % lãi vay','8'],['D/V % vay','50']],run:(a)=>{const[r0,i,d]=a;const dv=d/100;return`ROE = ${nf((r0/100-i/100*dv)/(1-dv)*100)}% · ${i<r0?'vay có lợi':'vay bất lợi'}`}},
+ {t:'Hệ số quy mô (quy tắc lũy thừa)',fx:'Giá₂ = Giá₁ × (Công suất₂/Công suất₁)ˣ ; x thường lấy 0,6',f:[['Giá máy 1','500'],['Công suất 1','100'],['Công suất 2','150'],['x','0.6']],run:(a)=>{const[g,c1,c2,x]=a;return`Giá₂ = ${nf(g*Math.pow(c2/c1,x))}`}}
+];
+function vCT(){
+ let h=`<h1>Công thức và máy tính nhanh</h1><p class="lead">Dùng để tự kiểm tra các phép tính trong bài. Dấu thập phân nhập bằng dấu chấm hoặc phẩy đều được.</p>`;
+ CALC.forEach((c,k)=>{h+=`<div class="card" style="margin-bottom:12px" data-calc="${k}"><b>${c.t}</b><div class="fx">${c.fx}</div><div class="calc">${c.f.map(([l,v],j)=>`<label class="f">${l}<input type="text" inputmode="decimal" value="${v}" data-j="${j}"></label>`).join('')}</div><div class="res" id="res${k}"></div></div>`});
+ h+=`<div class="card" data-npv="1"><b>NPV và IRR của dòng tiền</b><div class="fx">NPV = Σ CFₜ/(1+r)ᵗ ; IRR: NPV = 0</div><label class="f">Dòng tiền từ kỳ 0, cách nhau dấu cách hoặc chấm phẩy (ví dụ -1000; 300; 400; 500)<input type="text" id="cf" value="-1000; 300; 400; 500"></label><label class="f" style="margin-top:8px;max-width:160px">r %/kỳ<input type="text" id="cfr" value="10"></label><div class="res" id="resnpv"></div></div>
+ <h2>Bảng tra nhanh</h2><div class="tw"><table><tr><th>Cách tiếp cận</th><th>Phương pháp chính</th><th>Khi dùng</th></tr>
+ <tr><td>Thị trường</td><td>So sánh trực tiếp; chiết trừ</td><td>Có giao dịch tương tự, đủ số lượng</td></tr>
+ <tr><td>Chi phí</td><td>Đất + công trình (trừ hao mòn); chi phí tái tạo/thay thế</td><td>Tài sản mới, đặc thù, ít giao dịch</td></tr>
+ <tr><td>Thu nhập</td><td>Vốn hóa trực tiếp; dòng tiền chiết khấu</td><td>Tài sản tạo thu nhập</td></tr>
+ <tr><td>Thặng dư</td><td>Giá trị đất = giá trị phát triển − chi phí − lợi nhuận</td><td>Đất có tiềm năng phát triển</td></tr></table></div>`;
+ return h}
+function bindCalc(){
+ $app.querySelectorAll('[data-calc]').forEach(el=>{const k=+el.dataset.calc;const up=()=>{const a=[...el.querySelectorAll('input')].map(i=>parseNum(i.value));el.querySelector('.res').textContent=a.some(isNaN)?'':CALC[k].run(a)};el.addEventListener('input',up);up()});
+ const n=$app.querySelector('[data-npv]');if(n){const up=()=>{const cf=$app.querySelector('#cf').value.split(/[;\s]+/).filter(Boolean).map(parseNum),r=parseNum($app.querySelector('#cfr').value)/100;const o=$app.querySelector('#resnpv');if(cf.length<2||cf.some(isNaN)||isNaN(r)){o.textContent='';return}const npv=cf.reduce((s,c,i)=>s+c/Math.pow(1+r,i),0);const f=x=>cf.reduce((s,c,i)=>s+c/Math.pow(1+x,i),0);o.textContent=`NPV = ${nf(npv)} · IRR = ${f(-.9)*f(2)<=0?nf(irrf(cf)*100)+'%':'không xác định'}`};n.addEventListener('input',up);up()}}
+
+/* ---------- Router ---------- */
+function render(){
+ const h=(location.hash||'').slice(1);let v,tab='';
+ const [a,...rest]=h.split('-');const arg=rest.join('-');
+ if(a==='hoc'){tab='hoc';v=arg?vLes(arg):vHocIdx()}
+ else if(a==='luyen'){tab='luyen';
+  if(arg){let l;
+   if(arg==='mix')l=shuffle(Q).slice(0,10);
+   else if(arg==='sai')l=Q.filter(q=>P.q[q.id]&&!P.q[q.id].ok);
+   else if(/^m\d$/.test(arg))l=shuffle(Q.filter(q=>q.m==arg[1])).slice(0,20);
+   else l=shuffle(qOf(arg));
+   const lab=arg==='mix'?'10 câu ngẫu nhiên':arg==='sai'?'Ôn câu đã sai':/^m\d$/.test(arg)?MON[arg[1]].n:(LT[arg]?LT[arg].title.replace(/:.*/,''):arg);
+   history.replaceState(null,'','#luyen');
+   if(l.length){startQuiz(l,lab);v=vQuiz()}else{QS=null;v='<h1>Chưa có câu nào</h1><p class="lead">Bộ câu này đang trống.</p><a class="btn" href="#luyen">Quay lại</a>'}}
+  else v=QS&&QS.list?vQuiz():vSetup()}
+ else if(a==='bai'){tab='bai';v=isExId(arg)?vEx(arg):vExIdx(arg)}
+ else if(a==='ct'){tab='ct';v=vCT()}
+ else v=vHome();
+ $app.innerHTML=v;
+ document.querySelectorAll('nav a').forEach(x=>x.classList.toggle('on',x.dataset.tab===tab));
+ if(tab==='ct')bindCalc();
+ if(tab==='luyen'&&!(QS&&QS.list))upCnt();
+ window.scrollTo(0,0)}
+function upCnt(){const f=readSetup();const c=filtQ(f).length;const el=$app.querySelector('#cnt');if(el)el.textContent=c+' câu phù hợp'}
+
+document.addEventListener('click',ev=>{
+ const g=ev.target.closest('[data-go]');if(g){go(g.dataset.go);return}
+ const o=ev.target.closest('[data-opt]');
+ if(o&&QS){const it=QS.list[QS.i];if(it.pick!==null)return;const j=+o.dataset.opt;it.pick=it.perm[j];
+  const ok=it.pick===it.q.a,s=P.q[it.q.id]||{n:0};P.q[it.q.id]={ok,n:s.n+1,last:Date.now()};save();
+  const y=window.scrollY;$app.innerHTML=vQuiz();window.scrollTo(0,y);
+  const e=$app.querySelector('.exp');if(e)e.scrollIntoView({block:'nearest',behavior:'smooth'});return}
+ const b=ev.target.closest('[data-act]');if(!b)return;const act=b.dataset.act;
+ if(act==='next'){QS.i++;render()}
+ else if(act==='quit'){QS=null;go('luyen')}
+ else if(act==='redo'){const l=QS.list.filter(x=>x.pick!==x.q.a).map(x=>x.q);startQuiz(shuffle(l),'Làm lại câu sai');render()}
+ else if(act==='startq'){const f=readSetup(),l=shuffle(filtQ(f)).slice(0,+f.n);if(!l.length){$app.querySelector('#cnt').textContent='Không có câu nào phù hợp bộ lọc.';return}
+  SETUP=f;startQuiz(l,'Bộ câu tự chọn');render()}
+ else if(act==='step'){EV.shown++;rerenderEx()}
+ else if(act==='stepall'){EV.shown=99;rerenderEx(true)}
+ else if(act==='chk'){const e=EX.find(x=>x.id===EV.id),r=runEx(e),v=parseNum($app.querySelector('#myans').value),out=$app.querySelector('#chkout');
+  if(isNaN(v)){out.innerHTML='<span class="pill w">Hãy nhập một số</span>';return}
+  const tol=e.tol||0.005,good=Math.abs(v-r.ans)<=Math.max(Math.abs(r.ans)*tol,0.011);
+  EV.res=good?`<span class="pill o">Đúng</span> Kết quả khớp (${nf(r.ans)}).`:`<span class="pill b">Chưa khớp</span> Hãy rà lại từng bước bên dưới; đáp số đúng chỉ hiện khi bạn xem hết lời giải.`;
+  out.innerHTML=EV.res;if(good){P.ex[e.id]={done:true,t:Date.now()};save()}}
+ else if(act==='reset'){P={q:{},ex:{}};save();render()}});
+function rerenderEx(){const e=EX.find(x=>x.id===EV.id),r=runEx(e);if(EV.shown>=r.steps.length){EV.shown=r.steps.length;P.ex[e.id]=Object.assign({},P.ex[e.id],{done:true});save()}
+ const my=$app.querySelector('#myans').value;$app.innerHTML=vEx(EV.id);$app.querySelector('#myans').value=my}
+document.addEventListener('change',ev=>{
+ if(!$app.querySelector('#fm'))return;
+ if(ev.target.id==='fm'){SETUP=readSetup();SETUP.t='';$app.innerHTML=vSetup();upCnt()}
+ else if(['ft','fmode','fn'].includes(ev.target.id))upCnt()});
+window.addEventListener('hashchange',render);
+render();
+</script>
+
+</body></html>
