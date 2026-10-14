@@ -55,11 +55,17 @@ export function useProgress() {
     } catch (e) {}
   }, [P]);
   const markQ = (id, ok) =>
-    setP((p) => ({ ...p, q: { ...p.q, [id]: { ok, n: (p.q[id]?.n || 0) + 1, last: Date.now() } } }));
+    setP((p) => ({
+      ...p,
+      q: { ...p.q, [id]: { ok, n: (p.q[id]?.n || 0) + 1, w: wrongOf(p.q[id]) + (ok ? 0 : 1), last: Date.now() } },
+    }));
   const markEx = (id) => setP((p) => ({ ...p, ex: { ...p.ex, [id]: { ...p.ex[id], done: true, t: Date.now() } } }));
   const reset = () => setP({ q: {}, ex: {} });
   return { P, markQ, markEx, reset };
 }
+
+/* Số lần làm sai; dữ liệu cũ chưa có trường w thì suy ra từ kết quả gần nhất */
+export const wrongOf = (r) => (r ? (r.w ?? (r.ok === false ? 1 : 0)) : 0);
 
 export const stQ = (P, m) => {
   const l = Q.filter((q) => !m || q.m === m);

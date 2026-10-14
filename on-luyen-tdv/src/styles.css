@@ -65,3 +65,19 @@ label.f{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--mu
 .foot{margin-top:36px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--mut)}
 .link{background:none;border:0;color:var(--ac);font:inherit;cursor:pointer;padding:0;text-decoration:underline}
 @media(max-width:480px){h1{font-size:22px}.q{font-size:15.5px}}
+/* ---- Sơ đồ cây ---- */
+.tr{list-style:none;margin:0;padding:0}
+.tr .tr{margin:2px 0 4px 11px;padding-left:14px;border-left:2px solid var(--line)}
+.tn{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;padding:4px 2px;line-height:1.45}
+.tn.d0 .tt2{font-weight:700;font-size:16px}
+.tn.d1 .tt2{font-weight:600;color:var(--ac)}
+.tn .tt2{min-width:0;flex:1 1 200px}
+.tg{width:22px;height:22px;flex:none;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ac);font:600 15px/1 'IBM Plex Mono',monospace;cursor:pointer;padding:0}
+.tg.dot{border:0;background:none;color:var(--mut);cursor:default}
+.pill.chip{border:0;font:inherit;font-size:12.5px;cursor:pointer}
+/* ---- Câu sai nhiều ---- */
+.wq{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:10px 14px;margin-bottom:8px}
+.wq summary{cursor:pointer;display:flex;gap:10px;align-items:baseline}
+.wq summary .qt{flex:1;min-width:0}
+.wq .rk{font-family:'IBM Plex Mono',monospace;color:var(--mut);font-size:12px;min-width:22px}
+.pill.chip.off{background:var(--card);color:var(--mut);box-shadow:inset 0 0 0 1px var(--line)}

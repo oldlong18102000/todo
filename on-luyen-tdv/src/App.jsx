@@ -1,13 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
 import { Q } from './data/questions.js';
 import { MON } from './data/lessons.js';
-import { LT, qOf, shuffle, shortTitle, useHash, useProgress } from './lib.js';
+import { LT, qOf, shuffle, shortTitle, useHash, useProgress, wrongOf } from './lib.js';
 import { Home, Lesson, LessonIndex } from './learn.jsx';
 import { Quiz, QuizSetup } from './quiz.jsx';
 import { ExIndex, Exercise } from './practice.jsx';
 import { Formulas } from './formulas.jsx';
+import { TreeView } from './tree.jsx';
+import { WrongView } from './wrong.jsx';
 
-const TABS = [['', 'Tổng quan'], ['hoc', 'Bài học'], ['luyen', 'Trắc nghiệm'], ['bai', 'Bài tính'], ['ct', 'Công thức']];
+const TABS = [['', 'Tổng quan'], ['hoc', 'Bài học'], ['luyen', 'Trắc nghiệm'], ['sai', 'Sai nhiều'], ['cay', 'Sơ đồ cây'], ['bai', 'Bài tính'], ['ct', 'Công thức']];
 
 const newSession = (qs, label) => ({
   label,
@@ -22,7 +24,7 @@ export default function App() {
   const [setup, setSetup] = useState({ m: '', t: '', mode: 'all', n: '20' });
   const [a, ...rest] = hash.split('-');
   const arg = rest.join('-');
-  const tab = ['hoc', 'luyen', 'bai', 'ct'].includes(a) ? a : '';
+  const tab = ['hoc', 'luyen', 'sai', 'cay', 'bai', 'ct'].includes(a) ? a : '';
   const Pref = useRef(P);
   Pref.current = P;
 
@@ -31,10 +33,11 @@ export default function App() {
     if (a !== 'luyen' || !arg) return;
     let l;
     if (arg === 'mix') l = shuffle(Q).slice(0, 10);
+    else if (arg === 'saimax') l = Q.filter((q) => wrongOf(Pref.current.q[q.id]) > 0).sort((x, y) => wrongOf(Pref.current.q[y.id]) - wrongOf(Pref.current.q[x.id])).slice(0, 10);
     else if (arg === 'sai') l = Q.filter((q) => Pref.current.q[q.id] && !Pref.current.q[q.id].ok);
     else if (/^m\d$/.test(arg)) l = shuffle(Q.filter((q) => q.m == arg[1])).slice(0, 20);
     else l = shuffle(qOf(arg));
-    const label = arg === 'mix' ? '10 câu ngẫu nhiên' : arg === 'sai' ? 'Ôn câu đã sai'
+    const label = arg === 'mix' ? '10 câu ngẫu nhiên' : arg === 'saimax' ? '10 câu sai nhiều nhất' : arg === 'sai' ? 'Ôn câu đã sai'
       : /^m\d$/.test(arg) ? MON[arg[1]].n : LT[arg] ? shortTitle(LT[arg].title) : arg;
     setQS(l.length ? newSession(l, label) : null);
     history.replaceState(null, '', '#luyen');
@@ -63,6 +66,8 @@ export default function App() {
     else if (empty) view = (<><h1>Chưa có câu nào</h1><p className="lead">Bộ câu này đang trống.</p><button className="btn" onClick={() => { setEmpty(false); location.hash = 'luyen'; }}>Quay lại</button></>);
     else view = <QuizSetup P={P} setup={setup} setSetup={setSetup} onStart={(qs, f) => { setSetup(f); setQS(newSession(shuffle(qs).slice(0, +f.n), 'Bộ câu tự chọn')); }} />;
   } else if (a === 'bai') view = /^b\d+$/.test(arg) ? <Exercise key={arg} id={arg} P={P} markEx={markEx} /> : <ExIndex P={P} filter={arg} />;
+  else if (a === 'sai') view = <WrongView P={P} />;
+  else if (a === 'cay') view = <TreeView P={P} />;
   else if (a === 'ct') view = <Formulas />;
   else view = <Home P={P} reset={reset} />;
 
